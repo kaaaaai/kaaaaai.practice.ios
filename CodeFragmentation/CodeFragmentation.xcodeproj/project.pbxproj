@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
 		083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB19226F080400E9FFCA /* AppDelegate.m */; };
 		083CFB1D226F080400E9FFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB1C226F080400E9FFCA /* ViewController.m */; };
 		083CFB20226F080400E9FFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB1E226F080400E9FFCA /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		083CFB15226F080400E9FFCA /* CodeFragmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083CFB18226F080400E9FFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		083CFB19226F080400E9FFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0822ABA422FA6C2C00724828 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0822ABA522FA6C3A00724828 /* Foundation+Log.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		083CFB0C226F080300E9FFCA = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				0822ABA422FA6C2C00724828 /* Other */,
 				083CFB57226F08C100E9FFCA /* ChainFunction */,
 				083CFB5C226F08C100E9FFCA /* FunctionalProgramming */,
 				083CFB18226F080400E9FFCA /* AppDelegate.h */,
@@ -298,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				083CFB1D226F080400E9FFCA /* ViewController.m in Sources */,
+				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
