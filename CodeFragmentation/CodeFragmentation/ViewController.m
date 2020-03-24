@@ -11,7 +11,7 @@
 #import "Calculator.h"
 #import "NSObject+Calculator.h"
 
-@interface ViewController (){
+@interface ViewController ()<NSURLSessionDelegate>{
     NSMutableData *mData;
     NSURLConnection *connentGet;
 }
@@ -112,21 +112,50 @@
         //转换成NSURL
         NSURL *url = [NSURL URLWithString:urlString];
         
-        NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10];
-     
-        //异步请求有两种方式；一种是使用代理，一种是使用block
-        
-        //使用block
-        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-            
-            //NSLog(@"%@",[weibo.statuses[0] objectForKey:@"text"]);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-             
-            });//更新UI
-        
-        }];
+
+    
+    NSURL *questUrl = [NSURL URLWithString:@"https://c.y.qq.com/base/fcgi-bin/u?__=uiZBPcc"];
+    [self redirectForURL:questUrl];
+
 }
+
+- (void)redirectForURL:(NSURL*)url{
+    
+       NSMutableURLRequest *quest = [NSMutableURLRequest requestWithURL:url];
+       quest.HTTPMethod = @"GET";
+       NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+       config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+       NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue currentQueue]];
+       
+       NSURLSessionDataTask *task = [urlSession dataTaskWithRequest:quest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+          NSHTTPURLResponse *urlResponse = (NSHTTPURLResponse *)response;
+          NSLog(@"%ld",urlResponse.statusCode);
+          NSLog(@"%@",urlResponse.allHeaderFields);
+           
+          NSDictionary *dic = urlResponse.allHeaderFields;
+          NSLog(@"%@",dic[@"Location"]);
+           
+           
+       }];
+       [task resume];
+}
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+willPerformHTTPRedirection:(NSHTTPURLResponse *)response
+        newRequest:(NSURLRequest *)request
+ completionHandler:(void (^)(NSURLRequest * __nullable))completionHandler{
+    NSHTTPURLResponse *urlResponse = (NSHTTPURLResponse *)response;
+    NSLog(@"%ld",urlResponse.statusCode);
+    NSLog(@"%@",urlResponse.allHeaderFields);
+    
+    NSDictionary *dic = urlResponse.allHeaderFields;
+    NSLog(@"location url:%@",dic[@"Location"]);
+    completionHandler(request);
+    
+    if (dic[@"Location"] != nil) {
+         NSURL *questUrl = [NSURL URLWithString:dic[@"Location"]];
+        [self redirectForURL:questUrl];
+    }
+}
+
 
 @end
