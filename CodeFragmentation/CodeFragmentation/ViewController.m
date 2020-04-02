@@ -11,6 +11,7 @@
 #import "Calculator.h"
 #import "NSObject+Calculator.h"
 
+#import "KIRSA.h"
 @interface ViewController ()<NSURLSessionDelegate>{
     NSMutableData *mData;
     NSURLConnection *connentGet;
@@ -49,6 +50,11 @@
     }];
 }
 
+- (void)btnClick{
+    [self rsaEncryptAndDecrypt];
+}
+
+///链式编程、函数式编程
 - (void)CaculatorMethod{
     /**
        代码剖析：
@@ -95,28 +101,21 @@
        NSLog(@"isEqual:%d", isEqual);
 }
 
-- (void)btnClick{
+///歌单获取
+- (void)getSongList{
     //    分享猫科静物的歌单《填充物》http://music.163.com/playlist/1997538165/89292472/?userid=89292472 (@网易云音乐)
-   
-    //歌单id 1997538165
     
-    //api 接口 http://music.163.com/api/playlist/detail?id=1997538165&updateTime=-1
-    
-    //酷狗歌单：分享故梦的歌单《‖G.E.M.邓紫棋‖:一路成长的铁肺女王》https://t4.kugou.com/song.html?id=5lXkc16wjV2（@酷狗音乐）
-     //拿到urlString
-        NSString *urlString = @"http://music.163.com/playlist/1997538165/89292472/?userid=89292472";
-        
-        //编码
-        urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-        
-        //转换成NSURL
-        NSURL *url = [NSURL URLWithString:urlString];
-        
+     //歌单id 1997538165
+     
+     //api 接口 http://music.163.com/api/playlist/detail?id=1997538165&updateTime=-1
+     
+     //酷狗歌单：分享故梦的歌单《‖G.E.M.邓紫棋‖:一路成长的铁肺女王》https://t4.kugou.com/song.html?id=5lXkc16wjV2（@酷狗音乐）
+         
+     NSURL *qqmusicUrl = [NSURL URLWithString:@"https://c.y.qq.com/base/fcgi-bin/u?__=uiZBPcc"];
+     [self redirectForURL:qqmusicUrl];
 
-    
-    NSURL *questUrl = [NSURL URLWithString:@"https://c.y.qq.com/base/fcgi-bin/u?__=uiZBPcc"];
-    [self redirectForURL:questUrl];
-
+     NSURL *kugouURL = [NSURL URLWithString:@"https://t.kugou.com/6xuWHf2wjV2"];
+     [self redirectForURL:kugouURL];
 }
 
 - (void)redirectForURL:(NSURL*)url{
@@ -128,17 +127,10 @@
        NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue currentQueue]];
        
        NSURLSessionDataTask *task = [urlSession dataTaskWithRequest:quest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-          NSHTTPURLResponse *urlResponse = (NSHTTPURLResponse *)response;
-          NSLog(@"%ld",urlResponse.statusCode);
-          NSLog(@"%@",urlResponse.allHeaderFields);
-           
-          NSDictionary *dic = urlResponse.allHeaderFields;
-          NSLog(@"%@",dic[@"Location"]);
-           
-           
        }];
        [task resume];
 }
+
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
 willPerformHTTPRedirection:(NSHTTPURLResponse *)response
         newRequest:(NSURLRequest *)request
@@ -157,5 +149,10 @@ willPerformHTTPRedirection:(NSHTTPURLResponse *)response
     }
 }
 
-
+- (void)rsaEncryptAndDecrypt{
+    NSString * str = [KIRSA encryptString:@"I am a Chinese"];
+       
+    NSLog(@"加密后:%@",str);
+    NSLog(@"%@ 解密后:%@",str,[KIRSA decryptString:str]);
+}
 @end

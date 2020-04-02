@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
+		0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 0831E352242DAEC600C3B3CC /* privatekey.p12 */; };
+		0831E355242DAEC600C3B3CC /* publickey.der in Resources */ = {isa = PBXBuildFile; fileRef = 0831E353242DAEC600C3B3CC /* publickey.der */; };
+		0831E357242DAEEC00C3B3CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0831E356242DAEEC00C3B3CC /* Security.framework */; };
+		0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831E359242DAF3F00C3B3CC /* KIRSA.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB19226F080400E9FFCA /* AppDelegate.m */; };
 		083CFB1D226F080400E9FFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB1C226F080400E9FFCA /* ViewController.m */; };
 		083CFB20226F080400E9FFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB1E226F080400E9FFCA /* Main.storyboard */; };
@@ -45,6 +49,11 @@
 /* Begin PBXFileReference section */
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		0831E352242DAEC600C3B3CC /* privatekey.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = privatekey.p12; sourceTree = "<group>"; };
+		0831E353242DAEC600C3B3CC /* publickey.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = publickey.der; sourceTree = "<group>"; };
+		0831E356242DAEEC00C3B3CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0831E358242DAF3F00C3B3CC /* KIRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIRSA.h; sourceTree = "<group>"; };
+		0831E359242DAF3F00C3B3CC /* KIRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIRSA.m; sourceTree = "<group>"; };
 		083CFB15226F080400E9FFCA /* CodeFragmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083CFB18226F080400E9FFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		083CFB19226F080400E9FFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0831E357242DAEEC00C3B3CC /* Security.framework in Frameworks */,
 				C590F945EFAD0B42224935D2 /* Pods_CodeFragmentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +124,17 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		0831E351242DAEA400C3B3CC /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				0831E352242DAEC600C3B3CC /* privatekey.p12 */,
+				0831E353242DAEC600C3B3CC /* publickey.der */,
+				0831E358242DAF3F00C3B3CC /* KIRSA.h */,
+				0831E359242DAF3F00C3B3CC /* KIRSA.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
 		083CFB0C226F080300E9FFCA = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +161,7 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				0831E351242DAEA400C3B3CC /* RSA */,
 				0822ABA422FA6C2C00724828 /* Other */,
 				083CFB57226F08C100E9FFCA /* ChainFunction */,
 				083CFB5C226F08C100E9FFCA /* FunctionalProgramming */,
@@ -204,13 +226,13 @@
 				F183D20FBFDAE3743AFACA65 /* Pods-CodeFragmentationTests.debug.xcconfig */,
 				05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		3E8951433D54F998097734AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0831E356242DAEEC00C3B3CC /* Security.framework */,
 				DFB3B458BC09DCFF70B245D4 /* Pods_CodeFragmentation.framework */,
 				7558526925A24732ED0C5198 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework */,
 				5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */,
@@ -326,9 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0831E355242DAEC600C3B3CC /* publickey.der in Resources */,
 				083CFB25226F080500E9FFCA /* LaunchScreen.storyboard in Resources */,
 				083CFB22226F080500E9FFCA /* Assets.xcassets in Resources */,
 				083CFB56226F088D00E9FFCA /* readme.md in Resources */,
+				0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */,
 				083CFB20226F080400E9FFCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +488,7 @@
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
+				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +660,8 @@
 			baseConfigurationReference = ED6F6E00487606B60568A66B /* Pods-CodeFragmentation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GR3FK25RUR;
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,6 +669,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -652,7 +679,8 @@
 			baseConfigurationReference = B49AA86A5DCF799F6A073091 /* Pods-CodeFragmentation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GR3FK25RUR;
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,6 +688,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

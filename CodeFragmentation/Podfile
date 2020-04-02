@@ -7,6 +7,7 @@ target 'CodeFragmentation' do
 
   # Pods for CodeFragmentation
   pod 'Masonry'
+#  pod 'NotificationBannerSwift', '~> 3.0.0'
 
   target 'CodeFragmentationTests' do
     inherit! :search_paths
