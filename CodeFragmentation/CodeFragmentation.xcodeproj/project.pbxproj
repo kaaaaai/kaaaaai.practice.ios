@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
+		082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DE5D524C02C4000AB12DE /* KKSortingMethod.m */; };
 		0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 0831E352242DAEC600C3B3CC /* privatekey.p12 */; };
 		0831E355242DAEC600C3B3CC /* publickey.der in Resources */ = {isa = PBXBuildFile; fileRef = 0831E353242DAEC600C3B3CC /* publickey.der */; };
 		0831E357242DAEEC00C3B3CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0831E356242DAEEC00C3B3CC /* Security.framework */; };
@@ -27,6 +28,7 @@
 		0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856544E24B567E000FEFE00 /* KKPlaylistTool.m */; };
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
+		0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */; };
 		0919A2EB56AC210EF6C260E3 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558526925A24732ED0C5198 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework */; };
 		25EDD22F95C2CC453307FD3C /* Pods_CodeFragmentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */; };
 		C590F945EFAD0B42224935D2 /* Pods_CodeFragmentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3B458BC09DCFF70B245D4 /* Pods_CodeFragmentation.framework */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		082DE5D424C02C4000AB12DE /* KKSortingMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSortingMethod.h; sourceTree = "<group>"; };
+		082DE5D524C02C4000AB12DE /* KKSortingMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSortingMethod.m; sourceTree = "<group>"; };
 		0831E352242DAEC600C3B3CC /* privatekey.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = privatekey.p12; sourceTree = "<group>"; };
 		0831E353242DAEC600C3B3CC /* publickey.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = publickey.der; sourceTree = "<group>"; };
 		0831E356242DAEEC00C3B3CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -88,6 +92,8 @@
 		0856545424B5689600FEFE00 /* KKLabTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKLabTool.m; sourceTree = "<group>"; };
 		0856545824B569F300FEFE00 /* KKSingleton.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.pch; sourceTree = "<group>"; };
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
+		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
+		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
 		5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7558526925A24732ED0C5198 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentation_CodeFragmentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59BFC861AC0E0762E74C5CC /* Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentation-CodeFragmentationUITests/Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,12 +133,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0822ABA422FA6C2C00724828 /* Other */ = {
+		0822ABA422FA6C2C00724828 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				0822ABA522FA6C3A00724828 /* Foundation+Log.m */,
 			);
-			path = Other;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		082DE5D324C02C0B00AB12DE /* BasedAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				082DE5D424C02C4000AB12DE /* KKSortingMethod.h */,
+				082DE5D524C02C4000AB12DE /* KKSortingMethod.m */,
+			);
+			path = BasedAlgorithm;
 			sourceTree = "<group>";
 		};
 		0831E351242DAEA400C3B3CC /* RSA */ = {
@@ -172,12 +187,13 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				082DE5D324C02C0B00AB12DE /* BasedAlgorithm */,
+				0856545B24B5C58300FEFE00 /* MultiDelegate */,
 				0856545724B569D600FEFE00 /* UtilityHelpers */,
 				0856545624B569B900FEFE00 /* Tools */,
 				0831E351242DAEA400C3B3CC /* RSA */,
-				0822ABA422FA6C2C00724828 /* Other */,
+				0822ABA422FA6C2C00724828 /* Extension */,
 				083CFB57226F08C100E9FFCA /* ChainFunction */,
-				083CFB5C226F08C100E9FFCA /* FunctionalProgramming */,
 				083CFB18226F080400E9FFCA /* AppDelegate.h */,
 				083CFB19226F080400E9FFCA /* AppDelegate.m */,
 				083CFB1B226F080400E9FFCA /* ViewController.h */,
@@ -214,6 +230,7 @@
 		083CFB57226F08C100E9FFCA /* ChainFunction */ = {
 			isa = PBXGroup;
 			children = (
+				083CFB5C226F08C100E9FFCA /* FunctionalProgramming */,
 				083CFB58226F08C100E9FFCA /* NSObject+Calculator.h */,
 				083CFB59226F08C100E9FFCA /* CalculatorMaker.h */,
 				083CFB5A226F08C100E9FFCA /* NSObject+Calculator.m */,
@@ -249,6 +266,15 @@
 				0856545A24B56A3500FEFE00 /* KKSingleton.h */,
 			);
 			path = UtilityHelpers;
+			sourceTree = "<group>";
+		};
+		0856545B24B5C58300FEFE00 /* MultiDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */,
+				0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */,
+			);
+			path = MultiDelegate;
 			sourceTree = "<group>";
 		};
 		329C8AAC6D93481735DB927B /* Pods */ = {
@@ -520,6 +546,8 @@
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
+				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
+				0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
 				0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */,
 				0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */,

@@ -25,6 +25,7 @@
     
     [self setUI];
     
+    [self testMethod];
     // Do any additional setup after loading the view.
 }
 
@@ -58,6 +59,10 @@
        
     NSLog(@"加密后:%@",str);
     NSLog(@"%@ 解密后:%@",str,[KIRSA decryptString:str]);
+}
+
+- (void)testMethod{
+    [[KKLabTool sharedLabTool] takeOutSameItem];
 }
 
 @end

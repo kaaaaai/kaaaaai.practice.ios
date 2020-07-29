@@ -1,5 +1,5 @@
 //
-//  KKLabTool.h
+//  KKMultiDelegate.h
 //  CodeFragmentation
 //
 //  Created by Kai Lv on 2020/7/8.
@@ -10,14 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKLabTool : NSObject
-KKSingletonH(LabTool)
+@interface KKMultiDelegate : NSObject
 
-/*!
- *  @method 取出相同的元素-测试方法
- *
- */
--(void)takeOutSameItem;
 @end
 
 NS_ASSUME_NONNULL_END
