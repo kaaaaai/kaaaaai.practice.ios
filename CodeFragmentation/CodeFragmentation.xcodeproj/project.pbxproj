@@ -29,8 +29,12 @@
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
 		0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */; };
-		0919A2EB56AC210EF6C260E3 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558526925A24732ED0C5198 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework */; };
+		0886FBD624D268C800EA0107 /* LXHeadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD324D268C800EA0107 /* LXHeadMessageView.swift */; };
+		0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD424D268C800EA0107 /* FMSlider.swift */; };
+		0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */; };
+		0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */; };
 		25EDD22F95C2CC453307FD3C /* Pods_CodeFragmentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */; };
+		27323286364D44787B13D1C3 /* Pods_CodeFragmentationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A9EFFDA037E537243EEF20 /* Pods_CodeFragmentationUITests.framework */; };
 		C590F945EFAD0B42224935D2 /* Pods_CodeFragmentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3B458BC09DCFF70B245D4 /* Pods_CodeFragmentation.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,8 +98,15 @@
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
 		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
 		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
+		0886FBD324D268C800EA0107 /* LXHeadMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXHeadMessageView.swift; sourceTree = "<group>"; };
+		0886FBD424D268C800EA0107 /* FMSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSlider.swift; sourceTree = "<group>"; };
+		0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMStationAdjustView.swift; sourceTree = "<group>"; };
+		0886FBDB24D26A1000EA0107 /* CodeFragmentation-Bridgint-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFragmentation-Bridgint-Header.h"; sourceTree = "<group>"; };
+		0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKFactoryPattern.swift; sourceTree = "<group>"; };
+		0BAA9943B3F37E4115364840 /* Pods-CodeFragmentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationUITests/Pods-CodeFragmentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		15A9EFFDA037E537243EEF20 /* Pods_CodeFragmentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7558526925A24732ED0C5198 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentation_CodeFragmentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED908A99E0F76FC3C294005 /* Pods-CodeFragmentationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationUITests/Pods-CodeFragmentationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A59BFC861AC0E0762E74C5CC /* Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentation-CodeFragmentationUITests/Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B49AA86A5DCF799F6A073091 /* Pods-CodeFragmentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentation.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentation/Pods-CodeFragmentation.release.xcconfig"; sourceTree = "<group>"; };
 		BAEC4517EA28ABCEBC720342 /* Pods-CodeFragmentation-CodeFragmentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentation-CodeFragmentationUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeFragmentation-CodeFragmentationUITests/Pods-CodeFragmentation-CodeFragmentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0919A2EB56AC210EF6C260E3 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework in Frameworks */,
+				27323286364D44787B13D1C3 /* Pods_CodeFragmentationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +198,8 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				0886FBDC24D26BE100EA0107 /* DesignPatterns */,
+				0886FBD224D268C800EA0107 /* View */,
 				082DE5D324C02C0B00AB12DE /* BasedAlgorithm */,
 				0856545B24B5C58300FEFE00 /* MultiDelegate */,
 				0856545724B569D600FEFE00 /* UtilityHelpers */,
@@ -205,6 +218,7 @@
 				083CFB23226F080500E9FFCA /* LaunchScreen.storyboard */,
 				083CFB26226F080500E9FFCA /* Info.plist */,
 				083CFB27226F080500E9FFCA /* main.m */,
+				0886FBDB24D26A1000EA0107 /* CodeFragmentation-Bridgint-Header.h */,
 			);
 			path = CodeFragmentation;
 			sourceTree = "<group>";
@@ -277,6 +291,24 @@
 			path = MultiDelegate;
 			sourceTree = "<group>";
 		};
+		0886FBD224D268C800EA0107 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0886FBD324D268C800EA0107 /* LXHeadMessageView.swift */,
+				0886FBD424D268C800EA0107 /* FMSlider.swift */,
+				0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0886FBDC24D26BE100EA0107 /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
 		329C8AAC6D93481735DB927B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +318,8 @@
 				A59BFC861AC0E0762E74C5CC /* Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig */,
 				F183D20FBFDAE3743AFACA65 /* Pods-CodeFragmentationTests.debug.xcconfig */,
 				05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */,
+				0BAA9943B3F37E4115364840 /* Pods-CodeFragmentationUITests.debug.xcconfig */,
+				7ED908A99E0F76FC3C294005 /* Pods-CodeFragmentationUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -295,8 +329,8 @@
 			children = (
 				0831E356242DAEEC00C3B3CC /* Security.framework */,
 				DFB3B458BC09DCFF70B245D4 /* Pods_CodeFragmentation.framework */,
-				7558526925A24732ED0C5198 /* Pods_CodeFragmentation_CodeFragmentationUITests.framework */,
 				5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */,
+				15A9EFFDA037E537243EEF20 /* Pods_CodeFragmentationUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,7 +384,6 @@
 				083CFB34226F080500E9FFCA /* Sources */,
 				083CFB35226F080500E9FFCA /* Frameworks */,
 				083CFB36226F080500E9FFCA /* Resources */,
-				9041899DCC7948E6E6548D3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,6 +401,7 @@
 		083CFB0D226F080300E9FFCA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KK;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Kaaaaai;
 				TargetAttributes = {
@@ -472,7 +506,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CodeFragmentation-CodeFragmentationUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CodeFragmentationUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,23 +533,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9041899DCC7948E6E6548D3B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CodeFragmentation-CodeFragmentationUITests/Pods-CodeFragmentation-CodeFragmentationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CodeFragmentation-CodeFragmentationUITests/Pods-CodeFragmentation-CodeFragmentationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeFragmentation-CodeFragmentationUITests/Pods-CodeFragmentation-CodeFragmentationUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94E976552B0C0ACF77F1DBB5 /* [CP] Embed Pods Frameworks */ = {
@@ -546,6 +563,7 @@
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
+				0886FBD624D268C800EA0107 /* LXHeadMessageView.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
 				0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
@@ -554,7 +572,10 @@
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
 				0856545524B5689600FEFE00 /* KKLabTool.m in Sources */,
+				0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */,
+				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
+				0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,7 +681,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -713,7 +734,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -738,6 +759,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -759,6 +781,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -767,6 +790,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F183D20FBFDAE3743AFACA65 /* Pods-CodeFragmentationTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
@@ -786,6 +810,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
@@ -803,8 +828,9 @@
 		};
 		083CFB48226F080500E9FFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAEC4517EA28ABCEBC720342 /* Pods-CodeFragmentation-CodeFragmentationUITests.debug.xcconfig */;
+			baseConfigurationReference = 0BAA9943B3F37E4115364840 /* Pods-CodeFragmentationUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeFragmentationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -821,8 +847,9 @@
 		};
 		083CFB49226F080500E9FFCA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A59BFC861AC0E0762E74C5CC /* Pods-CodeFragmentation-CodeFragmentationUITests.release.xcconfig */;
+			baseConfigurationReference = 7ED908A99E0F76FC3C294005 /* Pods-CodeFragmentationUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeFragmentationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

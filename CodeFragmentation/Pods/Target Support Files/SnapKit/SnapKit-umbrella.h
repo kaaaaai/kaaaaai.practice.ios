@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CodeFragmentation_CodeFragmentationUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CodeFragmentation_CodeFragmentationUITestsVersionString[];
+FOUNDATION_EXPORT double SnapKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char SnapKitVersionString[];
 

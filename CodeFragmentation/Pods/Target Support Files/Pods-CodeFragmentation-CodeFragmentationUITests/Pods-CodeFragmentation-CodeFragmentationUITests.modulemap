@@ -1,6 +1,0 @@
-framework module Pods_CodeFragmentation_CodeFragmentationUITests {
-  umbrella header "Pods-CodeFragmentation-CodeFragmentationUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

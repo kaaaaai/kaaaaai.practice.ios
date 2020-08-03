@@ -26,6 +26,13 @@ class LXHeadMessageView: UIView {
     private let message: String
     private var style: MessageStyle = .none
 
+    private let kScreenHeight = UIScreen.main.bounds.size.height
+    private let kScreenWidth = UIScreen.main.bounds.size.width
+    
+    private static let successBackgroundColor: UIColor = UIColor(red: 86.0/255, green: 188/255, blue: 138.0/255,  alpha: 1)
+       private static let warningBackgroundColor: UIColor = UIColor(red: 242.0/255, green: 153.0/255, blue: 46.0/255,  alpha: 1)
+       private static let errorBackgroundColor: UIColor = UIColor(red: 238.0/255, green: 105.0/255, blue: 106/255,  alpha: 1)
+       private static let noneBackgroundColor: UIColor =  UIColor(red: 44.0/255,  green: 187.0/255, blue: 255.0/255, alpha: 1)
     
     public enum MessageStyle{
         case success,error,warning,none
@@ -39,16 +46,16 @@ class LXHeadMessageView: UIView {
         
         switch style {
         case .success:
-            self.backgroundColor = UIColor.rgbColorFromHex(rgb: 0x56bc8a)
+            self.backgroundColor = LXHeadMessageView.successBackgroundColor
             break
         case .warning:
-            self.backgroundColor = UIColor.rgbColorFromHex(rgb: 0xf2992e)
+            self.backgroundColor = LXHeadMessageView.warningBackgroundColor
             break
         case .error:
-            self.backgroundColor = UIColor.rgbColorFromHex(rgb: 0xee696a)
+            self.backgroundColor = LXHeadMessageView.errorBackgroundColor
             break
         case .none:
-            self.backgroundColor = UIColor.rgbColorFromHex(rgb: 0x56bc8a)
+            self.backgroundColor = LXHeadMessageView.noneBackgroundColor
             break
         }
 
