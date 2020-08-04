@@ -29,7 +29,7 @@
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
 		0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */; };
-		0886FBD624D268C800EA0107 /* LXHeadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD324D268C800EA0107 /* LXHeadMessageView.swift */; };
+		0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */; };
 		0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD424D268C800EA0107 /* FMSlider.swift */; };
 		0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */; };
 		0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */; };
@@ -98,7 +98,7 @@
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
 		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
 		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
-		0886FBD324D268C800EA0107 /* LXHeadMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXHeadMessageView.swift; sourceTree = "<group>"; };
+		0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHeadMessageView.swift; sourceTree = "<group>"; };
 		0886FBD424D268C800EA0107 /* FMSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSlider.swift; sourceTree = "<group>"; };
 		0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMStationAdjustView.swift; sourceTree = "<group>"; };
 		0886FBDB24D26A1000EA0107 /* CodeFragmentation-Bridgint-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFragmentation-Bridgint-Header.h"; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 		0886FBD224D268C800EA0107 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0886FBD324D268C800EA0107 /* LXHeadMessageView.swift */,
+				0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */,
 				0886FBD424D268C800EA0107 /* FMSlider.swift */,
 				0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */,
 			);
@@ -563,7 +563,7 @@
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
-				0886FBD624D268C800EA0107 /* LXHeadMessageView.swift in Sources */,
+				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
 				0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
