@@ -75,12 +75,8 @@ import UIKit
             break
         }
 
-        #if swift(>=4.2)
         let attributes = [NSAttributedString.Key.font : UIFont.init(name: "PingFangSC-Medium", size: 14)]
-        #else
-        var attributes = [NSAttributedString.Key.font : UIFont.init(name: "PingFangSC-Medium", size: 14)]
-        #endif
-        
+       
 //        let layer_bg = CALayer()
 //        layer_bg.frame = CGRect(x: 0, y: self.frame.origin.y + 2, width: self.frame.width, height: self.frame.height)
 //        layer_bg.cornerRadius = 14.0
@@ -109,17 +105,20 @@ import UIKit
             self.frame.origin.y = -4
         }
         
-        let completionAnimations : (Bool) -> () = { finished in
-            if finished {
-                UIView.animate(withDuration: 5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [.curveEaseInOut], animations: {
-                    self.frame.origin.y = -49
-                }){finished in
-                    self.removeFromSuperview()
-                }
+        let completionAnimations: ()->() = {
+            UIView.animate(withDuration: 5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [.curveEaseInOut], animations: {
+                self.frame.origin.y = -self.frame.size.height
+            }){finished in
+                self.removeFromSuperview()
             }
         }
         
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 10, options: [.curveEaseInOut], animations: animations, completion: completionAnimations)
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completionAnimations)
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 10, options: [.curveEaseInOut], animations: animations, completion: nil)
+
+        CATransaction.commit()
 
     }
     
