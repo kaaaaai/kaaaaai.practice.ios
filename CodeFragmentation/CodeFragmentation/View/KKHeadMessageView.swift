@@ -76,17 +76,6 @@ import UIKit
         }
 
         let attributes = [NSAttributedString.Key.font : UIFont.init(name: "PingFangSC-Medium", size: 14)]
-       
-//        let layer_bg = CALayer()
-//        layer_bg.frame = CGRect(x: 0, y: self.frame.origin.y + 2, width: self.frame.width, height: self.frame.height)
-//        layer_bg.cornerRadius = 14.0
-//        layer_bg.backgroundColor = UIColor.white.cgColor
-//        layer_bg.masksToBounds = false
-//        layer_bg.shadowColor = UIColor.rgbaColorFromHex(rgb: 0x333333, alpha: 0.12).cgColor
-//        layer_bg.shadowOffset = CGSize(width: 0, height: 2)
-//        layer_bg.shadowOpacity = 1
-//        layer_bg.shadowRadius = 10
-//        self.layer.insertSublayer(layer_bg, at: 0)
         
         let textSize = self.message.boundingRect(with: CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat.greatestFiniteMagnitude), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attributes as [NSAttributedString.Key : Any], context: nil).size
         

@@ -17,17 +17,17 @@ class KKFactoryPattern: NSObject {
     
     func factoryConstruction() {
         let c = Client()
-        c.createProduct(type: 0)
+        c.createProduct(type: 0).creatNail()
         
         let cSimple = SimpleClient()
-        cSimple.s.createProduct(type: 0)
+        cSimple.s.createProduct(type: 0).creatNail()
         
         let cMethod = MethodClient()
-        cMethod.f.createProduct(type: 0)
+        cMethod.f.createProduct(type: 0)?.creatNail()
         
         let cAbstract = AbstraClient()
-        cAbstract.f.createProductA(type: 0)
-        cAbstract.f.createProductA(type: 1)
+        cAbstract.f.createProductA(type: 0)?.creatHammer()
+        cAbstract.f.createProductB(type: 0)?.creatNail()
     }
 }
 

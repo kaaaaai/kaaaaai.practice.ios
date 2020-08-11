@@ -1,13 +1,13 @@
 //
-//  KKSingleton.pch
+//  KKPrefixHeader.pch
 //  CodeFragmentation
 //
-//  Created by Kai Lv on 2020/7/8.
+//  Created by Kai Lv on 2020/8/11.
 //  Copyright © 2020 Kaaaaai. All rights reserved.
 //
 
-#ifndef KKSingleton_pch
-#define KKSingleton_pch
+#ifndef KKPrefixHeader_pch
+#define KKPrefixHeader_pch
 
 #import "KKSingleton.h"
 
@@ -16,4 +16,4 @@
 
 #import "KKLabTool.h"
 
-#endif /* KKSingleton_pch */
+#endif /* KKPrefixHeader_pch */

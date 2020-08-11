@@ -25,6 +25,7 @@
 		083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB5A226F08C100E9FFCA /* NSObject+Calculator.m */; };
 		083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB5B226F08C100E9FFCA /* CalculatorMaker.m */; };
 		083CFB61226F08C100E9FFCA /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB5D226F08C100E9FFCA /* Calculator.m */; };
+		0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */; };
 		0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856544E24B567E000FEFE00 /* KKPlaylistTool.m */; };
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
@@ -88,13 +89,14 @@
 		083CFB5B226F08C100E9FFCA /* CalculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
 		083CFB5D226F08C100E9FFCA /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		083CFB5E226F08C100E9FFCA /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		0854BFEC24E23A6000E07E1A /* KKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
+		0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKSwiftLabTool.swift; sourceTree = "<group>"; };
 		0856544D24B567E000FEFE00 /* KKPlaylistTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlaylistTool.h; sourceTree = "<group>"; };
 		0856544E24B567E000FEFE00 /* KKPlaylistTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPlaylistTool.m; sourceTree = "<group>"; };
 		0856545024B5685500FEFE00 /* KKMethodChainStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMethodChainStyle.h; sourceTree = "<group>"; };
 		0856545124B5685500FEFE00 /* KKMethodChainStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMethodChainStyle.m; sourceTree = "<group>"; };
 		0856545324B5689600FEFE00 /* KKLabTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKLabTool.h; sourceTree = "<group>"; };
 		0856545424B5689600FEFE00 /* KKLabTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKLabTool.m; sourceTree = "<group>"; };
-		0856545824B569F300FEFE00 /* KKSingleton.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.pch; sourceTree = "<group>"; };
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
 		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
 		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		0856545624B569B900FEFE00 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */,
 				0856545324B5689600FEFE00 /* KKLabTool.h */,
 				0856545424B5689600FEFE00 /* KKLabTool.m */,
 				0856544D24B567E000FEFE00 /* KKPlaylistTool.h */,
@@ -276,7 +279,7 @@
 		0856545724B569D600FEFE00 /* UtilityHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				0856545824B569F300FEFE00 /* KKSingleton.pch */,
+				0854BFEC24E23A6000E07E1A /* KKPrefixHeader.pch */,
 				0856545A24B56A3500FEFE00 /* KKSingleton.h */,
 			);
 			path = UtilityHelpers;
@@ -562,6 +565,7 @@
 				083CFB1D226F080400E9FFCA /* ViewController.m in Sources */,
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
+				0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
@@ -750,7 +754,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GR3FK25RUR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKSingleton.pch";
+				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -772,7 +776,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GR3FK25RUR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKSingleton.pch";
+				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
