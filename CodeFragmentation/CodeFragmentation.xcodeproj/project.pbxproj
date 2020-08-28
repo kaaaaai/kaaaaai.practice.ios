@@ -13,6 +13,7 @@
 		0831E355242DAEC600C3B3CC /* publickey.der in Resources */ = {isa = PBXBuildFile; fileRef = 0831E353242DAEC600C3B3CC /* publickey.der */; };
 		0831E357242DAEEC00C3B3CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0831E356242DAEEC00C3B3CC /* Security.framework */; };
 		0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831E359242DAF3F00C3B3CC /* KIRSA.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		08388B7B24F26B6F0036C391 /* KKFactoryPatternPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08388B7A24F26B6F0036C391 /* KKFactoryPatternPractice.swift */; };
 		083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB19226F080400E9FFCA /* AppDelegate.m */; };
 		083CFB1D226F080400E9FFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB1C226F080400E9FFCA /* ViewController.m */; };
 		083CFB20226F080400E9FFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB1E226F080400E9FFCA /* Main.storyboard */; };
@@ -30,6 +31,11 @@
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
 		0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */; };
+		087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0D24F8D42200D66410 /* KKPerson.swift */; };
+		087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */; };
+		087C4B1224F8D4FE00D66410 /* KKPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1124F8D4FE00D66410 /* KKPersonView.swift */; };
+		087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */; };
+		087C4B1624F8D70C00D66410 /* KKPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */; };
 		0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */; };
 		0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD424D268C800EA0107 /* FMSlider.swift */; };
 		0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */; };
@@ -66,6 +72,7 @@
 		0831E356242DAEEC00C3B3CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0831E358242DAF3F00C3B3CC /* KIRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIRSA.h; sourceTree = "<group>"; };
 		0831E359242DAF3F00C3B3CC /* KIRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIRSA.m; sourceTree = "<group>"; };
+		08388B7A24F26B6F0036C391 /* KKFactoryPatternPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKFactoryPatternPractice.swift; sourceTree = "<group>"; };
 		083CFB15226F080400E9FFCA /* CodeFragmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083CFB18226F080400E9FFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		083CFB19226F080400E9FFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +107,11 @@
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
 		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
 		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
+		087C4B0D24F8D42200D66410 /* KKPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPerson.swift; sourceTree = "<group>"; };
+		087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewPresenter.swift; sourceTree = "<group>"; };
+		087C4B1124F8D4FE00D66410 /* KKPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonView.swift; sourceTree = "<group>"; };
+		087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonPresenter.swift; sourceTree = "<group>"; };
+		087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewController.swift; sourceTree = "<group>"; };
 		0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHeadMessageView.swift; sourceTree = "<group>"; };
 		0886FBD424D268C800EA0107 /* FMSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSlider.swift; sourceTree = "<group>"; };
 		0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMStationAdjustView.swift; sourceTree = "<group>"; };
@@ -294,6 +306,18 @@
 			path = MultiDelegate;
 			sourceTree = "<group>";
 		};
+		087C4B0C24F8D3FF00D66410 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				087C4B0D24F8D42200D66410 /* KKPerson.swift */,
+				087C4B1124F8D4FE00D66410 /* KKPersonView.swift */,
+				087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */,
+				087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */,
+				087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
 		0886FBD224D268C800EA0107 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +331,9 @@
 		0886FBDC24D26BE100EA0107 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				087C4B0C24F8D3FF00D66410 /* MVP */,
 				0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */,
+				08388B7A24F26B6F0036C391 /* KKFactoryPatternPractice.swift */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -563,15 +589,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				083CFB1D226F080400E9FFCA /* ViewController.m in Sources */,
+				087C4B1224F8D4FE00D66410 /* KKPersonView.swift in Sources */,
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
+				087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
 				0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
+				08388B7B24F26B6F0036C391 /* KKFactoryPatternPractice.swift in Sources */,
 				0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */,
+				087C4B1624F8D70C00D66410 /* KKPersonViewController.swift in Sources */,
 				0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */,
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
@@ -579,7 +609,9 @@
 				0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */,
 				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
+				087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */,
 				0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */,
+				087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,7 +828,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -804,7 +837,10 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentationTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeFragmentation.app/CodeFragmentation";
 			};
@@ -816,7 +852,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -824,7 +861,10 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentationTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeFragmentation.app/CodeFragmentation";
 			};
