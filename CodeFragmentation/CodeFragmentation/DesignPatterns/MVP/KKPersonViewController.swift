@@ -50,7 +50,8 @@ import UIKit
     }
     
     func setTitle(name: String) {
-        self.persionLabel.text = name
+        //3.响应代理方法
+        self.persionLabel.text = "姓名：\(name)"
     }
     /*
     // MARK: - Navigation

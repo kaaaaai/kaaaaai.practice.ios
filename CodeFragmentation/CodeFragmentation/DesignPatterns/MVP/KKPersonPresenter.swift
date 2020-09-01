@@ -13,6 +13,7 @@ class KKPersonPresenter: KKPersonViewPresenter {
     let person: KKPerson
     
     required init(view: KKPersonView, person: KKPerson) {
+        //1.设置 view 的代理
         self.view = view
         self.person = person
     }
@@ -20,6 +21,7 @@ class KKPersonPresenter: KKPersonViewPresenter {
     func showPersionInformation() {
         let name = self.person.name
         
+        //2.执行代理方法
         self.view.setTitle(name: name)
     }
     
