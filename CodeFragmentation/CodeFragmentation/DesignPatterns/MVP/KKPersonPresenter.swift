@@ -10,7 +10,7 @@ import UIKit
 
 class KKPersonPresenter: KKPersonViewPresenter {
     unowned let view: KKPersonView
-    let person: KKPerson
+    var person: KKPerson
     
     required init(view: KKPersonView, person: KKPerson) {
         //1.设置 view 的代理
@@ -18,11 +18,15 @@ class KKPersonPresenter: KKPersonViewPresenter {
         self.person = person
     }
     
+    func updateInfo(person: KKPerson) {
+        self.person = person
+    }
+    
     func showPersionInformation() {
-        let name = self.person.name
+        let person = self.person
         
         //2.执行代理方法
-        self.view.setTitle(name: name)
+        self.view.setPersonInfo(persion: person)
     }
     
 }

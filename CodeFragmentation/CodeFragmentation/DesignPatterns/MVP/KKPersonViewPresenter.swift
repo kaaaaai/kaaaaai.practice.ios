@@ -10,5 +10,6 @@ import UIKit
 
 protocol KKPersonViewPresenter {
     init(view: KKPersonView, person: KKPerson)
+    func updateInfo(person: KKPerson)
     func showPersionInformation()
 }

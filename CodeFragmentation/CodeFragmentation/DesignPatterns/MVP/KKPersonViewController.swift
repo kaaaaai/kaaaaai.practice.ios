@@ -41,17 +41,24 @@ import UIKit
             make.centerX.equalToSuperview()
             make.bottom.equalTo(showPersionVButton.snp_top).offset(-20)
         }
+        self.presenter.showPersionInformation()
         // Do any additional setup after loading the view.
     }
     
 
     @objc func showPVBtnClicked(sender: UIButton) -> () {
+        let persionArr:[[String: Any]] = [["name":"李四","sex":"男","grade":"78"],["name":"王五","sex":"女","grade":"98"],["name":"赵六","sex":"男","grade":"68"],["name":"胡七","sex":"女","grade":"58"],["name":"石八","sex":"未知","grade":"78"]]
+        let personDic = persionArr[Int(arc4random()) % (persionArr.count - 1)]
+        var person = KKPerson()
+        person.loadFromDictionary(personDic)
+        self.presenter.updateInfo(person: person)
         self.presenter.showPersionInformation()
+        
     }
     
-    func setTitle(name: String) {
+    func setPersonInfo(persion: KKPerson) {
         //3.响应代理方法
-        self.persionLabel.text = "姓名：\(name)"
+        self.persionLabel.text = "姓名：\(persion.name) 性别：\(persion.sex) 分数：\(persion.grade)"
     }
     /*
     // MARK: - Navigation

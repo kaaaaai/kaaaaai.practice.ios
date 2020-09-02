@@ -9,5 +9,5 @@
 import UIKit
 
 protocol KKPersonView: class {
-    func setTitle(name: String)
+    func setPersonInfo(persion: KKPerson)
 }
