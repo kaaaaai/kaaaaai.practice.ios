@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813B4A6250106EE003FB9CF /* KKPermissions.swift */; };
 		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
 		082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DE5D524C02C4000AB12DE /* KKSortingMethod.m */; };
 		0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 0831E352242DAEC600C3B3CC /* privatekey.p12 */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
+		0813B4A6250106EE003FB9CF /* KKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissions.swift; sourceTree = "<group>"; };
 		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		082DE5D424C02C4000AB12DE /* KKSortingMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSortingMethod.h; sourceTree = "<group>"; };
 		082DE5D524C02C4000AB12DE /* KKSortingMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSortingMethod.m; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				0856545424B5689600FEFE00 /* KKLabTool.m */,
 				0856544D24B567E000FEFE00 /* KKPlaylistTool.h */,
 				0856544E24B567E000FEFE00 /* KKPlaylistTool.m */,
+				0813B4A6250106EE003FB9CF /* KKPermissions.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
 				087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */,
+				0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */,
 				0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */,
 				087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */,
 			);
