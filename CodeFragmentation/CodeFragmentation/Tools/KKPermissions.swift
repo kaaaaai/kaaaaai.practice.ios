@@ -40,21 +40,25 @@ extension KKPermissions {
 extension KKPermissions{
     //MARK:蓝牙权限
     public static func requestBluetooth(_ callback: @escaping Callback){
-        guard KKPermissions.provide.bluetoothManager.state == .poweredOn else{ return }
+        KKPermissions.provide.bluetoothManager = KKPermissions.provide.createBluetoothManager()
+
+        KKPermissions.provide.bluetoothCallBack = callback
         KKPermissions.provide.bluetoothManager.startAdvertising(nil)
         KKPermissions.provide.bluetoothManager.stopAdvertising()
     }
     
     //MARK:应用内定位权限
     public static func requestLocationWhenInUse(_ callback: @escaping Callback){
-        KKPermissions.provide.LocationManager.requestWhenInUseAuthorization()
+        KKPermissions.provide.LocationManager = KKPermissions.provide.createLocationManager()
         KKPermissions.provide.locationCallBack = callback
+        KKPermissions.provide.LocationManager.requestWhenInUseAuthorization()
     }
     
     //MARK:持续使用定位权限
     public static func requestLocationAlways(_ callback: @escaping Callback){
-        KKPermissions.provide.LocationManager.requestAlwaysAuthorization()
+        KKPermissions.provide.LocationManager = KKPermissions.provide.createLocationManager()
         KKPermissions.provide.locationCallBack = callback
+        KKPermissions.provide.LocationManager.requestAlwaysAuthorization()
     }
     
     //MARK:麦克风权限
@@ -167,20 +171,31 @@ extension KKPermissions{
 
 class KKPermissions: NSObject {
     
-    private lazy var LocationManager:CLLocationManager = {
+    private func createBluetoothManager() -> CBPeripheralManager{
+        let bluetoothManager = CBPeripheralManager(
+            delegate: KKPermissions.provide,
+            queue: nil,
+            options: nil)
+        return bluetoothManager
+    }
+    
+    private func createLocationManager() -> CLLocationManager{
         let locManager = CLLocationManager()
         locManager.delegate = KKPermissions.provide
         return locManager
-    }()
+    }
+    
+    private var LocationManager:CLLocationManager!
+
+    private static var locationState: PermissionStatus?
     
     private var locationCallBack: Callback?
 
-    private lazy var bluetoothManager = CBPeripheralManager(
-        delegate: KKPermissions.provide,
-        queue: nil,
-        options: [CBPeripheralManagerOptionShowPowerAlertKey : false])
+    private var bluetoothManager: CBPeripheralManager!
     
     private var bluetoothCallBack: Callback?
+
+    private static var bluetoothState: PermissionStatus?
 
     private static let provide:KKPermissions =  KKPermissions()
     
@@ -192,39 +207,60 @@ class KKPermissions: NSObject {
 //MARK: 定位/蓝牙 代理处理
 extension KKPermissions: CLLocationManagerDelegate,CBPeripheralManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        guard KKPermissions.provide.LocationManager != nil else {
+            return
+        }
+        
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
-            self.locationCallBack?(.authorized)
+            KKPermissions.locationState = .authorized
             break
         case .restricted, .denied:
-            self.locationCallBack?(.denied)
+            KKPermissions.locationState = .denied
             break
         case .notDetermined:
-            self.locationCallBack?(.notDetermined)
+            KKPermissions.locationState = .notDetermined
             break
         @unknown default:
-            self.locationCallBack?(.notDetermined)
+            KKPermissions.locationState = .notDetermined
             break
         }
+        
+        self.locationCallBack?(KKPermissions.locationState!)
+        
+        self.locationCallBack = nil
     }
     
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
+        print(">>>>>权限状态测试  KKpermissions \(peripheral.state)")
+
+        guard KKPermissions.provide.bluetoothManager != nil else {
+            return
+        }
+        
         switch peripheral.state {
         case .unsupported, .poweredOff:
-            self.bluetoothCallBack?(.disabled)
+            KKPermissions.bluetoothState = .disabled
             break
         case .unauthorized:
-            self.bluetoothCallBack?(.denied)
+            KKPermissions.bluetoothState = .denied
             break
         case .poweredOn:
-            self.bluetoothCallBack?(.authorized)
+            KKPermissions.bluetoothState = .authorized
             break
         case .resetting, .unknown:
-            self.bluetoothCallBack?(.notDetermined)
+            KKPermissions.bluetoothState = .notDetermined
             break
         @unknown default:
-            self.bluetoothCallBack?(.notDetermined)
+            KKPermissions.bluetoothState = .notDetermined
             break
         }
+        
+        self.bluetoothCallBack?(KKPermissions.bluetoothState!)
+        
+        //响应一次后不再持有
+        self.bluetoothCallBack = nil
+
     }
 }
