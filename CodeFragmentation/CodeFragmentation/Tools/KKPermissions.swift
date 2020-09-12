@@ -261,6 +261,5 @@ extension KKPermissions: CLLocationManagerDelegate,CBPeripheralManagerDelegate{
         
         //响应一次后不再持有
         self.bluetoothCallBack = nil
-
     }
 }

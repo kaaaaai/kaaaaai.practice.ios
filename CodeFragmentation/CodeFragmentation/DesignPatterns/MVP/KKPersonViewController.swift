@@ -60,14 +60,9 @@ import UIKit
         //3.响应代理方法
         self.persionLabel.text = "姓名：\(persion.name) 性别：\(persion.sex) 分数：\(persion.grade)"
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
 
 }

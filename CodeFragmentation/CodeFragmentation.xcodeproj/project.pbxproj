@@ -27,6 +27,11 @@
 		083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB5A226F08C100E9FFCA /* NSObject+Calculator.m */; };
 		083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB5B226F08C100E9FFCA /* CalculatorMaker.m */; };
 		083CFB61226F08C100E9FFCA /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB5D226F08C100E9FFCA /* Calculator.m */; };
+		085141E0250C655000FEB009 /* KKPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141DF250C655000FEB009 /* KKPermissionsViewController.swift */; };
+		085141E2250C657100FEB009 /* KKPermissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E1250C657100FEB009 /* KKPermissionTableViewCell.swift */; };
+		085141E4250C65EF00FEB009 /* KKConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E3250C65EF00FEB009 /* KKConst.swift */; };
+		085141E6250C661700FEB009 /* KKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E5250C661700FEB009 /* KKColor.swift */; };
+		085141E8250C6D0A00FEB009 /* KKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E7250C6D0A00FEB009 /* KKButton.swift */; };
 		0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */; };
 		0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856544E24B567E000FEFE00 /* KKPlaylistTool.m */; };
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
@@ -98,6 +103,11 @@
 		083CFB5B226F08C100E9FFCA /* CalculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
 		083CFB5D226F08C100E9FFCA /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		083CFB5E226F08C100E9FFCA /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		085141DF250C655000FEB009 /* KKPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissionsViewController.swift; sourceTree = "<group>"; };
+		085141E1250C657100FEB009 /* KKPermissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissionTableViewCell.swift; sourceTree = "<group>"; };
+		085141E3250C65EF00FEB009 /* KKConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKConst.swift; sourceTree = "<group>"; };
+		085141E5250C661700FEB009 /* KKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKColor.swift; sourceTree = "<group>"; };
+		085141E7250C6D0A00FEB009 /* KKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKButton.swift; sourceTree = "<group>"; };
 		0854BFEC24E23A6000E07E1A /* KKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
 		0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKSwiftLabTool.swift; sourceTree = "<group>"; };
 		0856544D24B567E000FEFE00 /* KKPlaylistTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlaylistTool.h; sourceTree = "<group>"; };
@@ -164,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				0822ABA522FA6C3A00724828 /* Foundation+Log.m */,
+				085141E5250C661700FEB009 /* KKColor.swift */,
+				085141E7250C6D0A00FEB009 /* KKButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -214,6 +226,7 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				085141D8250C5E6500FEB009 /* ViewController */,
 				0886FBDC24D26BE100EA0107 /* DesignPatterns */,
 				0886FBD224D268C800EA0107 /* View */,
 				082DE5D324C02C0B00AB12DE /* BasedAlgorithm */,
@@ -278,6 +291,14 @@
 			path = FunctionalProgramming;
 			sourceTree = "<group>";
 		};
+		085141D8250C5E6500FEB009 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				085141DF250C655000FEB009 /* KKPermissionsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		0856545624B569B900FEFE00 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +317,7 @@
 			children = (
 				0854BFEC24E23A6000E07E1A /* KKPrefixHeader.pch */,
 				0856545A24B56A3500FEFE00 /* KKSingleton.h */,
+				085141E3250C65EF00FEB009 /* KKConst.swift */,
 			);
 			path = UtilityHelpers;
 			sourceTree = "<group>";
@@ -327,6 +349,7 @@
 				0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */,
 				0886FBD424D268C800EA0107 /* FMSlider.swift */,
 				0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */,
+				085141E1250C657100FEB009 /* KKPermissionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,8 +616,10 @@
 			files = (
 				083CFB1D226F080400E9FFCA /* ViewController.m in Sources */,
 				087C4B1224F8D4FE00D66410 /* KKPersonView.swift in Sources */,
+				085141E2250C657100FEB009 /* KKPermissionTableViewCell.swift in Sources */,
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
+				085141E4250C65EF00FEB009 /* KKConst.swift in Sources */,
 				0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
@@ -608,12 +633,15 @@
 				0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */,
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
+				085141E0250C655000FEB009 /* KKPermissionsViewController.swift in Sources */,
 				0856545524B5689600FEFE00 /* KKLabTool.m in Sources */,
 				0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */,
 				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
+				085141E6250C661700FEB009 /* KKColor.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
 				087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */,
 				0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */,
+				085141E8250C6D0A00FEB009 /* KKButton.swift in Sources */,
 				0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */,
 				087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */,
 			);
@@ -799,6 +827,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -821,6 +850,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
