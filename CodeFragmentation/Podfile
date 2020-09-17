@@ -10,6 +10,8 @@ target 'CodeFragmentation' do
   # Pods for CodeFragmentation
   pod 'Masonry'
   pod 'SnapKit'
+  pod 'JCore'
+  pod 'JPush' 
 #  pod 'NotificationBannerSwift', '~> 3.0.0'
 end
 

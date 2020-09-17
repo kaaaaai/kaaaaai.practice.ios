@@ -62,12 +62,13 @@
 }
 
 - (IBAction)mvvmBtnClicked:(id)sender {
+    
 }
 
 - (IBAction)viperBtnClicked:(id)sender {
-    
-    
 }
+
+
 - (IBAction)permissionBtnClicked:(id)sender {
     KKPermissionsViewController *kkpvc = [[KKPermissionsViewController alloc]init];
     [self presentViewController:kkpvc animated:true completion:nil];

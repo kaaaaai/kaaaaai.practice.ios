@@ -1,20 +1,29 @@
 PODS:
+  - JCore (2.3.4)
+  - JPush (3.3.4):
+    - JCore (< 3.0.0, >= 2.0.0)
   - Masonry (1.1.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - JCore
+  - JPush
   - Masonry
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - JCore
+    - JPush
     - Masonry
     - SnapKit
 
 SPEC CHECKSUMS:
+  JCore: 8aa29dc57ba3730dd9fe7544ce1a4e1cbe221135
+  JPush: 6188b8f375a7113f4b62bb33e96e280dbcfa06be
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: bebce56e555331b3c648eb67ed966390b29fdbdb
+PODFILE CHECKSUM: b237ad0fa93414be3b992b525c9b59bf5b78d10b
 
 COCOAPODS: 1.9.1

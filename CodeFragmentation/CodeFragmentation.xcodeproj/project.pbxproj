@@ -119,6 +119,7 @@
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
 		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
 		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
+		08693AFA25135E11004E7155 /* CodeFragmentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeFragmentation.entitlements; sourceTree = "<group>"; };
 		087C4B0D24F8D42200D66410 /* KKPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPerson.swift; sourceTree = "<group>"; };
 		087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewPresenter.swift; sourceTree = "<group>"; };
 		087C4B1124F8D4FE00D66410 /* KKPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonView.swift; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				08693AFA25135E11004E7155 /* CodeFragmentation.entitlements */,
 				085141D8250C5E6500FEB009 /* ViewController */,
 				0886FBDC24D26BE100EA0107 /* DesignPatterns */,
 				0886FBD224D268C800EA0107 /* View */,
@@ -815,8 +817,9 @@
 			baseConfigurationReference = ED6F6E00487606B60568A66B /* Pods-CodeFragmentation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodeFragmentation/CodeFragmentation.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = GR3FK25RUR;
+				DEVELOPMENT_TEAM = XLSQQP5RCG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
@@ -824,9 +827,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.pratice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
+				PROVISIONING_PROFILE_SPECIFIER = CodeFragment_Kaaaaai_Dev_Push;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -838,8 +842,9 @@
 			baseConfigurationReference = B49AA86A5DCF799F6A073091 /* Pods-CodeFragmentation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodeFragmentation/CodeFragmentation.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = GR3FK25RUR;
+				DEVELOPMENT_TEAM = XLSQQP5RCG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
@@ -847,9 +852,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentation;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.pratice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = All_Can_Test_development;
+				PROVISIONING_PROFILE_SPECIFIER = CodeFragment_Kaaaaai_Dev_Push;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

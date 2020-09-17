@@ -1,3 +1,7 @@
+<h1 align=center>
+<img src="logo.png" width=60%>
+</h1>
+
 # 代码碎片
 主要用于学习、尝试与记录一些代码写法，结构。
 
