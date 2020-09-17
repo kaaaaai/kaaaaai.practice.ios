@@ -1,5 +1,5 @@
 <h1 align=center>
-<img src="logo.png" width=60%>
+<img src="logo.png" width=30%>
 </h1>
 
 # 代码碎片
