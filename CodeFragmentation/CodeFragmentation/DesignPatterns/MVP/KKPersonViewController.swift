@@ -51,6 +51,7 @@ import UIKit
         let personDic = persionArr[Int(arc4random()) % (persionArr.count - 1)]
         var person = KKPerson()
         person.loadFromDictionary(personDic)
+        
         self.presenter.updateInfo(person: person)
         self.presenter.showPersionInformation()
         

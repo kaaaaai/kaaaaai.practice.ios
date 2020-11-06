@@ -13,7 +13,7 @@ import Photos
 import CoreBluetooth
 
 //MARK: 权限状态枚举
-public enum PermissionStatus: String {
+public enum PermissionStatus: String,CustomStringConvertible {
     case authorized    = "Authorized"
     case denied        = "Denied"
     case disabled      = "Disabled"
@@ -22,6 +22,10 @@ public enum PermissionStatus: String {
     init?(string: String?) {
         guard let string = string else { return nil }
         self.init(rawValue: string)
+    }
+
+    public var description: String {
+        return rawValue
     }
 }
 
@@ -34,6 +38,79 @@ extension PermissionStatus: CustomStringConvertible {
 
 extension KKPermissions {
     public typealias Callback = (PermissionStatus) -> Void
+}
+
+
+//MARK:获取权限状态
+extension LXPermissions{
+    ///麦克风权限
+    public class func microphoneAuthorizationStatus() -> PermissionStatus {
+        let audioSession = AVAudioSession.sharedInstance()
+        let status = audioSession.recordPermission
+        switch status {
+        case .denied:
+            return .denied
+        case .granted:
+            return .authorized
+        case .undetermined:
+            return .notDetermined
+        default:
+            return .disabled
+        }
+    }
+    
+    ///通讯录权限
+    public class func contactAuthorizationStatus() -> PermissionStatus {
+        let status = CNContactStore.authorizationStatus(for: .contacts)
+        switch status {
+        case .denied, .restricted:
+            return .denied
+        case .authorized:
+            return .authorized
+        case .notDetermined:
+            return .notDetermined
+        default:
+            return .disabled
+        }
+    }
+    
+    ///地理位置权限
+    public class func locationAuthorizationStatus() -> PermissionStatus {
+        let status = CLLocationManager.authorizationStatus()
+            
+        switch status {
+        case .denied, .restricted:
+            return .denied
+        case .authorizedAlways,.authorizedWhenInUse:
+            return .authorized
+        case .notDetermined:
+            return .notDetermined
+        default:
+            return .disabled
+        }
+    }
+    
+    ///蓝牙权限
+    //TODO: 获取时会触发弹窗
+    public class func bluetoothAuthorizationStatus() -> PermissionStatus {
+//        let status = CBPeripheralManager.authorizationStatus()
+
+        let status = CBPeripheralManager().state
+//        print("\(status)---"+"---\(status2)")
+        switch status {
+        case .unsupported, .poweredOff:
+            return .disabled
+        case .unauthorized:
+            return .denied
+        case .poweredOn:
+            return .authorized
+        case .resetting, .unknown:
+            return .notDetermined
+        default:
+            return .disabled
+        }
+    }
+    
 }
 
 //MARK:权限请求方法
