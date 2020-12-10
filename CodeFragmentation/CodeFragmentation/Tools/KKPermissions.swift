@@ -29,20 +29,13 @@ public enum PermissionStatus: String,CustomStringConvertible {
     }
 }
 
-extension PermissionStatus: CustomStringConvertible {
-    /// The textual representation of self.
-    public var description: String {
-        return rawValue
-    }
-}
-
 extension KKPermissions {
     public typealias Callback = (PermissionStatus) -> Void
 }
 
 
 //MARK:获取权限状态
-extension LXPermissions{
+extension KKPermissions {
     ///麦克风权限
     public class func microphoneAuthorizationStatus() -> PermissionStatus {
         let audioSession = AVAudioSession.sharedInstance()
@@ -96,7 +89,7 @@ extension LXPermissions{
 //        let status = CBPeripheralManager.authorizationStatus()
 
         let status = CBPeripheralManager().state
-//        print("\(status)---"+"---\(status2)")
+
         switch status {
         case .unsupported, .poweredOff:
             return .disabled
@@ -114,32 +107,31 @@ extension LXPermissions{
 }
 
 //MARK:权限请求方法
-extension KKPermissions{
-    //MARK:蓝牙权限
-    public static func requestBluetooth(_ callback: @escaping Callback){
+extension KKPermissions {
+    ///蓝牙权限
+    public class func requestBluetooth(_ callback: @escaping Callback){
         KKPermissions.provide.bluetoothManager = KKPermissions.provide.createBluetoothManager()
-
         KKPermissions.provide.bluetoothCallBack = callback
         KKPermissions.provide.bluetoothManager.startAdvertising(nil)
         KKPermissions.provide.bluetoothManager.stopAdvertising()
     }
     
-    //MARK:应用内定位权限
-    public static func requestLocationWhenInUse(_ callback: @escaping Callback){
+    ///应用内定位权限
+    public class func requestLocationWhenInUse(_ callback: @escaping Callback){
         KKPermissions.provide.LocationManager = KKPermissions.provide.createLocationManager()
-        KKPermissions.provide.locationCallBack = callback
         KKPermissions.provide.LocationManager.requestWhenInUseAuthorization()
-    }
-    
-    //MARK:持续使用定位权限
-    public static func requestLocationAlways(_ callback: @escaping Callback){
-        KKPermissions.provide.LocationManager = KKPermissions.provide.createLocationManager()
         KKPermissions.provide.locationCallBack = callback
-        KKPermissions.provide.LocationManager.requestAlwaysAuthorization()
     }
     
-    //MARK:麦克风权限
-    public static func requestMicrophone(_ callback: @escaping Callback){
+    ///持续使用定位权限
+    public class func requestLocationAlways(_ callback: @escaping Callback){
+        KKPermissions.provide.LocationManager = KKPermissions.provide.createLocationManager()
+        KKPermissions.provide.LocationManager.requestAlwaysAuthorization()
+        KKPermissions.provide.locationCallBack = callback
+    }
+    
+    ///麦克风权限
+    public class func requestMicrophone(_ callback: @escaping Callback){
         let audioSession = AVAudioSession.sharedInstance()
         audioSession.requestRecordPermission { (allowed) in
             if allowed {
@@ -151,7 +143,7 @@ extension KKPermissions{
     }
     
     //MARK:通讯录权限
-    public static func requestContacts(_ callback: @escaping Callback) {
+    public class func requestContacts(_ callback: @escaping Callback) {
         //1.获取授权状态
         //CNContactStore 通讯录对象
         let status = CNContactStore.authorizationStatus(for: .contacts)
@@ -188,7 +180,7 @@ extension KKPermissions{
     }
     
     //MARK: 相册权限
-    static func requestPhoto(_ callback: @escaping Callback) {
+    public class func requestPhoto(_ callback: @escaping Callback) {
         let granted = PHPhotoLibrary.authorizationStatus()
         switch granted {
         case PHAuthorizationStatus.authorized:
@@ -211,7 +203,7 @@ extension KKPermissions{
     }
     
     //MARK: 相机权限
-    static func requestCamera(_ callback: @escaping Callback) {
+    public class func requestCamera(_ callback: @escaping Callback) {
         let granted = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
         switch granted {
         case .authorized:
@@ -234,7 +226,7 @@ extension KKPermissions{
     }
     
     //MARK: 跳转到APP系统设置权限界面
-    public static func jumpToSystemPrivacySetting() {
+    public class func jumpToSystemPrivacySetting() {
         guard let appSetting = URL(string: UIApplication.openSettingsURLString) else {
             return
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081223C425821F22001BEA06 /* KKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081223C325821F22001BEA06 /* KKControl.swift */; };
 		0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813B4A6250106EE003FB9CF /* KKPermissions.swift */; };
 		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
 		082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DE5D524C02C4000AB12DE /* KKSortingMethod.m */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
+		081223C325821F22001BEA06 /* KKControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKControl.swift; sourceTree = "<group>"; };
 		0813B4A6250106EE003FB9CF /* KKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissions.swift; sourceTree = "<group>"; };
 		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		082DE5D424C02C4000AB12DE /* KKSortingMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSortingMethod.h; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				0822ABA522FA6C3A00724828 /* Foundation+Log.m */,
 				085141E5250C661700FEB009 /* KKColor.swift */,
 				085141E7250C6D0A00FEB009 /* KKButton.swift */,
+				081223C325821F22001BEA06 /* KKControl.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */,
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
+				081223C425821F22001BEA06 /* KKControl.swift in Sources */,
 				085141E0250C655000FEB009 /* KKPermissionsViewController.swift in Sources */,
 				0856545524B5689600FEFE00 /* KKLabTool.m in Sources */,
 				0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */,
