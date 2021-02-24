@@ -28,5 +28,4 @@ class KKPersonPresenter: KKPersonViewPresenter {
         //2.执行代理方法
         self.view.setPersonInfo(persion: person)
     }
-    
 }

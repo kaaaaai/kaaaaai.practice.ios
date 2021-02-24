@@ -62,7 +62,6 @@
 }
 
 - (IBAction)mvvmBtnClicked:(id)sender {
-    
 }
 
 - (IBAction)viperBtnClicked:(id)sender {
