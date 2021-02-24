@@ -19,7 +19,7 @@
                 maker.add(1).add(2).add(3).add(4).divide(5);
        
           }];
-       传递一个block给calculate方法，在calculate方法中创建一个CaculatorMaker对象，然后作为输入参数传递给block的maker，这个block内部进行相应的计算工作，即步奏2所作的工作。最后调用return maker.result;将计算结果返回。
+       传递一个 block 给 calculate 方法，在 calculate 方法中创建一个CaculatorMaker对象，然后作为输入参数传递给block的maker，这个block内部进行相应的计算工作，即步奏2所作的工作。最后调用return maker.result;将计算结果返回。
        
        2. maker.add这个方法获取在add中定义的block:
        

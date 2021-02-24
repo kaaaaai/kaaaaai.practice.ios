@@ -3,12 +3,20 @@ PODS:
   - JPush (3.3.4):
     - JCore (< 3.0.0, >= 2.0.0)
   - Masonry (1.1.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - JCore
   - JPush
   - Masonry
+  - RxCocoa (~> 5.1.0)
+  - RxSwift (~> 5.1.0)
   - SnapKit
 
 SPEC REPOS:
@@ -16,14 +24,20 @@ SPEC REPOS:
     - JCore
     - JPush
     - Masonry
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   JCore: 8aa29dc57ba3730dd9fe7544ce1a4e1cbe221135
   JPush: 6188b8f375a7113f4b62bb33e96e280dbcfa06be
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: b237ad0fa93414be3b992b525c9b59bf5b78d10b
+PODFILE CHECKSUM: 2218fa19a83a790402a4e4ec42eefb3223bacece
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0

@@ -15,7 +15,6 @@
 		0831E355242DAEC600C3B3CC /* publickey.der in Resources */ = {isa = PBXBuildFile; fileRef = 0831E353242DAEC600C3B3CC /* publickey.der */; };
 		0831E357242DAEEC00C3B3CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0831E356242DAEEC00C3B3CC /* Security.framework */; };
 		0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831E359242DAF3F00C3B3CC /* KIRSA.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		08388B7B24F26B6F0036C391 /* KKFactoryPatternPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08388B7A24F26B6F0036C391 /* KKFactoryPatternPractice.swift */; };
 		083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB19226F080400E9FFCA /* AppDelegate.m */; };
 		083CFB1D226F080400E9FFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB1C226F080400E9FFCA /* ViewController.m */; };
 		083CFB20226F080400E9FFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB1E226F080400E9FFCA /* Main.storyboard */; };
@@ -37,7 +36,7 @@
 		0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856544E24B567E000FEFE00 /* KKPlaylistTool.m */; };
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
-		0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */; };
+		085FCB5425E50B65005C1A30 /* KKRxLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */; };
 		087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0D24F8D42200D66410 /* KKPerson.swift */; };
 		087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */; };
 		087C4B1224F8D4FE00D66410 /* KKPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1124F8D4FE00D66410 /* KKPersonView.swift */; };
@@ -81,7 +80,6 @@
 		0831E356242DAEEC00C3B3CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0831E358242DAF3F00C3B3CC /* KIRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIRSA.h; sourceTree = "<group>"; };
 		0831E359242DAF3F00C3B3CC /* KIRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIRSA.m; sourceTree = "<group>"; };
-		08388B7A24F26B6F0036C391 /* KKFactoryPatternPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKFactoryPatternPractice.swift; sourceTree = "<group>"; };
 		083CFB15226F080400E9FFCA /* CodeFragmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083CFB18226F080400E9FFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		083CFB19226F080400E9FFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,9 +117,10 @@
 		0856545324B5689600FEFE00 /* KKLabTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKLabTool.h; sourceTree = "<group>"; };
 		0856545424B5689600FEFE00 /* KKLabTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKLabTool.m; sourceTree = "<group>"; };
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
-		0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMultiDelegate.h; sourceTree = "<group>"; };
-		0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMultiDelegate.m; sourceTree = "<group>"; };
+		085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKRxLoginViewController.swift; sourceTree = "<group>"; };
 		08693AFA25135E11004E7155 /* CodeFragmentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeFragmentation.entitlements; sourceTree = "<group>"; };
+		086B853625E6250300CF3931 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		086B854625E6250800CF3931 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		087C4B0D24F8D42200D66410 /* KKPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPerson.swift; sourceTree = "<group>"; };
 		087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewPresenter.swift; sourceTree = "<group>"; };
 		087C4B1124F8D4FE00D66410 /* KKPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonView.swift; sourceTree = "<group>"; };
@@ -231,16 +230,14 @@
 			isa = PBXGroup;
 			children = (
 				08693AFA25135E11004E7155 /* CodeFragmentation.entitlements */,
-				085141D8250C5E6500FEB009 /* ViewController */,
+				085FCB4225E5092B005C1A30 /* RxSwiftStudy */,
+				085141D8250C5E6500FEB009 /* PermissionsRequest */,
 				0886FBDC24D26BE100EA0107 /* DesignPatterns */,
 				0886FBD224D268C800EA0107 /* View */,
 				082DE5D324C02C0B00AB12DE /* BasedAlgorithm */,
-				0856545B24B5C58300FEFE00 /* MultiDelegate */,
 				0856545724B569D600FEFE00 /* UtilityHelpers */,
 				0856545624B569B900FEFE00 /* Tools */,
-				0831E351242DAEA400C3B3CC /* RSA */,
 				0822ABA422FA6C2C00724828 /* Extension */,
-				083CFB57226F08C100E9FFCA /* ChainFunction */,
 				083CFB18226F080400E9FFCA /* AppDelegate.h */,
 				083CFB19226F080400E9FFCA /* AppDelegate.m */,
 				083CFB1B226F080400E9FFCA /* ViewController.h */,
@@ -296,17 +293,20 @@
 			path = FunctionalProgramming;
 			sourceTree = "<group>";
 		};
-		085141D8250C5E6500FEB009 /* ViewController */ = {
+		085141D8250C5E6500FEB009 /* PermissionsRequest */ = {
 			isa = PBXGroup;
 			children = (
 				085141DF250C655000FEB009 /* KKPermissionsViewController.swift */,
+				085141E1250C657100FEB009 /* KKPermissionTableViewCell.swift */,
 			);
-			path = ViewController;
+			path = PermissionsRequest;
 			sourceTree = "<group>";
 		};
 		0856545624B569B900FEFE00 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				083CFB57226F08C100E9FFCA /* ChainFunction */,
+				0831E351242DAEA400C3B3CC /* RSA */,
 				0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */,
 				0856545324B5689600FEFE00 /* KKLabTool.h */,
 				0856545424B5689600FEFE00 /* KKLabTool.m */,
@@ -327,13 +327,12 @@
 			path = UtilityHelpers;
 			sourceTree = "<group>";
 		};
-		0856545B24B5C58300FEFE00 /* MultiDelegate */ = {
+		085FCB4225E5092B005C1A30 /* RxSwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				0856545D24B5C5DC00FEFE00 /* KKMultiDelegate.h */,
-				0856545E24B5C5DC00FEFE00 /* KKMultiDelegate.m */,
+				085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */,
 			);
-			path = MultiDelegate;
+			path = RxSwiftStudy;
 			sourceTree = "<group>";
 		};
 		087C4B0C24F8D3FF00D66410 /* MVP */ = {
@@ -354,7 +353,6 @@
 				0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */,
 				0886FBD424D268C800EA0107 /* FMSlider.swift */,
 				0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */,
-				085141E1250C657100FEB009 /* KKPermissionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,7 +362,6 @@
 			children = (
 				087C4B0C24F8D3FF00D66410 /* MVP */,
 				0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */,
-				08388B7A24F26B6F0036C391 /* KKFactoryPatternPractice.swift */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -387,6 +384,8 @@
 		3E8951433D54F998097734AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				086B854625E6250800CF3931 /* RxCocoa.framework */,
+				086B853625E6250300CF3931 /* RxSwift.framework */,
 				0831E356242DAEEC00C3B3CC /* Security.framework */,
 				DFB3B458BC09DCFF70B245D4 /* Pods_CodeFragmentation.framework */,
 				5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */,
@@ -625,14 +624,13 @@
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				085141E4250C65EF00FEB009 /* KKConst.swift in Sources */,
+				085FCB5425E50B65005C1A30 /* KKRxLoginViewController.swift in Sources */,
 				0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
 				087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
-				0856545F24B5C5DC00FEFE00 /* KKMultiDelegate.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
-				08388B7B24F26B6F0036C391 /* KKFactoryPatternPractice.swift in Sources */,
 				0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */,
 				087C4B1624F8D70C00D66410 /* KKPersonViewController.swift in Sources */,
 				0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */,
@@ -755,7 +753,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -808,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -823,7 +821,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CodeFragmentation/CodeFragmentation.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = XLSQQP5RCG;
+				DEVELOPMENT_TEAM = GR3FK25RUR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
@@ -834,7 +832,7 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.pratice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = CodeFragment_Kaaaaai_Dev_Push;
+				PROVISIONING_PROFILE_SPECIFIER = All_Can_Dev_Test;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -848,7 +846,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CodeFragmentation/CodeFragmentation.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = XLSQQP5RCG;
+				DEVELOPMENT_TEAM = GR3FK25RUR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
@@ -859,7 +857,7 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.pratice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = CodeFragment_Kaaaaai_Dev_Push;
+				PROVISIONING_PROFILE_SPECIFIER = All_Can_Dev_Test;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -872,7 +870,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

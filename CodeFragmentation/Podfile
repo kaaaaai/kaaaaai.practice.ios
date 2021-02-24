@@ -11,7 +11,9 @@ target 'CodeFragmentation' do
   pod 'Masonry'
   pod 'SnapKit'
   pod 'JCore'
-  pod 'JPush' 
+  pod 'JPush'
+  pod 'RxSwift', '~> 5.1.0'
+  pod 'RxCocoa', '~> 5.1.0'
 end
 
 target 'CodeFragmentationTests' do
@@ -21,6 +23,20 @@ end
 
 target 'CodeFragmentationUITests' do
     # Pods for testing
+end
+
+# Script for setting swift version of PromiseKit to 4.2, since it for some reason sets the version to 5, even though it does not support it.
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == 'RxSwift'
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+    target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+        end
+  end
 end
 
 

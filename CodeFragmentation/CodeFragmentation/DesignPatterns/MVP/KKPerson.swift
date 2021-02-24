@@ -24,7 +24,9 @@ struct KKPerson {
         self.sex = sex
         self.grade = grade
     }
-    
+}
+
+extension KKPerson{
     func buildWith(_ dict: [String: AnyObject]) -> KKPerson{
         var person = KKPerson.init()
         person.loadFromDictionary(dict)
@@ -43,4 +45,3 @@ struct KKPerson {
         }
     }
 }
-

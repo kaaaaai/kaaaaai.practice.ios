@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public class KKPersonViewController: UIViewController, KKPersonView {
+@objc public class KKPersonViewController: UIViewController {
     
     var presenter: KKPersonViewPresenter!
     let showPersionVButton = UIButton()
@@ -56,14 +56,16 @@ import UIKit
         self.presenter.showPersionInformation()
         
     }
-    
-    func setPersonInfo(persion: KKPerson) {
-        //3.响应代理方法
-        self.persionLabel.text = "姓名：\(persion.name) 性别：\(persion.sex) 分数：\(persion.grade)"
-    }
-    
+   
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true, completion: nil)
     }
 
+}
+
+extension KKPersonViewController: KKPersonView{
+    func setPersonInfo(persion: KKPerson) {
+        //3.响应代理方法
+        self.persionLabel.text = "姓名：\(persion.name) 性别：\(persion.sex) 分数：\(persion.grade)"
+    }
 }
