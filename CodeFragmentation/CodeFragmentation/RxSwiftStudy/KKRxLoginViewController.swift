@@ -23,11 +23,20 @@ class KKRxLoginViewController: UIViewController {
     
     @IBOutlet weak var doSomethingOutlet: UIButton!
     
+    @IBOutlet weak var signalButton: UIButton!
+    
     var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginMethod()
+        
+//        signalMethod()
+        driverMethod()
+    }
+    
+    func loginMethod(){
         usernameValidOutlet.text = "Username has to be at least \(minimalUsernameLength) characters"
         passwordValidOutlet.text = "Password has to be at least \(minimalPasswordLength) characters"
 
@@ -62,12 +71,43 @@ class KKRxLoginViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
-    func showAlert() {
-        let alertView = UIAlertController(title: "RxExample", message: "This is wonderful", preferredStyle: .alert)
+    
+    func showAlert(mes: String = "This is wonderful") {
+        let alertView = UIAlertController(title: "RxExample", message: mes, preferredStyle: .alert)
         let action = UIAlertAction(title: "ok", style: .default, handler: nil)
         alertView.addAction(action)
        self.present(alertView, animated: true, completion: nil)
     }
+}
 
+extension KKRxLoginViewController{
+    func driverMethod(){
+        let showAlert: (String) -> Void = { mes in
+            self.showAlert(mes: mes)
+        }
+        
+        let event: Driver<Void> = signalButton.rx.tap.asDriver()
+        
+        let observer: ()-> Void = { showAlert("弹出提示框 1") }
+        
+        event.drive(onNext: observer)
+//
+        let newObserver: () -> Void = { showAlert("弹出提示框 2")}
+        event.drive(onNext: newObserver)
+    }
+    
+    func signalMethod(){
+        let showAlert: (String) -> Void = { mes in
+            self.showAlert(mes: mes)
+        }
+        
+        let event: Signal<Void> = signalButton.rx.tap.asSignal()
+        
+        let observer: ()-> Void = { showAlert("弹出提示框 1") }
 
+        event.emit(onNext: observer)
+        
+        let newObserver: () -> Void = { showAlert("弹出提示框 2")}
+        event.emit(onNext: newObserver)
+    }
 }
