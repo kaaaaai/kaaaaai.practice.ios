@@ -39,38 +39,4 @@
     [[KKLabTool sharedLabTool] takeOutSameItem];
 }
 
-#pragma mark - 弹出框
-- (IBAction)successBtnClicked:(id)sender {
-    [KKHeadMessageView showMessageView:@"😊这是一个测试的弹窗" style:MessageStyleSuccess];
-}
-
-- (IBAction)warningBtnClicked:(id)sender {
-    [KKHeadMessageView showMessageView:@"😊这是一个测试的弹窗" style:MessageStyleWarning];
-}
-
-- (IBAction)errorBtnClicked:(id)sender {
-    [KKHeadMessageView showMessageView:@"😊这是一个测试的弹窗" style:MessageStyleError];
-}
-
-- (IBAction)noneBtnClicked:(id)sender {
-    [KKHeadMessageView showMessageView:@"😊这是一个测试的弹窗" style:MessageStyleNone];
-}
-
-- (IBAction)mvpBtnClicked:(id)sender {
-    KKPersonViewController *kkpvc = [[KKPersonViewController alloc]init];
-    [self presentViewController:kkpvc animated:true completion:nil];
-}
-
-- (IBAction)mvvmBtnClicked:(id)sender {
-}
-
-- (IBAction)viperBtnClicked:(id)sender {
-}
-
-
-- (IBAction)permissionBtnClicked:(id)sender {
-    KKPermissionsViewController *kkpvc = [[KKPermissionsViewController alloc]init];
-    [self presentViewController:kkpvc animated:true completion:nil];
-}
-
 @end

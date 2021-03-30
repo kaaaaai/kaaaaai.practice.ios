@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		081223C425821F22001BEA06 /* KKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081223C325821F22001BEA06 /* KKControl.swift */; };
 		0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813B4A6250106EE003FB9CF /* KKPermissions.swift */; };
+		081AB23725E9EC29009CBF3B /* KKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AB23625E9EC29009CBF3B /* KKViewController.swift */; };
 		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
 		082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DE5D524C02C4000AB12DE /* KKSortingMethod.m */; };
 		0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 0831E352242DAEC600C3B3CC /* privatekey.p12 */; };
@@ -46,6 +47,10 @@
 		0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD424D268C800EA0107 /* FMSlider.swift */; };
 		0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */; };
 		0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */; };
+		08C77FDE26132161007C683F /* KKView+XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FDD26132161007C683F /* KKView+XIB.swift */; };
+		08C77FE526132C19007C683F /* KKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FE426132C19007C683F /* KKMainViewController.swift */; };
+		08C77FEC261330AC007C683F /* KKAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FEB261330AC007C683F /* KKAnimationViewController.swift */; };
+		08C77FF1261331A3007C683F /* KKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FF0261331A3007C683F /* KKBaseViewController.swift */; };
 		25EDD22F95C2CC453307FD3C /* Pods_CodeFragmentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */; };
 		27323286364D44787B13D1C3 /* Pods_CodeFragmentationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A9EFFDA037E537243EEF20 /* Pods_CodeFragmentationUITests.framework */; };
 		C590F945EFAD0B42224935D2 /* Pods_CodeFragmentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB3B458BC09DCFF70B245D4 /* Pods_CodeFragmentation.framework */; };
@@ -72,6 +77,7 @@
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		081223C325821F22001BEA06 /* KKControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKControl.swift; sourceTree = "<group>"; };
 		0813B4A6250106EE003FB9CF /* KKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissions.swift; sourceTree = "<group>"; };
+		081AB23625E9EC29009CBF3B /* KKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKViewController.swift; sourceTree = "<group>"; };
 		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		082DE5D424C02C4000AB12DE /* KKSortingMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSortingMethod.h; sourceTree = "<group>"; };
 		082DE5D524C02C4000AB12DE /* KKSortingMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSortingMethod.m; sourceTree = "<group>"; };
@@ -131,6 +137,10 @@
 		0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMStationAdjustView.swift; sourceTree = "<group>"; };
 		0886FBDB24D26A1000EA0107 /* CodeFragmentation-Bridgint-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFragmentation-Bridgint-Header.h"; sourceTree = "<group>"; };
 		0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKFactoryPattern.swift; sourceTree = "<group>"; };
+		08C77FDD26132161007C683F /* KKView+XIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KKView+XIB.swift"; sourceTree = "<group>"; };
+		08C77FE426132C19007C683F /* KKMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKMainViewController.swift; sourceTree = "<group>"; };
+		08C77FEB261330AC007C683F /* KKAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimationViewController.swift; sourceTree = "<group>"; };
+		08C77FF0261331A3007C683F /* KKBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKBaseViewController.swift; sourceTree = "<group>"; };
 		0BAA9943B3F37E4115364840 /* Pods-CodeFragmentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationUITests/Pods-CodeFragmentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15A9EFFDA037E537243EEF20 /* Pods_CodeFragmentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5266471BD45FE8F157EA99A4 /* Pods_CodeFragmentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeFragmentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +189,8 @@
 				085141E5250C661700FEB009 /* KKColor.swift */,
 				085141E7250C6D0A00FEB009 /* KKButton.swift */,
 				081223C325821F22001BEA06 /* KKControl.swift */,
+				081AB23625E9EC29009CBF3B /* KKViewController.swift */,
+				08C77FDD26132161007C683F /* KKView+XIB.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -242,6 +254,9 @@
 				083CFB19226F080400E9FFCA /* AppDelegate.m */,
 				083CFB1B226F080400E9FFCA /* ViewController.h */,
 				083CFB1C226F080400E9FFCA /* ViewController.m */,
+				08C77FF0261331A3007C683F /* KKBaseViewController.swift */,
+				08C77FE426132C19007C683F /* KKMainViewController.swift */,
+				08C77FEB261330AC007C683F /* KKAnimationViewController.swift */,
 				0856545024B5685500FEFE00 /* KKMethodChainStyle.h */,
 				0856545124B5685500FEFE00 /* KKMethodChainStyle.m */,
 				083CFB1E226F080400E9FFCA /* Main.storyboard */,
@@ -624,10 +639,13 @@
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				085141E4250C65EF00FEB009 /* KKConst.swift in Sources */,
+				08C77FF1261331A3007C683F /* KKBaseViewController.swift in Sources */,
 				085FCB5425E50B65005C1A30 /* KKRxLoginViewController.swift in Sources */,
+				08C77FEC261330AC007C683F /* KKAnimationViewController.swift in Sources */,
 				0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
+				08C77FDE26132161007C683F /* KKView+XIB.swift in Sources */,
 				087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
@@ -637,12 +655,14 @@
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
 				081223C425821F22001BEA06 /* KKControl.swift in Sources */,
+				08C77FE526132C19007C683F /* KKMainViewController.swift in Sources */,
 				085141E0250C655000FEB009 /* KKPermissionsViewController.swift in Sources */,
 				0856545524B5689600FEFE00 /* KKLabTool.m in Sources */,
 				0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */,
 				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
 				085141E6250C661700FEB009 /* KKColor.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
+				081AB23725E9EC29009CBF3B /* KKViewController.swift in Sources */,
 				087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */,
 				0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */,
 				085141E8250C6D0A00FEB009 /* KKButton.swift in Sources */,

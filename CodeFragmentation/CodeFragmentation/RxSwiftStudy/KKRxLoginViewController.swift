@@ -34,6 +34,21 @@ class KKRxLoginViewController: UIViewController {
         
 //        signalMethod()
         driverMethod()
+        
+        //原始字符串
+        let str1:String = "2021-02-27 10:33:09.137343+0800 CodeFragmentation[413:53317] TIC Read Status [1:0x0]: 1:57搜索到字符串：<NSRegularExpression: 0x2813b6850> [a-zA-Z] 0x0原字符串：qwer1234新字符串：1234"
+        //判断表情的正则表达式
+        let pattern = "[^\\u4e00-\\u9fa5]"
+        //替换后的字符串
+        let regex = try! NSRegularExpression(pattern: pattern, options: [])
+        let str3 = regex.firstMatch(in: str1, options: [], range: NSMakeRange(0, str1.count))
+        let str2 = regex.stringByReplacingMatches(in: str1, options: [], range: NSMakeRange(0, str1.count), withTemplate: "")
+        //打印结果
+        print("搜索到字符串：\(regex)")
+        print("原字符串：\(str1)")
+        print("新字符串：\(str2)")
+        print("测试字符串：\(str3)")
+
     }
     
     func loginMethod(){
@@ -78,6 +93,10 @@ class KKRxLoginViewController: UIViewController {
         alertView.addAction(action)
        self.present(alertView, animated: true, completion: nil)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.lowVersionExitInterface()
+    }
 }
 
 extension KKRxLoginViewController{
@@ -91,7 +110,7 @@ extension KKRxLoginViewController{
         let observer: ()-> Void = { showAlert("弹出提示框 1") }
         
         event.drive(onNext: observer)
-//
+
         let newObserver: () -> Void = { showAlert("弹出提示框 2")}
         event.drive(onNext: newObserver)
     }

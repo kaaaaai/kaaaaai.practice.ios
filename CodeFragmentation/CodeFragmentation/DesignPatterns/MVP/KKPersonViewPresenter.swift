@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * 定义业务实现 协议
+ */
 protocol KKPersonViewPresenter {
     init(view: KKPersonView, person: KKPerson)
     func updateInfo(person: KKPerson)

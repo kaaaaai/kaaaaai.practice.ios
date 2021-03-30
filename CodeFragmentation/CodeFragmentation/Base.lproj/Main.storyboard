@@ -9,405 +9,451 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="KKMainViewController" customModule="CodeFragmentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpN-Ca-thd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="弹出框" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-tU-qmr">
-                                <rect key="frame" x="20" y="20" width="105" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Yef-9W-bKu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS6-qG-6nw">
-                                <rect key="frame" x="20" y="62" width="335" height="1"/>
-                                <color key="backgroundColor" red="0.199981451" green="0.2000103295" blue="0.19997167590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="NDQ-gU-mdT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="7Qf-0H-o5a">
-                                <rect key="frame" x="20" y="73" width="335" height="40"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="BQe-sn-jCD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-xl-aie">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.33714902400000002" green="0.73716646429999999" blue="0.54013943669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" id="8bC-Xf-vdC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="弹出框" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-tU-qmr">
+                                                <rect key="frame" x="20" y="20" width="105" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Yef-9W-bKu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS6-qG-6nw">
+                                                <rect key="frame" x="20" y="62" width="335" height="1"/>
+                                                <color key="backgroundColor" red="0.199981451" green="0.2000103295" blue="0.19997167590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="NDQ-gU-mdT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="7Qf-0H-o5a">
+                                                <rect key="frame" x="20" y="73" width="335" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D1-xl-aie">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.33714902400000002" green="0.73716646429999999" blue="0.54013943669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="JUe-Vu-D0L"/>
+                                                            <constraint firstAttribute="height" constant="40" id="nNt-Fk-7Rg"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Success">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.34084695580000002" green="0.7395173907" blue="0.54115194079999995" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="successBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5T-eS-2dp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWH-Mr-6Xk">
+                                                        <rect key="frame" x="85" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.94827431439999998" green="0.60197508340000006" blue="0.1799301505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="VyW-co-1uz"/>
+                                                            <constraint firstAttribute="height" constant="40" id="WHC-aQ-WF1"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Warning">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.94384759659999995" green="0.60786235330000005" blue="0.18018823859999999" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="warningBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCe-Ap-i5p"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-zV-l92">
+                                                        <rect key="frame" x="170" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.75245362520000003" green="0.14193964000000001" blue="0.14362430570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="JM5-FL-IDp"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="wsT-vP-PDJ"/>
+                                                        </constraints>
+                                                        <state key="normal" title="error">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.74879318480000001" green="0.14231842759999999" blue="0.145041436" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="errorBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufe-Tm-h52"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIE-by-QHw">
+                                                        <rect key="frame" x="255" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.17274186020000001" green="0.73361080879999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="60P-MC-mSQ"/>
+                                                            <constraint firstAttribute="height" constant="40" id="7ds-FJ-YFR"/>
+                                                        </constraints>
+                                                        <state key="normal" title="none">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.2137835324" green="0.72821098569999998" blue="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="noneBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1m-1Y-wH7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="d30-XB-aVV"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="架构模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-pU-Mer">
+                                                <rect key="frame" x="20" y="153" width="125" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="ZYD-WA-z9z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDo-0B-9mN">
+                                                <rect key="frame" x="12" y="195" width="351" height="1"/>
+                                                <color key="backgroundColor" red="0.2431156635" green="0.24314942959999999" blue="0.2431041598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="JbO-e2-wxE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-Wu-FR9">
+                                                <rect key="frame" x="20" y="206" width="335" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo4-TW-xMn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.43304699660000001" green="0.45296353099999997" blue="0.88257372379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="2gL-1K-0QK"/>
+                                                        </constraints>
+                                                        <state key="normal" title="MVP">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.44107213620000002" green="0.44020932909999999" blue="0.88239759210000002" alpha="0.35447617827868855" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="mvpBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Os2-lF-CAA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98U-Jo-aU3">
+                                                        <rect key="frame" x="127.5" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.47283029560000001" green="0.2023673356" blue="0.43774142859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="UZT-7P-K3x"/>
+                                                        </constraints>
+                                                        <state key="normal" title="MVVM">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.47407394650000001" green="0.19813698530000001" blue="0.43923455480000001" alpha="0.34735207479508196" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="mvvmBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZa-bV-eMa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvK-s2-8M3">
+                                                        <rect key="frame" x="255" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.42402422429999997" green="0.35294073819999999" blue="0.48195940259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tHP-Sz-ntQ"/>
+                                                        </constraints>
+                                                        <state key="normal" title="VIPER">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.42433544989999999" green="0.3506054878" blue="0.48236769439999999" alpha="0.34932120901639346" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="viperBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQg-lG-ZD3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LDP-MH-lni"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-Se-bVt">
+                                                <rect key="frame" x="20" y="286" width="125" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="c64-BJ-e17"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-Py-n8g">
+                                                <rect key="frame" x="12" y="327.5" width="351" height="1"/>
+                                                <color key="backgroundColor" red="0.2431156635" green="0.24314942959999999" blue="0.2431041598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NUb-xu-hvS">
+                                                <rect key="frame" x="27.5" y="338.5" width="320" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-nL-KYA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.85329025979999995" green="0.52307236189999995" blue="0.32504320139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="aVC-fP-1UN"/>
+                                                        </constraints>
+                                                        <state key="normal" title="登录">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.47407394650000001" green="0.19813698530000001" blue="0.43923455480000001" alpha="0.34735207480000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="TRx-1c-GAp" kind="presentation" id="dHK-Cw-5JX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fww-VE-0CB">
+                                                        <rect key="frame" x="120" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.25155821439999998" green="0.35469755530000002" blue="0.47452628610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="30N-oI-M8U"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="yzi-iD-5pa"/>
+                                                        </constraints>
+                                                        <state key="normal" title="权限封装">
+                                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                                <color key="value" red="0.47407394650000001" green="0.19813698530000001" blue="0.43923455480000001" alpha="0.34735207480000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="permissionBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeQ-zi-Vfk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uea-py-baN">
+                                                        <rect key="frame" x="240" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.65555753412934925" green="0.30826395918822513" blue="0.37372840720897804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="bRa-oj-xcA"/>
+                                                        </constraints>
+                                                        <state key="normal" title="动画">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" red="0.65555753409999995" green="0.30826395919999999" blue="0.3737284072" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="0.0" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="RYY-Bo-h2c" kind="presentation" id="pxu-8Z-CxH"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="JUe-Vu-D0L"/>
-                                            <constraint firstAttribute="height" constant="40" id="nNt-Fk-7Rg"/>
+                                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oW0-Wu-FR9" secondAttribute="trailing" constant="20" id="1bv-6A-Oew"/>
+                                            <constraint firstItem="hsh-tU-qmr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2AV-Ae-kEl"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="vDo-0B-9mN" secondAttribute="trailing" constant="4" id="2ZH-oz-409"/>
+                                            <constraint firstItem="OW0-pU-Mer" firstAttribute="top" secondItem="7Qf-0H-o5a" secondAttribute="bottom" constant="40" id="3Qh-Yh-2au"/>
+                                            <constraint firstItem="7Qf-0H-o5a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7AW-H0-agB"/>
+                                            <constraint firstItem="NUb-xu-hvS" firstAttribute="centerX" secondItem="oW0-Wu-FR9" secondAttribute="centerX" id="9aG-nU-5Q2"/>
+                                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsh-tU-qmr" secondAttribute="trailing" constant="250" id="A4a-YT-nCU"/>
+                                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1y-Se-bVt" secondAttribute="trailing" constant="230" id="Ce5-4F-37K"/>
+                                            <constraint firstItem="g8A-Py-n8g" firstAttribute="height" secondItem="vDo-0B-9mN" secondAttribute="height" id="Czo-Db-8i6"/>
+                                            <constraint firstItem="NUb-xu-hvS" firstAttribute="top" secondItem="g8A-Py-n8g" secondAttribute="bottom" constant="10" id="DOI-AI-djU"/>
+                                            <constraint firstItem="g8A-Py-n8g" firstAttribute="top" secondItem="z1y-Se-bVt" secondAttribute="bottom" constant="8" id="J15-bl-FuY"/>
+                                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Qf-0H-o5a" secondAttribute="trailing" constant="20" id="K8J-6B-bns"/>
+                                            <constraint firstItem="z1y-Se-bVt" firstAttribute="leading" secondItem="OW0-pU-Mer" secondAttribute="leading" id="KEk-dy-G8L"/>
+                                            <constraint firstItem="z1y-Se-bVt" firstAttribute="top" secondItem="oW0-Wu-FR9" secondAttribute="bottom" constant="40" id="Ljp-Yw-gpf"/>
+                                            <constraint firstItem="PS6-qG-6nw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSV-hK-gla"/>
+                                            <constraint firstItem="oW0-Wu-FR9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rmq-bw-7DT"/>
+                                            <constraint firstItem="7Qf-0H-o5a" firstAttribute="top" secondItem="PS6-qG-6nw" secondAttribute="bottom" constant="10" id="YDb-lI-xZV"/>
+                                            <constraint firstItem="PS6-qG-6nw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="atb-MV-Dfb"/>
+                                            <constraint firstItem="PS6-qG-6nw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="bP5-tU-qso"/>
+                                            <constraint firstItem="hsh-tU-qmr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="g0E-V8-8qv"/>
+                                            <constraint firstItem="oW0-Wu-FR9" firstAttribute="top" secondItem="vDo-0B-9mN" secondAttribute="bottom" constant="10" id="grL-Ff-Ctx"/>
+                                            <constraint firstItem="g8A-Py-n8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jd7-Ot-dIX"/>
+                                            <constraint firstItem="vDo-0B-9mN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="jis-C1-3fP"/>
+                                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OW0-pU-Mer" secondAttribute="trailing" constant="230" id="op7-4H-H5z"/>
+                                            <constraint firstItem="g8A-Py-n8g" firstAttribute="width" secondItem="vDo-0B-9mN" secondAttribute="width" id="yt9-nE-gM9"/>
+                                            <constraint firstItem="OW0-pU-Mer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ziE-4S-6Gw"/>
+                                            <constraint firstItem="vDo-0B-9mN" firstAttribute="top" secondItem="OW0-pU-Mer" secondAttribute="bottom" constant="8" id="zv5-UZ-xgG"/>
                                         </constraints>
-                                        <state key="normal" title="Success">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.34084695580000002" green="0.7395173907" blue="0.54115194079999995" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="successBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDt-UJ-HFd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWH-Mr-6Xk">
-                                        <rect key="frame" x="85" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.94827431439999998" green="0.60197508340000006" blue="0.1799301505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="VyW-co-1uz"/>
-                                            <constraint firstAttribute="height" constant="40" id="WHC-aQ-WF1"/>
-                                        </constraints>
-                                        <state key="normal" title="Warning">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.94384759659999995" green="0.60786235330000005" blue="0.18018823859999999" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="warningBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCe-Ap-i5p"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-zV-l92">
-                                        <rect key="frame" x="170" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.75245362520000003" green="0.14193964000000001" blue="0.14362430570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="JM5-FL-IDp"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="wsT-vP-PDJ"/>
-                                        </constraints>
-                                        <state key="normal" title="error">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.74879318480000001" green="0.14231842759999999" blue="0.145041436" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="errorBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufe-Tm-h52"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIE-by-QHw">
-                                        <rect key="frame" x="255" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.17274186020000001" green="0.73361080879999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="60P-MC-mSQ"/>
-                                            <constraint firstAttribute="height" constant="40" id="7ds-FJ-YFR"/>
-                                        </constraints>
-                                        <state key="normal" title="none">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.2137835324" green="0.72821098569999998" blue="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="noneBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1m-1Y-wH7"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="d30-XB-aVV"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="架构模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-pU-Mer">
-                                <rect key="frame" x="20" y="153" width="125" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="ZYD-WA-z9z"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDo-0B-9mN">
-                                <rect key="frame" x="20" y="195" width="335" height="1"/>
-                                <color key="backgroundColor" red="0.2431156635" green="0.24314942959999999" blue="0.2431041598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="JbO-e2-wxE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-Wu-FR9">
-                                <rect key="frame" x="20" y="206" width="335" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo4-TW-xMn">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.43304699660000001" green="0.45296353099999997" blue="0.88257372379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="2gL-1K-0QK"/>
-                                        </constraints>
-                                        <state key="normal" title="MVP">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.44107213620000002" green="0.44020932909999999" blue="0.88239759210000002" alpha="0.35447617827868855" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="mvpBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Os2-lF-CAA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98U-Jo-aU3">
-                                        <rect key="frame" x="127.5" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.47283029560000001" green="0.2023673356" blue="0.43774142859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="UZT-7P-K3x"/>
-                                        </constraints>
-                                        <state key="normal" title="MVVM">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.47407394650000001" green="0.19813698530000001" blue="0.43923455480000001" alpha="0.34735207479508196" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="mvvmBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZa-bV-eMa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvK-s2-8M3">
-                                        <rect key="frame" x="255" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.42402422429999997" green="0.35294073819999999" blue="0.48195940259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tHP-Sz-ntQ"/>
-                                        </constraints>
-                                        <state key="normal" title="VIPER">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.42433544989999999" green="0.3506054878" blue="0.48236769439999999" alpha="0.34932120901639346" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="viperBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQg-lG-ZD3"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="LDP-MH-lni"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-Se-bVt">
-                                <rect key="frame" x="20" y="286" width="125" height="33.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="c64-BJ-e17"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-Py-n8g">
-                                <rect key="frame" x="20" y="327.5" width="335" height="1"/>
-                                <color key="backgroundColor" red="0.2431156635" green="0.24314942959999999" blue="0.2431041598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NUb-xu-hvS">
-                                <rect key="frame" x="87.5" y="338.5" width="200" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-nL-KYA">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.85329025979999995" green="0.52307236189999995" blue="0.32504320139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="aVC-fP-1UN"/>
-                                        </constraints>
-                                        <state key="normal" title="登录">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.47407394650000001" green="0.19813698530000001" blue="0.43923455480000001" alpha="0.34735207480000002" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="TRx-1c-GAp" kind="presentation" id="dHK-Cw-5JX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fww-VE-0CB">
-                                        <rect key="frame" x="120" y="0.0" width="80" height="40"/>
-                                        <color key="backgroundColor" red="0.25155821439999998" green="0.35469755530000002" blue="0.47452628610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="30N-oI-M8U"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="yzi-iD-5pa"/>
-                                        </constraints>
-                                        <state key="normal" title="权限封装">
-                                            <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
-                                                <color key="value" red="0.47407394650000001" green="0.19813698530000001" blue="0.43923455480000001" alpha="0.34735207480000002" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="permissionBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeQ-zi-Vfk"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                                <viewLayoutGuide key="safeArea" id="B7Z-QE-sLs"/>
+                            </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oW0-Wu-FR9" secondAttribute="trailing" constant="20" id="1bv-6A-Oew"/>
-                            <constraint firstItem="hsh-tU-qmr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2AV-Ae-kEl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vDo-0B-9mN" secondAttribute="trailing" constant="4" id="2ZH-oz-409"/>
-                            <constraint firstItem="OW0-pU-Mer" firstAttribute="top" secondItem="7Qf-0H-o5a" secondAttribute="bottom" constant="40" id="3Qh-Yh-2au"/>
-                            <constraint firstItem="7Qf-0H-o5a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7AW-H0-agB"/>
-                            <constraint firstItem="NUb-xu-hvS" firstAttribute="centerX" secondItem="oW0-Wu-FR9" secondAttribute="centerX" id="9aG-nU-5Q2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsh-tU-qmr" secondAttribute="trailing" constant="250" id="A4a-YT-nCU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1y-Se-bVt" secondAttribute="trailing" constant="230" id="Ce5-4F-37K"/>
-                            <constraint firstItem="g8A-Py-n8g" firstAttribute="height" secondItem="vDo-0B-9mN" secondAttribute="height" id="Czo-Db-8i6"/>
-                            <constraint firstItem="NUb-xu-hvS" firstAttribute="top" secondItem="g8A-Py-n8g" secondAttribute="bottom" constant="10" id="DOI-AI-djU"/>
-                            <constraint firstItem="g8A-Py-n8g" firstAttribute="top" secondItem="z1y-Se-bVt" secondAttribute="bottom" constant="8" id="J15-bl-FuY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Qf-0H-o5a" secondAttribute="trailing" constant="20" id="K8J-6B-bns"/>
-                            <constraint firstItem="z1y-Se-bVt" firstAttribute="leading" secondItem="OW0-pU-Mer" secondAttribute="leading" id="KEk-dy-G8L"/>
-                            <constraint firstItem="z1y-Se-bVt" firstAttribute="top" secondItem="oW0-Wu-FR9" secondAttribute="bottom" constant="40" id="Ljp-Yw-gpf"/>
-                            <constraint firstItem="PS6-qG-6nw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSV-hK-gla"/>
-                            <constraint firstItem="oW0-Wu-FR9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rmq-bw-7DT"/>
-                            <constraint firstItem="7Qf-0H-o5a" firstAttribute="top" secondItem="PS6-qG-6nw" secondAttribute="bottom" constant="10" id="YDb-lI-xZV"/>
-                            <constraint firstItem="PS6-qG-6nw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="atb-MV-Dfb"/>
-                            <constraint firstItem="PS6-qG-6nw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="bP5-tU-qso"/>
-                            <constraint firstItem="hsh-tU-qmr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="g0E-V8-8qv"/>
-                            <constraint firstItem="oW0-Wu-FR9" firstAttribute="top" secondItem="vDo-0B-9mN" secondAttribute="bottom" constant="10" id="grL-Ff-Ctx"/>
-                            <constraint firstItem="g8A-Py-n8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jd7-Ot-dIX"/>
-                            <constraint firstItem="vDo-0B-9mN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="jis-C1-3fP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OW0-pU-Mer" secondAttribute="trailing" constant="230" id="op7-4H-H5z"/>
-                            <constraint firstItem="g8A-Py-n8g" firstAttribute="width" secondItem="vDo-0B-9mN" secondAttribute="width" id="yt9-nE-gM9"/>
-                            <constraint firstItem="OW0-pU-Mer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ziE-4S-6Gw"/>
-                            <constraint firstItem="vDo-0B-9mN" firstAttribute="top" secondItem="OW0-pU-Mer" secondAttribute="bottom" constant="8" id="zv5-UZ-xgG"/>
-                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GVU-8Q-zUj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -566,7 +612,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wA2-7j-OZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864.79999999999995" y="97.601199400299862"/>
+            <point key="canvasLocation" x="1244" y="98"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="Lex-kT-zi7">
+            <objects>
+                <viewController id="RYY-Bo-h2c" customClass="KKAnimationViewController" customModule="CodeFragmentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qRZ-XX-745">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77E-As-d9Q">
+                                <rect key="frame" x="160" y="243" width="80" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65555753409999995" green="0.30826395919999999" blue="0.3737284072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加载动画">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.65555753409999995" green="0.30826395919999999" blue="0.3737284072" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="progressBtnClicked:" destination="RYY-Bo-h2c" eventType="touchUpInside" id="suk-1c-boz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bHJ-mg-45I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSe-Fa-DBT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="965.6671664167917"/>
         </scene>
     </scenes>
     <resources>
