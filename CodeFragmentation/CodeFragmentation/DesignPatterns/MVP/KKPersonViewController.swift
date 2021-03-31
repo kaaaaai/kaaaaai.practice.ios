@@ -10,7 +10,7 @@ import UIKit
 
 @objc public class KKPersonViewController: UIViewController {
     
-    var presenter: KKPersonViewPresenter!
+    var presenter: KKPersonPresenterProtocol!
     let showPersionVButton = UIButton()
     let persionLabel = UILabel()
 
@@ -19,8 +19,7 @@ import UIKit
 
         self.view.backgroundColor = .white
         let model = KKPerson(name: "张三", sex: "男", grade: "96")
-        let view = self
-        let presenter = KKPersonPresenter(view: view, person: model)
+        let presenter = KKPersonPresenter(viewController: self, person: model)
         self.presenter = presenter
         
         showPersionVButton.backgroundColor = UIColor.brown
@@ -63,7 +62,7 @@ import UIKit
 
 }
 
-extension KKPersonViewController: KKPersonView{
+extension KKPersonViewController: KKPersonDisplayLogic{
     func setPersonInfo(persion: KKPerson) {
         //3.响应代理方法
         self.persionLabel.text = "姓名：\(persion.name) 性别：\(persion.sex) 分数：\(persion.grade)"

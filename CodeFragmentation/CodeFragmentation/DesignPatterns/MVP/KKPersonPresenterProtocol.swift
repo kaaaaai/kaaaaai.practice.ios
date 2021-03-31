@@ -11,8 +11,8 @@ import UIKit
 /**
  * 定义业务实现 协议
  */
-protocol KKPersonViewPresenter {
-    init(view: KKPersonView, person: KKPerson)
+protocol KKPersonPresenterProtocol {
+    init(viewController: KKPersonDisplayLogic, person: KKPerson)
     func updateInfo(person: KKPerson)
     func showPersionInformation()
 }

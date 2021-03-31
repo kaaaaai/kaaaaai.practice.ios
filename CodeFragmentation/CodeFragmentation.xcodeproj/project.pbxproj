@@ -39,8 +39,8 @@
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
 		085FCB5425E50B65005C1A30 /* KKRxLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */; };
 		087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0D24F8D42200D66410 /* KKPerson.swift */; };
-		087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */; };
-		087C4B1224F8D4FE00D66410 /* KKPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1124F8D4FE00D66410 /* KKPersonView.swift */; };
+		087C4B1024F8D4C100D66410 /* KKPersonPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0F24F8D4C100D66410 /* KKPersonPresenterProtocol.swift */; };
+		087C4B1224F8D4FE00D66410 /* KKPersonDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1124F8D4FE00D66410 /* KKPersonDisplayLogic.swift */; };
 		087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */; };
 		087C4B1624F8D70C00D66410 /* KKPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */; };
 		0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */; };
@@ -128,8 +128,8 @@
 		086B853625E6250300CF3931 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		086B854625E6250800CF3931 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		087C4B0D24F8D42200D66410 /* KKPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPerson.swift; sourceTree = "<group>"; };
-		087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewPresenter.swift; sourceTree = "<group>"; };
-		087C4B1124F8D4FE00D66410 /* KKPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonView.swift; sourceTree = "<group>"; };
+		087C4B0F24F8D4C100D66410 /* KKPersonPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonPresenterProtocol.swift; sourceTree = "<group>"; };
+		087C4B1124F8D4FE00D66410 /* KKPersonDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonDisplayLogic.swift; sourceTree = "<group>"; };
 		087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonPresenter.swift; sourceTree = "<group>"; };
 		087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewController.swift; sourceTree = "<group>"; };
 		0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHeadMessageView.swift; sourceTree = "<group>"; };
@@ -354,8 +354,8 @@
 			isa = PBXGroup;
 			children = (
 				087C4B0D24F8D42200D66410 /* KKPerson.swift */,
-				087C4B1124F8D4FE00D66410 /* KKPersonView.swift */,
-				087C4B0F24F8D4C100D66410 /* KKPersonViewPresenter.swift */,
+				087C4B1124F8D4FE00D66410 /* KKPersonDisplayLogic.swift */,
+				087C4B0F24F8D4C100D66410 /* KKPersonPresenterProtocol.swift */,
 				087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */,
 				087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */,
 			);
@@ -634,7 +634,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				083CFB1D226F080400E9FFCA /* ViewController.m in Sources */,
-				087C4B1224F8D4FE00D66410 /* KKPersonView.swift in Sources */,
+				087C4B1224F8D4FE00D66410 /* KKPersonDisplayLogic.swift in Sources */,
 				085141E2250C657100FEB009 /* KKPermissionTableViewCell.swift in Sources */,
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
@@ -667,7 +667,7 @@
 				0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */,
 				085141E8250C6D0A00FEB009 /* KKButton.swift in Sources */,
 				0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */,
-				087C4B1024F8D4C100D66410 /* KKPersonViewPresenter.swift in Sources */,
+				087C4B1024F8D4C100D66410 /* KKPersonPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

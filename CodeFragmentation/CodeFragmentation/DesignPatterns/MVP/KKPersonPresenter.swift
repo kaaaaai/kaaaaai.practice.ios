@@ -8,13 +8,13 @@
 
 import UIKit
 
-class KKPersonPresenter: KKPersonViewPresenter {
-    unowned let view: KKPersonView
+class KKPersonPresenter: KKPersonPresenterProtocol {
+    unowned let viewController: KKPersonDisplayLogic
     var person: KKPerson
     
-    required init(view: KKPersonView, person: KKPerson) {
+    required init(viewController: KKPersonDisplayLogic, person: KKPerson) {
         //1.设置 view 的代理
-        self.view = view
+        self.viewController = viewController
         self.person = person
     }
     
@@ -26,6 +26,6 @@ class KKPersonPresenter: KKPersonViewPresenter {
         let person = self.person
         
         //2.执行代理方法
-        self.view.setPersonInfo(persion: person)
+        self.viewController.setPersonInfo(persion: person)
     }
 }
