@@ -17,13 +17,31 @@ class KKAnimationViewController: UIViewController {
     fileprivate var animator: UIViewPropertyAnimator!
     fileprivate var isAnimating: Bool = false
 
+    //初始相位
+    private var phase: Float = 0
+    //相位偏移量
+    private var phaseShift: Float = 0.25
+    
+    var displayLink = CADisplayLink()
+    //背景图层
+    var canvasLayer: CALayer!
+    //遮罩图层
+    var waveLayer: CAShapeLayer!
+    //背景图层frame
+    var frame = CGRect.zero
+    //遮罩图层frame
+    var shapeFrame = CGRect.zero
+    var coverLayer: CALayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        configureView()
     }
     
     @IBAction func progressBtnClicked(_ sender: UIButton) {
 //        startAnimationOne(sender)
-        startAnimationTwo(sender)
+//        startAnimationTwo(sender)
+        startAnimationThree(sender)
     }
 
     private func startAnimationOne(_ sender: UIButton){
@@ -72,9 +90,6 @@ extension KKAnimationViewController {
         startAnimation(type: .normal, duration: 5, height: sender.frame.height)
     }
 
-}
-
-extension KKAnimationViewController {
     enum ProgressAnimationType {
         case normal
         case reverse
@@ -116,5 +131,121 @@ extension KKAnimationViewController {
     
     open func getProgress() -> CGFloat {
         return self.progressView.frame.size.width
+    }
+}
+
+extension KKAnimationViewController {
+    /**
+     *[CoreAnimation动画（一）：遮罩动画/注水动画 - 简书](https://www.jianshu.com/p/1b5d8e21ebbb)
+     */
+    private func startAnimationThree(_ sender: UIButton) {
+        if self.phase != 0 {
+            //初始相位
+            self.phase = 0
+            //相位偏移量
+            self.phaseShift = 0.25
+            
+            self.displayLink.invalidate()
+        }
+        
+        //
+//        let shapePointY: CGFloat = 95
+//        let frame = CGRect(x: 0, y: 0, width: 53, height: 95)
+//        let shapeFrame = CGRect(x: 0, y: shapePointY, width: 53, height: 95)
+//        let shaperPointY: CGFloat = 0
+        
+        let frame = CGRect(x: 0, y: 0, width: sender.frame.size.width, height: sender.frame.size.height)
+        let shapeFrame = CGRect(x: 0, y: 0, width: sender.frame.size.width+1, height: sender.frame.size.height + 1)
+        
+        self.frame = frame
+        self.shapeFrame = shapeFrame
+
+        //黑色边框
+//        let bglayer = CAShapeLayer()
+//        bglayer.frame = CGRect(x: 20, y: 80, width: 52, height: 94)
+//        bglayer.path = createBezierPath().cgPath
+//        bglayer.fillColor = UIColor.clear.cgColor
+//        bglayer.strokeColor = UIColor.black.cgColor
+//        view.layer.addSublayer(bglayer)
+
+//        let mask = CAShapeLayer()
+//        mask.path = createBezierPath().cgPath
+//        bglayer.mask = mask
+
+        //创建背景图层
+        canvasLayer = CALayer()
+        canvasLayer.frame = frame
+        canvasLayer.cornerRadius = 2
+        canvasLayer.backgroundColor = UIColor.orange.cgColor
+        sender.layer.addSublayer(canvasLayer)
+//        bglayer.addSublayer(canvasLayer)
+        
+        //创建遮罩图层
+        waveLayer = CAShapeLayer()
+        waveLayer.frame = shapeFrame
+        waveLayer.backgroundColor = UIColor.orange.cgColor
+        //设定mask为waveLayer
+        canvasLayer.mask = waveLayer
+
+//        sender.layer.mask = waveLayer
+        //开始动画
+        startAnimating()
+    }
+    
+    func startAnimating() {
+        
+        displayLink = CADisplayLink(target: self, selector: #selector(update))
+        displayLink.add(to: RunLoop.current, forMode: .common)
+
+        var position = waveLayer.position
+        position.y = position.y + shapeFrame.size.height
+        
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.fromValue = NSValue(cgPoint: waveLayer.position)
+        animation.toValue = NSValue(cgPoint: position)
+        animation.duration = 5.0
+        animation.repeatCount = 0
+        animation.isRemovedOnCompletion = false
+        waveLayer.add(animation, forKey: nil)
+    }
+    
+    //波浪滚动 phase相位每桢变化值：phaseShift
+    @objc
+    private func update() {
+        let frame = self.frame
+        self.phase += self.phaseShift
+        UIGraphicsBeginImageContext(frame.size)
+        let wavePath = UIBezierPath()
+        var endX: CGFloat = 0
+        for x in 0..<Int(frame.size.width) {
+            endX = CGFloat(x)
+            //正弦函数，求y值
+            let y = 3 * sinf(Float(2 * .pi * (Float(x) / Float(frame.size.width)) + phase))
+            if x == 0 {
+                wavePath.move(to: CGPoint(x: CGFloat(x), y: CGFloat(y)))
+            } else {
+                wavePath.addLine(to: CGPoint(x: CGFloat(x), y: CGFloat(y)))
+            }
+        }
+        let endY = frame.height
+        wavePath.addLine(to: CGPoint(x: endX, y: endY))
+        wavePath.addLine(to: CGPoint(x: 0, y: endY))
+        //修改每桢的wavelayer.path
+        waveLayer.path = wavePath.cgPath
+        UIGraphicsEndImageContext()
+    }
+
+    private func createBezierPath() -> UIBezierPath {
+        // W:H = 70:120
+        // oval frame {1,1,52,94}
+        let ovalPath = UIBezierPath()
+        ovalPath.move(to: CGPoint(x: 53, y: 30.53))
+        ovalPath.addCurve(to: CGPoint(x: 27, y: 95), controlPoint1: CGPoint(x: 53, y: 46.83), controlPoint2: CGPoint(x: 41.36, y: 95))
+        ovalPath.addCurve(to: CGPoint(x: 1, y: 30.53), controlPoint1: CGPoint(x: 12.64, y: 95), controlPoint2: CGPoint(x: 1, y: 46.83))
+        ovalPath.addCurve(to: CGPoint(x: 27, y: 1), controlPoint1: CGPoint(x: 1, y: 14.22), controlPoint2: CGPoint(x: 12.64, y: 1))
+        ovalPath.addCurve(to: CGPoint(x: 53, y: 30.53), controlPoint1: CGPoint(x: 41.36, y: 1), controlPoint2: CGPoint(x: 53, y: 14.22))
+        ovalPath.close()
+
+        return ovalPath
     }
 }
