@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080B3D6D26256C47000F5BD9 /* KKTransitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */; };
 		081223C425821F22001BEA06 /* KKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081223C325821F22001BEA06 /* KKControl.swift */; };
 		0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813B4A6250106EE003FB9CF /* KKPermissions.swift */; };
 		081AB23725E9EC29009CBF3B /* KKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AB23625E9EC29009CBF3B /* KKViewController.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
+		080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTransitionsViewController.swift; sourceTree = "<group>"; };
 		081223C325821F22001BEA06 /* KKControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKControl.swift; sourceTree = "<group>"; };
 		0813B4A6250106EE003FB9CF /* KKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissions.swift; sourceTree = "<group>"; };
 		081AB23625E9EC29009CBF3B /* KKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				08C77FF0261331A3007C683F /* KKBaseViewController.swift */,
 				08C77FE426132C19007C683F /* KKMainViewController.swift */,
 				08C77FEB261330AC007C683F /* KKAnimationViewController.swift */,
+				080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */,
 				0856545024B5685500FEFE00 /* KKMethodChainStyle.h */,
 				0856545124B5685500FEFE00 /* KKMethodChainStyle.m */,
 				083CFB1E226F080400E9FFCA /* Main.storyboard */,
@@ -420,7 +423,7 @@
 				083CFB11226F080400E9FFCA /* Sources */,
 				083CFB12226F080400E9FFCA /* Frameworks */,
 				083CFB13226F080400E9FFCA /* Resources */,
-				94E976552B0C0ACF77F1DBB5 /* [CP] Embed Pods Frameworks */,
+				FE3945A728C4F3B9FA8646EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -609,7 +612,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		94E976552B0C0ACF77F1DBB5 /* [CP] Embed Pods Frameworks */ = {
+		FE3945A728C4F3B9FA8646EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -662,6 +665,7 @@
 				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
 				085141E6250C661700FEB009 /* KKColor.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
+				080B3D6D26256C47000F5BD9 /* KKTransitionsViewController.swift in Sources */,
 				081AB23725E9EC29009CBF3B /* KKViewController.swift in Sources */,
 				087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */,
 				0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */,

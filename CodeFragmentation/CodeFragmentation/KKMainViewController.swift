@@ -8,6 +8,20 @@
 
 import UIKit
 
+extension MessageStyle: CustomStringConvertible {
+    public var description: String{
+        switch self {
+        case .success:
+            return "success"
+        case .warning:
+            return "warning"
+        case .error:
+            return "error"
+        case .none:
+            return "none"
+        }
+    }
+}
 class KKMainViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,13 +30,33 @@ class KKMainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func successBtnClicked(_ sender: Any) {
-        KKHeadMessageView.showMessageView("✅ 这是一个测试的弹窗", style: .success)
+    @IBAction func messageAlertBtnClicked(_ sender: Any) {
+        let button = sender as! UIButton
+        switch button.tag {
+        case MessageStyle.warning.rawValue:
+            button.tag = MessageStyle.error.rawValue
+            KKHeadMessageView.showMessageView("❌ 这是一个测试的弹窗", style: .error)
+            button.setTitle(MessageStyle.error.description, for: .normal)
+        case MessageStyle.error.rawValue:
+            button.tag = MessageStyle.none.rawValue
+            KKHeadMessageView.showMessageView("🈳 这是一个测试的弹窗", style: .none)
+            button.setTitle(MessageStyle.none.description, for: .normal)
+        case MessageStyle.none.rawValue:
+            button.tag = MessageStyle.success.rawValue
+            KKHeadMessageView.showMessageView("✅ 这是一个测试的弹窗", style: .success)
+            button.setTitle(MessageStyle.success.description, for: .normal)
+        default:
+            button.tag = MessageStyle.warning.rawValue
+            KKHeadMessageView.showMessageView("⚠️ 这是一个测试的弹窗", style: .warning)
+            button.setTitle(MessageStyle.warning.description, for: .normal)
+        }
+        
+        button.backgroundColor = KKHeadMessageView.mv?.backgroundColor
     }
     
-    @IBAction func warningBtnClicked(_ sender: Any) {
-
-        KKHeadMessageView.showMessageView("⚠️ 这是一个测试的弹窗", style: .warning)
+    @IBAction func transitionBtnClicked(_ sender: Any) {
+        let ktvc = KKTransitionsViewController()
+        self.present(ktvc, animated: true, completion: nil)
     }
     
     @IBAction func errorBtnClicked(_ sender: Any) {
@@ -46,8 +80,6 @@ class KKMainViewController: UIViewController {
         let pmvc = KKPermissionsViewController()
         self.present(pmvc, animated: true, completion: nil)
     }
-    
-    
 }
 
 

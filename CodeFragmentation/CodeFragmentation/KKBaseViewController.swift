@@ -10,13 +10,21 @@ import UIKit
 
 class KKBaseViewController: UIViewController {
 
+    public var isAutoDismiss: Bool{ false }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
-    
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if isAutoDismiss {
+            if #available(iOS 13, *) {
+                
+            }else{
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
 }

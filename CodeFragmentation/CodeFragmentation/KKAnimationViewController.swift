@@ -8,8 +8,10 @@
 
 import UIKit
 
-class KKAnimationViewController: UIViewController {
+class KKAnimationViewController: KKBaseViewController {
 
+    override var isAutoDismiss: Bool { true }
+    
     private var progressLayer = CAShapeLayer()
     private var progressColor = UIColor(red: 144 / 255, green: 187 / 255, blue: 255 / 255, alpha: 0.2)
     
@@ -35,15 +37,19 @@ class KKAnimationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
 //        configureView()
     }
     
     @IBAction func progressBtnClicked(_ sender: UIButton) {
 //        startAnimationOne(sender)
-//        startAnimationTwo(sender)
-        startAnimationThree(sender)
+        startAnimationTwo(sender)
+//        startAnimationThree(sender)
     }
 
+}
+
+extension KKAnimationViewController {
     private func startAnimationOne(_ sender: UIButton){
         let frame = sender.frame
         let rectanglePath = UIBezierPath(rect: CGRect(x: sender.bounds.origin.x, y: sender.bounds.origin.y, width: frame.width, height: frame.height))
@@ -72,19 +78,20 @@ class KKAnimationViewController: UIViewController {
         self.progressLayer.add(stroke, forKey: nil)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.lowVersionExitInterface()
-    }
-}
-
-extension KKAnimationViewController {
     private func startAnimationTwo(_ sender: UIButton){
         progressView = UIView()
-        sender.addSubview(progressView)
-        
+        self.view.addSubview(progressView)
+        self.view.insertSubview(progressView, at: 0)
         progressView.backgroundColor = .black
-        progressView.frame.size.width = sender.frame.width
-        progressView.frame.size.height = 0
+//        progressView.frame.size.width = sender.frame.width
+//        progressView.frame.size.height = 0
+        
+        NSLayoutConstraint.activate([
+                                        progressView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                                        progressView.topAnchor.constraint(equalTo: self.view.topAnchor),
+                                        progressView.widthAnchor.constraint(equalTo: self.view.widthAnchor),
+                                        progressView.heightAnchor.constraint(equalTo: self.view.heightAnchor)])
+        progressView.layoutIfNeeded()
         progressView.layer.cornerRadius = 2
         
         startAnimation(type: .normal, duration: 5, height: sender.frame.height)
@@ -112,9 +119,11 @@ extension KKAnimationViewController {
     fileprivate func runAnimation(reverse: Bool, duration: CGFloat, height: CGFloat) {
 
         animator = UIViewPropertyAnimator.runningPropertyAnimator(withDuration: TimeInterval(duration), delay: 0.0, options: [.curveEaseInOut], animations: {
-            UIView.setAnimationRepeatCount(1)
+            UIView.setAnimationRepeatCount(99)
             UIView.setAnimationRepeatAutoreverses(reverse)
-            self.progressView.frame.size.height += height
+//            self.progressView.frame.size.height += height
+            self.progressView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.0).isActive = true
+            self.progressView.layoutIfNeeded()
         }, completion: { _ in
         })
         isAnimating = true
@@ -147,30 +156,13 @@ extension KKAnimationViewController {
             
             self.displayLink.invalidate()
         }
-        
-        //
-//        let shapePointY: CGFloat = 95
-//        let frame = CGRect(x: 0, y: 0, width: 53, height: 95)
-//        let shapeFrame = CGRect(x: 0, y: shapePointY, width: 53, height: 95)
-//        let shaperPointY: CGFloat = 0
-        
+ 
         let frame = CGRect(x: 0, y: 0, width: sender.frame.size.width, height: sender.frame.size.height)
-        let shapeFrame = CGRect(x: 0, y: 0, width: sender.frame.size.width+1, height: sender.frame.size.height + 1)
+        let shapeFrame = CGRect(x: 0, y: 0, width: sender.frame.size.width, height: sender.frame.size.height + 3)
         
         self.frame = frame
         self.shapeFrame = shapeFrame
 
-        //黑色边框
-//        let bglayer = CAShapeLayer()
-//        bglayer.frame = CGRect(x: 20, y: 80, width: 52, height: 94)
-//        bglayer.path = createBezierPath().cgPath
-//        bglayer.fillColor = UIColor.clear.cgColor
-//        bglayer.strokeColor = UIColor.black.cgColor
-//        view.layer.addSublayer(bglayer)
-
-//        let mask = CAShapeLayer()
-//        mask.path = createBezierPath().cgPath
-//        bglayer.mask = mask
 
         //创建背景图层
         canvasLayer = CALayer()
@@ -206,6 +198,7 @@ extension KKAnimationViewController {
         animation.duration = 5.0
         animation.repeatCount = 0
         animation.isRemovedOnCompletion = false
+        animation.fillMode = .forwards
         waveLayer.add(animation, forKey: nil)
     }
     

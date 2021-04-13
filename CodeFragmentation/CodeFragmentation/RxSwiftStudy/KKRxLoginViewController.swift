@@ -13,8 +13,9 @@ import RxCocoa
 private let minimalUsernameLength = 5
 private let minimalPasswordLength = 5
 
-class KKRxLoginViewController: UIViewController {
-
+class KKRxLoginViewController: KKBaseViewController {
+    override var isAutoDismiss: Bool { true }
+    
     @IBOutlet weak var usernameOutlet: UITextField!
     @IBOutlet weak var usernameValidOutlet: UILabel!
     
@@ -27,27 +28,25 @@ class KKRxLoginViewController: UIViewController {
     
     var disposeBag = DisposeBag()
 
+    var globalObserver: Single<String>?
+    var subject1: BehaviorSubject<String>!
+    var subject2: BehaviorSubject<String>!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginMethod()
+//        loginMethod()
         
 //        signalMethod()
-        driverMethod()
+//        driverMethod()
+        rxSwiftTest()
         
-        //原始字符串
-        let str1:String = "2021-02-27 10:33:09.137343+0800 CodeFragmentation[413:53317] TIC Read Status [1:0x0]: 1:57搜索到字符串：<NSRegularExpression: 0x2813b6850> [a-zA-Z] 0x0原字符串：qwer1234新字符串：1234"
-        //判断表情的正则表达式
-        let pattern = "[^\\u4e00-\\u9fa5]"
-        //替换后的字符串
-        let regex = try! NSRegularExpression(pattern: pattern, options: [])
-        let str3 = regex.firstMatch(in: str1, options: [], range: NSMakeRange(0, str1.count))
-        let str2 = regex.stringByReplacingMatches(in: str1, options: [], range: NSMakeRange(0, str1.count), withTemplate: "")
-        //打印结果
-        print("搜索到字符串：\(regex)")
-        print("原字符串：\(str1)")
-        print("新字符串：\(str2)")
-        print("测试字符串：\(str3)")
+        let tap = signalButton.rx.tap.asSignal()
+        tap.emit(onNext:
+                    {
+                        self.subject1.onNext(self.testOneMethod())
+                        self.subject2.onNext(self.testTwoMethod())
+                    })
 
     }
     
@@ -93,10 +92,6 @@ class KKRxLoginViewController: UIViewController {
         alertView.addAction(action)
        self.present(alertView, animated: true, completion: nil)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.lowVersionExitInterface()
-    }
 }
 
 extension KKRxLoginViewController{
@@ -128,5 +123,45 @@ extension KKRxLoginViewController{
         
         let newObserver: () -> Void = { showAlert("弹出提示框 2")}
         event.emit(onNext: newObserver)
+    }
+    
+    
+    func rxSwiftTest(){
+        let subject1 = BehaviorSubject(value: self.testOneMethod())
+        self.subject1 = subject1
+        let subject2 = BehaviorSubject(value: self.testTwoMethod())
+        self.subject2 = subject2
+        
+        let concat: Single<String> = Observable
+            .concat(self.subject1, self.subject2).take(1).asSingle()
+        self.globalObserver = concat
+        
+        
+        self.globalObserver!.subscribe { (str) in
+            print("Single: \(str)")
+        } onError: { _ in
+            print("error!!!!")
+        }.dispose()
+        
+        let observable: Observable<String> = Observable.concat(self.subject1,self.subject2).take(1).asObservable()
+        observable.subscribe(onNext: { string in
+            print("Single: \(string)")
+        }).dispose()
+
+        self.subject1.onNext(self.testOneMethod())
+        self.subject2.onNext(self.testTwoMethod())
+    }
+    
+    func testOneMethod() -> String{
+        let str = "testOneMethod"
+        print(str)
+        return str
+        
+    }
+    
+    func testTwoMethod() -> String{
+        let str = "testTwoMethod"
+        print(str)
+        return str
     }
 }

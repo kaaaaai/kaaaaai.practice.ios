@@ -4,16 +4,26 @@ platform :ios, '9.0'
 use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'CodeFragmentation' do
-  # Comment the next line if you don't want to use dynamic frameworks
+def uikit_pods
+  pod 'Masonry', '~> 1.1.0'
+  pod 'SnapKit', '~> 4.2.0'
+end
 
-  # Pods for CodeFragmentation
-  pod 'Masonry'
-  pod 'SnapKit'
-  pod 'JCore'
-  pod 'JPush'
+def business_pods
   pod 'RxSwift', '~> 5.1.0'
   pod 'RxCocoa', '~> 5.1.0'
+  pod 'RxSwiftExt', '~> 5'
+end
+
+def other_pods
+  pod 'JCore', '~> 2.4.0'
+  pod 'JPush', '~> 3.4.0'
+end
+
+target 'CodeFragmentation' do
+  uikit_pods
+  business_pods
+  other_pods
 end
 
 target 'CodeFragmentationTests' do

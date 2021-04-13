@@ -8,7 +8,8 @@
 
 import UIKit
 
-@objc public class KKPersonViewController: UIViewController {
+class KKPersonViewController: KKBaseViewController {
+//    public override var isAutoDismiss: Bool { true }
     
     var presenter: KKPersonPresenterProtocol!
     let showPersionVButton = UIButton()
@@ -55,11 +56,6 @@ import UIKit
         self.presenter.showPersionInformation()
         
     }
-   
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.lowVersionExitInterface()
-    }
-
 }
 
 extension KKPersonViewController: KKPersonDisplayLogic{

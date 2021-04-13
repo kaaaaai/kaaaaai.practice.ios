@@ -9,11 +9,5 @@
 import UIKit
 
 extension UIViewController {
-    public func lowVersionExitInterface(){
-        if #available(iOS 13, *) {
-            
-        }else{
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
+   
 }

@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="弹出框" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-tU-qmr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-tU-qmr">
                                                 <rect key="frame" x="20" y="20" width="105" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="Yef-9W-bKu"/>
@@ -54,7 +54,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="JUe-Vu-D0L"/>
                                                             <constraint firstAttribute="height" constant="40" id="nNt-Fk-7Rg"/>
                                                         </constraints>
-                                                        <state key="normal" title="Success">
+                                                        <state key="normal" title="提示框">
                                                             <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -76,7 +76,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="successBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5T-eS-2dp"/>
+                                                            <action selector="messageAlertBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5T-eS-2dp"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWH-Mr-6Xk">
@@ -86,7 +86,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="VyW-co-1uz"/>
                                                             <constraint firstAttribute="height" constant="40" id="WHC-aQ-WF1"/>
                                                         </constraints>
-                                                        <state key="normal" title="Warning">
+                                                        <state key="normal" title="转场">
                                                             <color key="titleColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -108,7 +108,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="warningBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCe-Ap-i5p"/>
+                                                            <action selector="transitionBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCe-Ap-i5p"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-zV-l92">
@@ -325,7 +325,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="aVC-fP-1UN"/>
                                                         </constraints>
-                                                        <state key="normal" title="登录">
+                                                        <state key="normal" title="RxSwift">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>

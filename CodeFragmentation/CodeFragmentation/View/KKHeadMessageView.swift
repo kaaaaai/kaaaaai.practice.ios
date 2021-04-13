@@ -9,10 +9,10 @@
 import UIKit
 
 @objc public enum MessageStyle: Int{
-    case none
     case success
-    case error
     case warning
+    case error
+    case none
 }
 
 
