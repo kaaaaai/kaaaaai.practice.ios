@@ -11,6 +11,7 @@
 		081223C425821F22001BEA06 /* KKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081223C325821F22001BEA06 /* KKControl.swift */; };
 		0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813B4A6250106EE003FB9CF /* KKPermissions.swift */; };
 		081AB23725E9EC29009CBF3B /* KKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081AB23625E9EC29009CBF3B /* KKViewController.swift */; };
+		081E0BE52664D4D00015A7BB /* KKDataSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E0BE42664D4D00015A7BB /* KKDataSourceView.swift */; };
 		0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0822ABA522FA6C3A00724828 /* Foundation+Log.m */; };
 		082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 082DE5D524C02C4000AB12DE /* KKSortingMethod.m */; };
 		0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 0831E352242DAEC600C3B3CC /* privatekey.p12 */; };
@@ -80,6 +81,7 @@
 		081223C325821F22001BEA06 /* KKControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKControl.swift; sourceTree = "<group>"; };
 		0813B4A6250106EE003FB9CF /* KKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissions.swift; sourceTree = "<group>"; };
 		081AB23625E9EC29009CBF3B /* KKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKViewController.swift; sourceTree = "<group>"; };
+		081E0BE42664D4D00015A7BB /* KKDataSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDataSourceView.swift; sourceTree = "<group>"; };
 		0822ABA522FA6C3A00724828 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		082DE5D424C02C4000AB12DE /* KKSortingMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSortingMethod.h; sourceTree = "<group>"; };
 		082DE5D524C02C4000AB12DE /* KKSortingMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSortingMethod.m; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 				0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */,
 				0886FBD424D268C800EA0107 /* FMSlider.swift */,
 				0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */,
+				081E0BE42664D4D00015A7BB /* KKDataSourceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 				087C4B1224F8D4FE00D66410 /* KKPersonDisplayLogic.swift in Sources */,
 				085141E2250C657100FEB009 /* KKPermissionTableViewCell.swift in Sources */,
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
+				081E0BE52664D4D00015A7BB /* KKDataSourceView.swift in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				085141E4250C65EF00FEB009 /* KKConst.swift in Sources */,
 				08C77FF1261331A3007C683F /* KKBaseViewController.swift in Sources */,
@@ -845,7 +849,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CodeFragmentation/CodeFragmentation.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = GR3FK25RUR;
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
@@ -856,7 +860,7 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.pratice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = All_Can_Dev_Test;
+				PROVISIONING_PROFILE_SPECIFIER = all_dev_can_test_development;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeFragmentation/CodeFragmentation-Bridgint-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

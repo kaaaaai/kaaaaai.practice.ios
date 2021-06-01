@@ -26,7 +26,10 @@ class KKMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let dsView = KKDataSourceView(frame: self.view.frame)
+        dsView.dataSource = self
+        dsView.delegate = self
+        self.view.addSubview(dsView)
         // Do any additional setup after loading the view.
     }
 
@@ -83,3 +86,11 @@ class KKMainViewController: UIViewController {
 }
 
 
+extension KKMainViewController: DSViewDataSource, DSViewDelegate {
+    func numberOfin(_ view: KKDataSourceView) -> Int {
+        return 8
+    }
+    
+    func dsView(_ view: KKDataSourceView, didSelectItem Index: Int) {
+    }
+}
