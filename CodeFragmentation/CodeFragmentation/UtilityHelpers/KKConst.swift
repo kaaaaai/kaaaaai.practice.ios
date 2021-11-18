@@ -18,8 +18,8 @@ let KKPingFangSC_R = "PingFangSC-Regular"
 let KKPingFangSC_M = "PingFangSC-Medium"
 
 
-let KKTextColor = UIColor.rgbColorFromHex(rgb: 0x333333)
-let KKPermissionColor = UIColor.rgbColorFromHex(rgb: 0x355C7D)
+let KKTextColor = UIColor.hex(0x333333)
+let KKPermissionColor = UIColor.hex(0x355C7D)
 
 //MARK: # Method
 func KKPingFangSC_R(size fontSize: CGFloat) -> UIFont{
@@ -30,12 +30,4 @@ func KKPingFangSC_R(size fontSize: CGFloat) -> UIFont{
 func KKPingFangSC_M(size fontSize: CGFloat) -> UIFont{
     let font = UIFont.init(name: KKPingFangSC_M, size: fontSize * myAutoSizeScaleX)
     return font!
-}
-
-func rgbaFromHex(rgb: Int, alpha: CGFloat) ->UIColor {
-    return UIColor.rgbaColorFromHex(rgb: rgb, alpha: alpha)
-}
-
-func rgbFromHex(rgb: Int) -> UIColor{
-    return UIColor.rgbColorFromHex(rgb: rgb)
 }

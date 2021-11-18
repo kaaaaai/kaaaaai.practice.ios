@@ -9,7 +9,8 @@
 import UIKit
 
 class KKPersonPresenter: KKPersonPresenterProtocol {
-    unowned let viewController: KKPersonDisplayLogic
+    var viewController: KKPersonDisplayLogic
+    
     var person: KKPerson
     
     required init(viewController: KKPersonDisplayLogic, person: KKPerson) {

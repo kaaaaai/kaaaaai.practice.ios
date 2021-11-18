@@ -47,7 +47,7 @@ class KKPermissionsViewController: UIViewController {
         let bottomLabel = UILabel.init()
         bottomLabel.text = "如果你不同意调用以上权限，将导致该功能无法正常使用，但不影响您使用本应用的基本功能。您可随时前往“设置”权限管理进行修改。"
         bottomLabel.font = KKPingFangSC_R(size: 14)
-        bottomLabel.textColor = UIColor.rgbColorFromHex(rgb: 0xCCCCCC)
+        bottomLabel.textColor = UIColor.hex(0xCCCCCC)
         bottomLabel.textAlignment = .left
         bottomLabel.numberOfLines = 3
         self.view.addSubview(bottomLabel)
@@ -175,7 +175,7 @@ extension KKPermissionsViewController: UITableViewDataSource,UITableViewDelegate
         let tableView = UITableView.init(frame: .zero)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorColor = UIColor.rgbColorFromHex(rgb: 0xEEEEEE)
+        tableView.separatorColor = UIColor.hex(0xEEEEEE)
         tableView.register(KKPermissionTableViewCell.self, forCellReuseIdentifier: "PermissionTableViewCell")
         return tableView;
     }

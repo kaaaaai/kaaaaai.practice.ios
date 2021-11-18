@@ -197,6 +197,8 @@ extension KKPermissions {
                     }
                 }
             })
+        case .limited:
+            callback(.authorized)
         @unknown default:
             callback(.denied)
         }

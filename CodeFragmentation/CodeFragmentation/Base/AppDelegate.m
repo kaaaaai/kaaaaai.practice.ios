@@ -16,6 +16,7 @@
 #endif
 // 如果需要使用 idfa 功能所需要引入的头文件（可选）
 #import <AdSupport/AdSupport.h>
+#import "CodeFragmentation-Swift.h"
 
 #define JPUSH_APP_KEY @"f51a80196e1d79c3a7e95707"
 #define JPUSH_APP_SECRET @"542088144ee2442596ac9e75"
@@ -33,7 +34,11 @@
     self.autoSizeScaleY = MainScreenHeight/667.f;
     
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
-      entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound|JPAuthorizationOptionProvidesAppNotificationSettings;
+    if (@available(iOS 12.0, *)) {
+        entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound|JPAuthorizationOptionProvidesAppNotificationSettings;
+    } else {
+        // Fallback on earlier versions
+    }
       if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
         // 可以添加自定义 categories
         // NSSet<UNNotificationCategory *> *categories for iOS10 or later

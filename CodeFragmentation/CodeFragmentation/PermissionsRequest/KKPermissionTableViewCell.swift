@@ -35,7 +35,7 @@ class KKPermissionTableViewCell: UITableViewCell {
         titleLabel.textAlignment = .left
         
         detailLabel.text = "details"
-        detailLabel.textColor = rgbFromHex(rgb: 0xAAAAAA)
+        detailLabel.textColor = UIColor.hex(0xAAAAAA)
         detailLabel.font = KKPingFangSC_R(size: 14)
         detailLabel.textAlignment = .left
         detailLabel.numberOfLines = 0

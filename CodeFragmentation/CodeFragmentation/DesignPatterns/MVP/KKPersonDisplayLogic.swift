@@ -11,6 +11,6 @@ import UIKit
 /**
  * 定义视图响应更新 协议
  */
-protocol KKPersonDisplayLogic: class {
+protocol KKPersonDisplayLogic {
     func setPersonInfo(persion: KKPerson)
 }

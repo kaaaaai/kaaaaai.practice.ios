@@ -20,11 +20,7 @@ class KKBaseViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isAutoDismiss {
-            if #available(iOS 13, *) {
-                
-            }else{
-                self.dismiss(animated: true, completion: nil)
-            }
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

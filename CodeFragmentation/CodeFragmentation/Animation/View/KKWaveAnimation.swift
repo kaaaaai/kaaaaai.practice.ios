@@ -1,56 +1,23 @@
 //
-//  KKAnimationViewController.swift
+//  KKWaveAnimation.swift
 //  CodeFragmentation
 //
-//  Created by Kai Lv on 2021/3/30.
+//  Created by Kai Lv on 2021/6/4.
 //  Copyright © 2021 Kaaaaai. All rights reserved.
 //
 
 import UIKit
 
-class KKAnimationViewController: KKBaseViewController {
-
-    override var isAutoDismiss: Bool { true }
-    
+class KKWaveAnimation: UIView {
     private var progressLayer = CAShapeLayer()
-    private var progressColor = UIColor(red: 144 / 255, green: 187 / 255, blue: 255 / 255, alpha: 0.2)
-    
     private var progressView: UIView!
+
+    private var progressColor = UIColor(red: 144 / 255, green: 187 / 255, blue: 255 / 255, alpha: 0.2)
+
     fileprivate var animator: UIViewPropertyAnimator!
     fileprivate var isAnimating: Bool = false
-
-    //初始相位
-    private var phase: Float = 0
-    //相位偏移量
-    private var phaseShift: Float = 0.25
     
-    var displayLink = CADisplayLink()
-    //背景图层
-    var canvasLayer: CALayer!
-    //遮罩图层
-    var waveLayer: CAShapeLayer!
-    //背景图层frame
-    var frame = CGRect.zero
-    //遮罩图层frame
-    var shapeFrame = CGRect.zero
-    var coverLayer: CALayer?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
-//        configureView()
-    }
-    
-    @IBAction func progressBtnClicked(_ sender: UIButton) {
-//        startAnimationOne(sender)
-        startAnimationTwo(sender)
-//        startAnimationThree(sender)
-    }
-
-}
-
-extension KKAnimationViewController {
-    private func startAnimationOne(_ sender: UIButton){
+    private func startAnimationOne(_ sender: UIView){
         let frame = sender.frame
         let rectanglePath = UIBezierPath(rect: CGRect(x: sender.bounds.origin.x, y: sender.bounds.origin.y, width: frame.width, height: frame.height))
 
@@ -78,19 +45,19 @@ extension KKAnimationViewController {
         self.progressLayer.add(stroke, forKey: nil)
     }
     
-    private func startAnimationTwo(_ sender: UIButton){
+    private func startAnimationTwo(_ sender: UIView){
         progressView = UIView()
-        self.view.addSubview(progressView)
-        self.view.insertSubview(progressView, at: 0)
+        self.addSubview(progressView)
+        self.insertSubview(progressView, at: 0)
         progressView.backgroundColor = .black
 //        progressView.frame.size.width = sender.frame.width
 //        progressView.frame.size.height = 0
         
         NSLayoutConstraint.activate([
-                                        progressView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-                                        progressView.topAnchor.constraint(equalTo: self.view.topAnchor),
-                                        progressView.widthAnchor.constraint(equalTo: self.view.widthAnchor),
-                                        progressView.heightAnchor.constraint(equalTo: self.view.heightAnchor)])
+                                        progressView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+                                        progressView.topAnchor.constraint(equalTo: self.topAnchor),
+                                        progressView.widthAnchor.constraint(equalTo: self.widthAnchor),
+                                        progressView.heightAnchor.constraint(equalTo: self.heightAnchor)])
         progressView.layoutIfNeeded()
         progressView.layer.cornerRadius = 2
         
@@ -122,7 +89,7 @@ extension KKAnimationViewController {
             UIView.setAnimationRepeatCount(99)
             UIView.setAnimationRepeatAutoreverses(reverse)
 //            self.progressView.frame.size.height += height
-            self.progressView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.0).isActive = true
+            self.progressView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.0).isActive = true
             self.progressView.layoutIfNeeded()
         }, completion: { _ in
         })
@@ -143,7 +110,23 @@ extension KKAnimationViewController {
     }
 }
 
-extension KKAnimationViewController {
+
+class KKWaveAnimationThree: UIView {
+    //初始相位
+    private var phase: Float = 0
+    //相位偏移量
+    private var phaseShift: Float = 0.25
+    
+    var displayLink = CADisplayLink()
+    //背景图层
+    var canvasLayer: CALayer!
+    //遮罩图层
+    var waveLayer: CAShapeLayer!
+    //背景图层frame
+    var bgframe = CGRect.zero
+    //遮罩图层frame
+    var shapeFrame = CGRect.zero
+    
     /**
      *[CoreAnimation动画（一）：遮罩动画/注水动画 - 简书](https://www.jianshu.com/p/1b5d8e21ebbb)
      */
@@ -160,9 +143,8 @@ extension KKAnimationViewController {
         let frame = CGRect(x: 0, y: 0, width: sender.frame.size.width, height: sender.frame.size.height)
         let shapeFrame = CGRect(x: 0, y: 0, width: sender.frame.size.width, height: sender.frame.size.height + 3)
         
-        self.frame = frame
+        self.bgframe = frame
         self.shapeFrame = shapeFrame
-
 
         //创建背景图层
         canvasLayer = CALayer()
@@ -179,7 +161,6 @@ extension KKAnimationViewController {
         //设定mask为waveLayer
         canvasLayer.mask = waveLayer
 
-//        sender.layer.mask = waveLayer
         //开始动画
         startAnimating()
     }
@@ -205,7 +186,7 @@ extension KKAnimationViewController {
     //波浪滚动 phase相位每桢变化值：phaseShift
     @objc
     private func update() {
-        let frame = self.frame
+        let frame = self.bgframe
         self.phase += self.phaseShift
         UIGraphicsBeginImageContext(frame.size)
         let wavePath = UIBezierPath()

@@ -39,12 +39,22 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "083CFB37226F080500E9FFCA"
                BuildableName = "CodeFragmentationUITests.xctest"
                BlueprintName = "CodeFragmentationUITests"
+               ReferencedContainer = "container:CodeFragmentation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0881D064268F0D5900D6FB40"
+               BuildableName = "CodeFragmentationUITests-Swift.xctest"
+               BlueprintName = "CodeFragmentationUITests-Swift"
                ReferencedContainer = "container:CodeFragmentation.xcodeproj">
             </BuildableReference>
          </TestableReference>

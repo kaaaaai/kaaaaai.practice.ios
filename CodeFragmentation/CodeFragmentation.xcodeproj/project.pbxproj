@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080A7C6626BCE52F00F2C177 /* KKVolumeDownIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A7C6526BCE52F00F2C177 /* KKVolumeDownIcon.swift */; };
+		080A7C6826BD018E00F2C177 /* VolumeDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A7C6726BD018E00F2C177 /* VolumeDown.swift */; };
+		080A7C6A26BD03AD00F2C177 /* VolumeUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A7C6926BD03AD00F2C177 /* VolumeUp.swift */; };
+		080A7C6C26BD0EF200F2C177 /* FanshapedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A7C6B26BD0EF200F2C177 /* FanshapedIcon.swift */; };
 		080B3D6D26256C47000F5BD9 /* KKTransitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */; };
 		081223C425821F22001BEA06 /* KKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081223C325821F22001BEA06 /* KKControl.swift */; };
 		0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813B4A6250106EE003FB9CF /* KKPermissions.swift */; };
@@ -19,7 +23,6 @@
 		0831E357242DAEEC00C3B3CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0831E356242DAEEC00C3B3CC /* Security.framework */; };
 		0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0831E359242DAF3F00C3B3CC /* KIRSA.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB19226F080400E9FFCA /* AppDelegate.m */; };
-		083CFB1D226F080400E9FFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CFB1C226F080400E9FFCA /* ViewController.m */; };
 		083CFB20226F080400E9FFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB1E226F080400E9FFCA /* Main.storyboard */; };
 		083CFB22226F080500E9FFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB21226F080500E9FFCA /* Assets.xcassets */; };
 		083CFB25226F080500E9FFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083CFB23226F080500E9FFCA /* LaunchScreen.storyboard */; };
@@ -35,6 +38,10 @@
 		085141E4250C65EF00FEB009 /* KKConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E3250C65EF00FEB009 /* KKConst.swift */; };
 		085141E6250C661700FEB009 /* KKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E5250C661700FEB009 /* KKColor.swift */; };
 		085141E8250C6D0A00FEB009 /* KKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085141E7250C6D0A00FEB009 /* KKButton.swift */; };
+		0854291A2669C5060008E6B7 /* KKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085429192669C5060008E6B7 /* KKWindow.swift */; };
+		085429232669C7710008E6B7 /* KKWaveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085429222669C7710008E6B7 /* KKWaveAnimation.swift */; };
+		085429612669CBDD0008E6B7 /* KKView+Radar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085429602669CBDD0008E6B7 /* KKView+Radar.swift */; };
+		0854298F266A129E0008E6B7 /* KKRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854298E266A129E0008E6B7 /* KKRadarView.swift */; };
 		0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */; };
 		0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856544E24B567E000FEFE00 /* KKPlaylistTool.m */; };
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
@@ -45,10 +52,15 @@
 		087C4B1224F8D4FE00D66410 /* KKPersonDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1124F8D4FE00D66410 /* KKPersonDisplayLogic.swift */; };
 		087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */; };
 		087C4B1624F8D70C00D66410 /* KKPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */; };
+		0881D068268F0D5900D6FB40 /* CodeFragmentationUITests_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881D067268F0D5900D6FB40 /* CodeFragmentationUITests_Swift.swift */; };
 		0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */; };
 		0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD424D268C800EA0107 /* FMSlider.swift */; };
 		0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */; };
 		0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */; };
+		08A791B8269A995200D1979A /* KKGradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791B7269A995200D1979A /* KKGradientSlider.swift */; };
+		08A791BD269AAAE400D1979A /* KKAnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791BC269AAAE400D1979A /* KKAnimalModel.swift */; };
+		08A791BF269AAB5700D1979A /* KKAnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791BE269AAB5700D1979A /* KKAnimalViewModel.swift */; };
+		08A791C1269AAB6E00D1979A /* KKAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791C0269AAB6E00D1979A /* KKAnimalViewController.swift */; };
 		08C77FDE26132161007C683F /* KKView+XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FDD26132161007C683F /* KKView+XIB.swift */; };
 		08C77FE526132C19007C683F /* KKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FE426132C19007C683F /* KKMainViewController.swift */; };
 		08C77FEC261330AC007C683F /* KKAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FEB261330AC007C683F /* KKAnimationViewController.swift */; };
@@ -73,10 +85,21 @@
 			remoteGlobalIDString = 083CFB14226F080400E9FFCA;
 			remoteInfo = CodeFragmentation;
 		};
+		0881D06A268F0D5900D6FB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083CFB0D226F080300E9FFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083CFB14226F080400E9FFCA;
+			remoteInfo = CodeFragmentation;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05A11832F2A22A9738B118CE /* Pods-CodeFragmentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeFragmentationTests.release.xcconfig"; path = "Target Support Files/Pods-CodeFragmentationTests/Pods-CodeFragmentationTests.release.xcconfig"; sourceTree = "<group>"; };
+		080A7C6526BCE52F00F2C177 /* KKVolumeDownIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKVolumeDownIcon.swift; sourceTree = "<group>"; };
+		080A7C6726BD018E00F2C177 /* VolumeDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeDown.swift; sourceTree = "<group>"; };
+		080A7C6926BD03AD00F2C177 /* VolumeUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeUp.swift; sourceTree = "<group>"; };
+		080A7C6B26BD0EF200F2C177 /* FanshapedIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanshapedIcon.swift; sourceTree = "<group>"; };
 		080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTransitionsViewController.swift; sourceTree = "<group>"; };
 		081223C325821F22001BEA06 /* KKControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKControl.swift; sourceTree = "<group>"; };
 		0813B4A6250106EE003FB9CF /* KKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPermissions.swift; sourceTree = "<group>"; };
@@ -93,8 +116,6 @@
 		083CFB15226F080400E9FFCA /* CodeFragmentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragmentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083CFB18226F080400E9FFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		083CFB19226F080400E9FFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		083CFB1B226F080400E9FFCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		083CFB1C226F080400E9FFCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		083CFB1F226F080400E9FFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		083CFB21226F080500E9FFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		083CFB24226F080500E9FFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,6 +139,10 @@
 		085141E3250C65EF00FEB009 /* KKConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKConst.swift; sourceTree = "<group>"; };
 		085141E5250C661700FEB009 /* KKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKColor.swift; sourceTree = "<group>"; };
 		085141E7250C6D0A00FEB009 /* KKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKButton.swift; sourceTree = "<group>"; };
+		085429192669C5060008E6B7 /* KKWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKWindow.swift; sourceTree = "<group>"; };
+		085429222669C7710008E6B7 /* KKWaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKWaveAnimation.swift; sourceTree = "<group>"; };
+		085429602669CBDD0008E6B7 /* KKView+Radar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KKView+Radar.swift"; sourceTree = "<group>"; };
+		0854298E266A129E0008E6B7 /* KKRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKRadarView.swift; sourceTree = "<group>"; };
 		0854BFEC24E23A6000E07E1A /* KKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
 		0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKSwiftLabTool.swift; sourceTree = "<group>"; };
 		0856544D24B567E000FEFE00 /* KKPlaylistTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlaylistTool.h; sourceTree = "<group>"; };
@@ -136,11 +161,18 @@
 		087C4B1124F8D4FE00D66410 /* KKPersonDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonDisplayLogic.swift; sourceTree = "<group>"; };
 		087C4B1324F8D59300D66410 /* KKPersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonPresenter.swift; sourceTree = "<group>"; };
 		087C4B1524F8D70C00D66410 /* KKPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPersonViewController.swift; sourceTree = "<group>"; };
+		0881D065268F0D5900D6FB40 /* CodeFragmentationUITests-Swift.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeFragmentationUITests-Swift.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0881D067268F0D5900D6FB40 /* CodeFragmentationUITests_Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeFragmentationUITests_Swift.swift; sourceTree = "<group>"; };
+		0881D069268F0D5900D6FB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHeadMessageView.swift; sourceTree = "<group>"; };
 		0886FBD424D268C800EA0107 /* FMSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSlider.swift; sourceTree = "<group>"; };
 		0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMStationAdjustView.swift; sourceTree = "<group>"; };
 		0886FBDB24D26A1000EA0107 /* CodeFragmentation-Bridgint-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFragmentation-Bridgint-Header.h"; sourceTree = "<group>"; };
 		0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKFactoryPattern.swift; sourceTree = "<group>"; };
+		08A791B7269A995200D1979A /* KKGradientSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKGradientSlider.swift; sourceTree = "<group>"; };
+		08A791BC269AAAE400D1979A /* KKAnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimalModel.swift; sourceTree = "<group>"; };
+		08A791BE269AAB5700D1979A /* KKAnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimalViewModel.swift; sourceTree = "<group>"; };
+		08A791C0269AAB6E00D1979A /* KKAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimalViewController.swift; sourceTree = "<group>"; };
 		08C77FDD26132161007C683F /* KKView+XIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KKView+XIB.swift"; sourceTree = "<group>"; };
 		08C77FE426132C19007C683F /* KKMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKMainViewController.swift; sourceTree = "<group>"; };
 		08C77FEB261330AC007C683F /* KKAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimationViewController.swift; sourceTree = "<group>"; };
@@ -183,9 +215,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0881D062268F0D5900D6FB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080A7C6226BCE4C900F2C177 /* PrintCode */ = {
+			isa = PBXGroup;
+			children = (
+				080A7C6B26BD0EF200F2C177 /* FanshapedIcon.swift */,
+				080A7C6926BD03AD00F2C177 /* VolumeUp.swift */,
+				080A7C6726BD018E00F2C177 /* VolumeDown.swift */,
+				080A7C6526BCE52F00F2C177 /* KKVolumeDownIcon.swift */,
+			);
+			path = PrintCode;
+			sourceTree = "<group>";
+		};
 		0822ABA422FA6C2C00724828 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +245,7 @@
 				081223C325821F22001BEA06 /* KKControl.swift */,
 				081AB23625E9EC29009CBF3B /* KKViewController.swift */,
 				08C77FDD26132161007C683F /* KKView+XIB.swift */,
+				085429192669C5060008E6B7 /* KKWindow.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -226,6 +277,7 @@
 				083CFB17226F080400E9FFCA /* CodeFragmentation */,
 				083CFB30226F080500E9FFCA /* CodeFragmentationTests */,
 				083CFB3B226F080500E9FFCA /* CodeFragmentationUITests */,
+				0881D066268F0D5900D6FB40 /* CodeFragmentationUITests-Swift */,
 				083CFB16226F080400E9FFCA /* Products */,
 				329C8AAC6D93481735DB927B /* Pods */,
 				3E8951433D54F998097734AF /* Frameworks */,
@@ -238,6 +290,7 @@
 				083CFB15226F080400E9FFCA /* CodeFragmentation.app */,
 				083CFB2D226F080500E9FFCA /* CodeFragmentationTests.xctest */,
 				083CFB38226F080500E9FFCA /* CodeFragmentationUITests.xctest */,
+				0881D065268F0D5900D6FB40 /* CodeFragmentationUITests-Swift.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,23 +298,18 @@
 		083CFB17226F080400E9FFCA /* CodeFragmentation */ = {
 			isa = PBXGroup;
 			children = (
+				08A791BA269A99DF00D1979A /* Base */,
+				08A791B9269A99A700D1979A /* ViewController */,
+				085429212669C7400008E6B7 /* Animation */,
 				08693AFA25135E11004E7155 /* CodeFragmentation.entitlements */,
 				085FCB4225E5092B005C1A30 /* RxSwiftStudy */,
 				085141D8250C5E6500FEB009 /* PermissionsRequest */,
 				0886FBDC24D26BE100EA0107 /* DesignPatterns */,
-				0886FBD224D268C800EA0107 /* View */,
+				0886FBD224D268C800EA0107 /* CustomView */,
 				082DE5D324C02C0B00AB12DE /* BasedAlgorithm */,
 				0856545724B569D600FEFE00 /* UtilityHelpers */,
 				0856545624B569B900FEFE00 /* Tools */,
 				0822ABA422FA6C2C00724828 /* Extension */,
-				083CFB18226F080400E9FFCA /* AppDelegate.h */,
-				083CFB19226F080400E9FFCA /* AppDelegate.m */,
-				083CFB1B226F080400E9FFCA /* ViewController.h */,
-				083CFB1C226F080400E9FFCA /* ViewController.m */,
-				08C77FF0261331A3007C683F /* KKBaseViewController.swift */,
-				08C77FE426132C19007C683F /* KKMainViewController.swift */,
-				08C77FEB261330AC007C683F /* KKAnimationViewController.swift */,
-				080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */,
 				0856545024B5685500FEFE00 /* KKMethodChainStyle.h */,
 				0856545124B5685500FEFE00 /* KKMethodChainStyle.m */,
 				083CFB1E226F080400E9FFCA /* Main.storyboard */,
@@ -316,15 +364,23 @@
 		085141D8250C5E6500FEB009 /* PermissionsRequest */ = {
 			isa = PBXGroup;
 			children = (
-				085141DF250C655000FEB009 /* KKPermissionsViewController.swift */,
 				085141E1250C657100FEB009 /* KKPermissionTableViewCell.swift */,
 			);
 			path = PermissionsRequest;
 			sourceTree = "<group>";
 		};
+		085429212669C7400008E6B7 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				087B3259266DB0F4000680C3 /* View */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		0856545624B569B900FEFE00 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				080A7C6226BCE4C900F2C177 /* PrintCode */,
 				083CFB57226F08C100E9FFCA /* ChainFunction */,
 				0831E351242DAEA400C3B3CC /* RSA */,
 				0854BFED24E2470A00E07E1A /* KKSwiftLabTool.swift */,
@@ -350,9 +406,18 @@
 		085FCB4225E5092B005C1A30 /* RxSwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */,
 			);
 			path = RxSwiftStudy;
+			sourceTree = "<group>";
+		};
+		087B3259266DB0F4000680C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				085429222669C7710008E6B7 /* KKWaveAnimation.swift */,
+				085429602669CBDD0008E6B7 /* KKView+Radar.swift */,
+				0854298E266A129E0008E6B7 /* KKRadarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		087C4B0C24F8D3FF00D66410 /* MVP */ = {
@@ -367,24 +432,67 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
-		0886FBD224D268C800EA0107 /* View */ = {
+		0881D066268F0D5900D6FB40 /* CodeFragmentationUITests-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0881D067268F0D5900D6FB40 /* CodeFragmentationUITests_Swift.swift */,
+				0881D069268F0D5900D6FB40 /* Info.plist */,
+			);
+			path = "CodeFragmentationUITests-Swift";
+			sourceTree = "<group>";
+		};
+		0886FBD224D268C800EA0107 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				0886FBD324D268C800EA0107 /* KKHeadMessageView.swift */,
 				0886FBD424D268C800EA0107 /* FMSlider.swift */,
 				0886FBD524D268C800EA0107 /* FMStationAdjustView.swift */,
 				081E0BE42664D4D00015A7BB /* KKDataSourceView.swift */,
+				08A791B7269A995200D1979A /* KKGradientSlider.swift */,
 			);
-			path = View;
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		0886FBDC24D26BE100EA0107 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				08A791BB269AAABE00D1979A /* MVVM */,
 				087C4B0C24F8D3FF00D66410 /* MVP */,
 				0886FBDD24D26C3D00EA0107 /* KKFactoryPattern.swift */,
 			);
 			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		08A791B9269A99A700D1979A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08C77FEB261330AC007C683F /* KKAnimationViewController.swift */,
+				085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */,
+				085141DF250C655000FEB009 /* KKPermissionsViewController.swift */,
+				08C77FE426132C19007C683F /* KKMainViewController.swift */,
+				080B3D6C26256C47000F5BD9 /* KKTransitionsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08A791BA269A99DF00D1979A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				083CFB18226F080400E9FFCA /* AppDelegate.h */,
+				083CFB19226F080400E9FFCA /* AppDelegate.m */,
+				08C77FF0261331A3007C683F /* KKBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		08A791BB269AAABE00D1979A /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				08A791BC269AAAE400D1979A /* KKAnimalModel.swift */,
+				08A791BE269AAB5700D1979A /* KKAnimalViewModel.swift */,
+				08A791C0269AAB6E00D1979A /* KKAnimalViewController.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		329C8AAC6D93481735DB927B /* Pods */ = {
@@ -475,6 +583,24 @@
 			productReference = 083CFB38226F080500E9FFCA /* CodeFragmentationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0881D064268F0D5900D6FB40 /* CodeFragmentationUITests-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0881D06C268F0D5900D6FB40 /* Build configuration list for PBXNativeTarget "CodeFragmentationUITests-Swift" */;
+			buildPhases = (
+				0881D061268F0D5900D6FB40 /* Sources */,
+				0881D062268F0D5900D6FB40 /* Frameworks */,
+				0881D063268F0D5900D6FB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0881D06B268F0D5900D6FB40 /* PBXTargetDependency */,
+			);
+			name = "CodeFragmentationUITests-Swift";
+			productName = "CodeFragmentationUITests-Swift";
+			productReference = 0881D065268F0D5900D6FB40 /* CodeFragmentationUITests-Swift.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -482,6 +608,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KK;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Kaaaaai;
 				TargetAttributes = {
@@ -494,6 +621,10 @@
 					};
 					083CFB37226F080500E9FFCA = {
 						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 083CFB14226F080400E9FFCA;
+					};
+					0881D064268F0D5900D6FB40 = {
+						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 083CFB14226F080400E9FFCA;
 					};
 				};
@@ -514,6 +645,7 @@
 				083CFB14226F080400E9FFCA /* CodeFragmentation */,
 				083CFB2C226F080500E9FFCA /* CodeFragmentationTests */,
 				083CFB37226F080500E9FFCA /* CodeFragmentationUITests */,
+				0881D064268F0D5900D6FB40 /* CodeFragmentationUITests-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -540,6 +672,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		083CFB36226F080500E9FFCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0881D063268F0D5900D6FB40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -639,16 +778,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				083CFB1D226F080400E9FFCA /* ViewController.m in Sources */,
 				087C4B1224F8D4FE00D66410 /* KKPersonDisplayLogic.swift in Sources */,
 				085141E2250C657100FEB009 /* KKPermissionTableViewCell.swift in Sources */,
 				0822ABA622FA6C3A00724828 /* Foundation+Log.m in Sources */,
 				081E0BE52664D4D00015A7BB /* KKDataSourceView.swift in Sources */,
+				080A7C6626BCE52F00F2C177 /* KKVolumeDownIcon.swift in Sources */,
 				083CFB60226F08C100E9FFCA /* CalculatorMaker.m in Sources */,
 				085141E4250C65EF00FEB009 /* KKConst.swift in Sources */,
 				08C77FF1261331A3007C683F /* KKBaseViewController.swift in Sources */,
 				085FCB5425E50B65005C1A30 /* KKRxLoginViewController.swift in Sources */,
 				08C77FEC261330AC007C683F /* KKAnimationViewController.swift in Sources */,
+				08A791BD269AAAE400D1979A /* KKAnimalModel.swift in Sources */,
 				0854BFEE24E2470A00E07E1A /* KKSwiftLabTool.swift in Sources */,
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
@@ -658,20 +798,30 @@
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
 				0856544F24B567E000FEFE00 /* KKPlaylistTool.m in Sources */,
 				087C4B1624F8D70C00D66410 /* KKPersonViewController.swift in Sources */,
+				085429612669CBDD0008E6B7 /* KKView+Radar.swift in Sources */,
 				0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */,
+				085429232669C7710008E6B7 /* KKWaveAnimation.swift in Sources */,
 				083CFB28226F080500E9FFCA /* main.m in Sources */,
 				083CFB1A226F080400E9FFCA /* AppDelegate.m in Sources */,
+				0854298F266A129E0008E6B7 /* KKRadarView.swift in Sources */,
+				08A791BF269AAB5700D1979A /* KKAnimalViewModel.swift in Sources */,
 				081223C425821F22001BEA06 /* KKControl.swift in Sources */,
 				08C77FE526132C19007C683F /* KKMainViewController.swift in Sources */,
 				085141E0250C655000FEB009 /* KKPermissionsViewController.swift in Sources */,
 				0856545524B5689600FEFE00 /* KKLabTool.m in Sources */,
+				080A7C6A26BD03AD00F2C177 /* VolumeUp.swift in Sources */,
 				0886FBD724D268C800EA0107 /* FMSlider.swift in Sources */,
+				080A7C6C26BD0EF200F2C177 /* FanshapedIcon.swift in Sources */,
+				0854291A2669C5060008E6B7 /* KKWindow.swift in Sources */,
 				0886FBDE24D26C3D00EA0107 /* KKFactoryPattern.swift in Sources */,
+				08A791B8269A995200D1979A /* KKGradientSlider.swift in Sources */,
+				08A791C1269AAB6E00D1979A /* KKAnimalViewController.swift in Sources */,
 				085141E6250C661700FEB009 /* KKColor.swift in Sources */,
 				0831E35A242DAF3F00C3B3CC /* KIRSA.m in Sources */,
 				080B3D6D26256C47000F5BD9 /* KKTransitionsViewController.swift in Sources */,
 				081AB23725E9EC29009CBF3B /* KKViewController.swift in Sources */,
 				087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */,
+				080A7C6826BD018E00F2C177 /* VolumeDown.swift in Sources */,
 				0813B4A7250106EE003FB9CF /* KKPermissions.swift in Sources */,
 				085141E8250C6D0A00FEB009 /* KKButton.swift in Sources */,
 				0886FBD824D268C800EA0107 /* FMStationAdjustView.swift in Sources */,
@@ -695,6 +845,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0881D061268F0D5900D6FB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0881D068268F0D5900D6FB40 /* CodeFragmentationUITests_Swift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -707,6 +865,11 @@
 			isa = PBXTargetDependency;
 			target = 083CFB14226F080400E9FFCA /* CodeFragmentation */;
 			targetProxy = 083CFB39226F080500E9FFCA /* PBXContainerItemProxy */;
+		};
+		0881D06B268F0D5900D6FB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083CFB14226F080400E9FFCA /* CodeFragmentation */;
+			targetProxy = 0881D06A268F0D5900D6FB40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -901,7 +1064,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -924,8 +1087,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
 				INFOPLIST_FILE = CodeFragmentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -947,7 +1112,10 @@
 			baseConfigurationReference = 0BAA9943B3F37E4115364840 /* Pods-CodeFragmentationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
 				INFOPLIST_FILE = CodeFragmentationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -956,6 +1124,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CodeFragmentation;
 			};
@@ -966,7 +1136,10 @@
 			baseConfigurationReference = 7ED908A99E0F76FC3C294005 /* Pods-CodeFragmentationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
 				INFOPLIST_FILE = CodeFragmentationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -975,6 +1148,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kaaaaai.CodeFragmentationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CodeFragmentation;
+			};
+			name = Release;
+		};
+		0881D06D268F0D5900D6FB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
+				INFOPLIST_FILE = "CodeFragmentationUITests-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaaaaai.demo.ios.study.remotecontrol.CodeFragmentationUITests-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CodeFragmentation;
+			};
+			name = Debug;
+		};
+		0881D06E268F0D5900D6FB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V63V65V6Y;
+				INFOPLIST_FILE = "CodeFragmentationUITests-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaaaaai.demo.ios.study.remotecontrol.CodeFragmentationUITests-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CodeFragmentation;
 			};
@@ -1015,6 +1234,15 @@
 			buildConfigurations = (
 				083CFB48226F080500E9FFCA /* Debug */,
 				083CFB49226F080500E9FFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0881D06C268F0D5900D6FB40 /* Build configuration list for PBXNativeTarget "CodeFragmentationUITests-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0881D06D268F0D5900D6FB40 /* Debug */,
+				0881D06E268F0D5900D6FB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

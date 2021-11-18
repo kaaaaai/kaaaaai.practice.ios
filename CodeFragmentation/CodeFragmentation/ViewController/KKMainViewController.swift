@@ -26,11 +26,13 @@ class KKMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func setupDataSourceView() {
         let dsView = KKDataSourceView(frame: self.view.frame)
         dsView.dataSource = self
         dsView.delegate = self
         self.view.addSubview(dsView)
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func messageAlertBtnClicked(_ sender: Any) {

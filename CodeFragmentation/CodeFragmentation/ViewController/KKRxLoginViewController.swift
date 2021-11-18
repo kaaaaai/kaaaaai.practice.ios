@@ -46,7 +46,7 @@ class KKRxLoginViewController: KKBaseViewController {
                     {
                         self.subject1.onNext(self.testOneMethod())
                         self.subject2.onNext(self.testTwoMethod())
-                    })
+                    }).disposed(by: disposeBag)
 
     }
     
@@ -104,10 +104,10 @@ extension KKRxLoginViewController{
         
         let observer: ()-> Void = { showAlert("弹出提示框 1") }
         
-        event.drive(onNext: observer)
+        event.drive(onNext: observer).disposed(by: disposeBag)
 
         let newObserver: () -> Void = { showAlert("弹出提示框 2")}
-        event.drive(onNext: newObserver)
+        event.drive(onNext: newObserver).disposed(by: disposeBag)
     }
     
     func signalMethod(){
@@ -119,10 +119,10 @@ extension KKRxLoginViewController{
         
         let observer: ()-> Void = { showAlert("弹出提示框 1") }
 
-        event.emit(onNext: observer)
+        event.emit(onNext: observer).disposed(by: disposeBag)
         
         let newObserver: () -> Void = { showAlert("弹出提示框 2")}
-        event.emit(onNext: newObserver)
+        event.emit(onNext: newObserver).disposed(by: disposeBag)
     }
     
     
