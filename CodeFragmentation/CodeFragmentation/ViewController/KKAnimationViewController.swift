@@ -17,8 +17,8 @@ class KKAnimationViewController: KKBaseViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
-//        radarView = KKRadarView(frame: CGRect(x:self.view.frame.size.width / 4, y: self.view.frame.size.height / 2, width: self.view.frame.size.width / 2, height: self.view.frame.size.width / 2))
-//        self.view.addSubview(radarView)
+        radarView = KKRadarView(frame: CGRect(x:self.view.frame.size.width / 4, y: self.view.frame.size.height / 2, width: self.view.frame.size.width / 2, height: self.view.frame.size.width / 2))
+        self.view.addSubview(radarView)
         
         let slider = KKGradientSlider(frame: CGRect(x: self.view.frame.size.width / 4, y: self.view.frame.size.height / 4, width: self.view.frame.size.width / 2, height: 1))
         slider.isUserInteractionEnabled = true

@@ -22,10 +22,45 @@ extension MessageStyle: CustomStringConvertible {
         }
     }
 }
+
+enum Sections: String, CaseIterable {
+    case UI
+    case Architecture = "架构模式"
+    case Others
+    
+    var sectionColor: UIColor {
+        switch self {
+        case .UI:
+            return UIColor(hex: 0x56BC8A)
+        case .Architecture:
+            return UIColor(hex: 0xF29A2E)
+        case .Others:
+            return UIColor(hex: 0x2CBBFF)
+        }
+    }
+    
+    var rows: [String] {
+        switch self {
+        case .UI:
+            return ["提示框","动画"]
+        case .Architecture:
+            return ["MVP", "MVVM", "VIPER"]
+        case .Others:
+            return ["RxSwift", "权限封装", ]
+        }
+    }
+}
+
+
+
 class KKMainViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
     }
     
     func setupDataSourceView() {
@@ -94,5 +129,43 @@ extension KKMainViewController: DSViewDataSource, DSViewDelegate {
     }
     
     func dsView(_ view: KKDataSourceView, didSelectItem Index: Int) {
+    }
+}
+
+extension KKMainViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = Sections.allCases[section].sectionColor
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        Sections.allCases[section].rawValue
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        48
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "TableViewCell")
+        }
+        
+        cell?.selectionStyle = .none
+        cell!.textLabel?.text = Sections.allCases[indexPath.section].rows[indexPath.row]
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        48
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        Sections.allCases.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        Sections.allCases[section].rows.count
     }
 }
