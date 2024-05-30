@@ -1,0 +1,6 @@
+framework module SBCCodecForIOS {
+  umbrella header "SBCCodecForIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

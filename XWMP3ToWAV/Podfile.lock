@@ -1,0 +1,21 @@
+PODS:
+  - ffmpeg-kit-ios-audio (6.0.LTS)
+  - SBCCodecForIOS (0.0.1)
+
+DEPENDENCIES:
+  - ffmpeg-kit-ios-audio (~> 6.0.LTS)
+  - SBCCodecForIOS (= 0.0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ffmpeg-kit-ios-audio
+  https://github.com/kakaoenterprise/PodSpecs.git:
+    - SBCCodecForIOS
+
+SPEC CHECKSUMS:
+  ffmpeg-kit-ios-audio: 497081fb830af30510ebe2793d507b57ddb5c105
+  SBCCodecForIOS: 5e4fa824900101524fe490fc14fd17861f812709
+
+PODFILE CHECKSUM: 73bfe36e8d9ae1a58c9c2309ce814e5bcb4383b8
+
+COCOAPODS: 1.15.2
