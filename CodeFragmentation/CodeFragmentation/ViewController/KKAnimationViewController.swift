@@ -11,19 +11,30 @@ import UIKit
 class KKAnimationViewController: KKBaseViewController {
 
     override var isAutoDismiss: Bool { false }
-    var radarView: KKRadarView!
+    lazy var radarView: KKRadarView = {
+        let view = KKRadarView(frame: CGRect(x:self.view.frame.size.width / 4, y: self.view.frame.size.height / 4, width: self.view.frame.size.width / 4, height: self.view.frame.size.width / 4))
+        return view
+    }()
+    
+    lazy var soundLineView: KKSoundLineAnimation = {
+        let view = KKSoundLineAnimation(frame: CGRect(x: self.view.frame.size.width / 2, y: self.view.frame.size.height / 2, width: self.view.frame.size.height / 4, height: self.view.frame.size.height / 4))
+        return view 
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
-        radarView = KKRadarView(frame: CGRect(x:self.view.frame.size.width / 4, y: self.view.frame.size.height / 2, width: self.view.frame.size.width / 2, height: self.view.frame.size.width / 2))
+//        radarView = KKRadarView(frame: CGRect(x:self.view.frame.size.width / 4, y: self.view.frame.size.height / 2, width: self.view.frame.size.width / 2, height: self.view.frame.size.width / 2))
         self.view.addSubview(radarView)
         
-        let slider = KKGradientSlider(frame: CGRect(x: self.view.frame.size.width / 4, y: self.view.frame.size.height / 4, width: self.view.frame.size.width / 2, height: 1))
-        slider.isUserInteractionEnabled = true
+//        let slider = KKGradientSlider(frame: CGRect(x: self.view.frame.size.width / 4, y: self.view.frame.size.height / 4, width: self.view.frame.size.width / 2, height: 1))
+//        slider.isUserInteractionEnabled = true
+//
+//        self.view.addSubview(slider)
         
-        self.view.addSubview(slider)
+        self.view.addSubview(soundLineView)
+        soundLineView.startAnimation()
     }
     
     @IBAction func progressBtnClicked(_ sender: UIButton) {

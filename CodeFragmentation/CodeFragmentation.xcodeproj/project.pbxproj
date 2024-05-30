@@ -47,6 +47,7 @@
 		0856545224B5685500FEFE00 /* KKMethodChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545124B5685500FEFE00 /* KKMethodChainStyle.m */; };
 		0856545524B5689600FEFE00 /* KKLabTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856545424B5689600FEFE00 /* KKLabTool.m */; };
 		085FCB5425E50B65005C1A30 /* KKRxLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */; };
+		0865B92D2A0CF7160010FD06 /* KKSoundLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865B92C2A0CF7160010FD06 /* KKSoundLineAnimation.swift */; };
 		087C4B0E24F8D42200D66410 /* KKPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0D24F8D42200D66410 /* KKPerson.swift */; };
 		087C4B1024F8D4C100D66410 /* KKPersonPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B0F24F8D4C100D66410 /* KKPersonPresenterProtocol.swift */; };
 		087C4B1224F8D4FE00D66410 /* KKPersonDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C4B1124F8D4FE00D66410 /* KKPersonDisplayLogic.swift */; };
@@ -61,6 +62,8 @@
 		08A791BD269AAAE400D1979A /* KKAnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791BC269AAAE400D1979A /* KKAnimalModel.swift */; };
 		08A791BF269AAB5700D1979A /* KKAnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791BE269AAB5700D1979A /* KKAnimalViewModel.swift */; };
 		08A791C1269AAB6E00D1979A /* KKAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A791C0269AAB6E00D1979A /* KKAnimalViewController.swift */; };
+		08AA74CA29E7E74C004AE130 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08AA74CC29E7E74C004AE130 /* Localizable.strings */; };
+		08AA74D129E7F4FC004AE130 /* applanga_settings.applanga in Resources */ = {isa = PBXBuildFile; fileRef = 08AA74D029E7F4E2004AE130 /* applanga_settings.applanga */; };
 		08C77FDE26132161007C683F /* KKView+XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FDD26132161007C683F /* KKView+XIB.swift */; };
 		08C77FE526132C19007C683F /* KKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FE426132C19007C683F /* KKMainViewController.swift */; };
 		08C77FEC261330AC007C683F /* KKAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C77FEB261330AC007C683F /* KKAnimationViewController.swift */; };
@@ -153,6 +156,7 @@
 		0856545424B5689600FEFE00 /* KKLabTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKLabTool.m; sourceTree = "<group>"; };
 		0856545A24B56A3500FEFE00 /* KKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSingleton.h; sourceTree = "<group>"; };
 		085FCB5325E50B65005C1A30 /* KKRxLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKRxLoginViewController.swift; sourceTree = "<group>"; };
+		0865B92C2A0CF7160010FD06 /* KKSoundLineAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKSoundLineAnimation.swift; sourceTree = "<group>"; };
 		08693AFA25135E11004E7155 /* CodeFragmentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeFragmentation.entitlements; sourceTree = "<group>"; };
 		086B853625E6250300CF3931 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		086B854625E6250800CF3931 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +177,11 @@
 		08A791BC269AAAE400D1979A /* KKAnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimalModel.swift; sourceTree = "<group>"; };
 		08A791BE269AAB5700D1979A /* KKAnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimalViewModel.swift; sourceTree = "<group>"; };
 		08A791C0269AAB6E00D1979A /* KKAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimalViewController.swift; sourceTree = "<group>"; };
+		08AA74C629E7E72A004AE130 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		08AA74C729E7E72A004AE130 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		08AA74CB29E7E74C004AE130 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		08AA74CD29E7E74F004AE130 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		08AA74D029E7F4E2004AE130 /* applanga_settings.applanga */ = {isa = PBXFileReference; lastKnownFileType = file; path = applanga_settings.applanga; sourceTree = "<group>"; };
 		08C77FDD26132161007C683F /* KKView+XIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KKView+XIB.swift"; sourceTree = "<group>"; };
 		08C77FE426132C19007C683F /* KKMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKMainViewController.swift; sourceTree = "<group>"; };
 		08C77FEB261330AC007C683F /* KKAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAnimationViewController.swift; sourceTree = "<group>"; };
@@ -317,7 +326,9 @@
 				083CFB23226F080500E9FFCA /* LaunchScreen.storyboard */,
 				083CFB26226F080500E9FFCA /* Info.plist */,
 				083CFB27226F080500E9FFCA /* main.m */,
+				08AA74CC29E7E74C004AE130 /* Localizable.strings */,
 				0886FBDB24D26A1000EA0107 /* CodeFragmentation-Bridgint-Header.h */,
+				08AA74D029E7F4E2004AE130 /* applanga_settings.applanga */,
 			);
 			path = CodeFragmentation;
 			sourceTree = "<group>";
@@ -416,6 +427,7 @@
 				085429222669C7710008E6B7 /* KKWaveAnimation.swift */,
 				085429602669CBDD0008E6B7 /* KKView+Radar.swift */,
 				0854298E266A129E0008E6B7 /* KKRadarView.swift */,
+				0865B92C2A0CF7160010FD06 /* KKSoundLineAnimation.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +648,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 083CFB0C226F080300E9FFCA;
 			productRefGroup = 083CFB16226F080400E9FFCA /* Products */;
@@ -655,9 +668,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AA74D129E7F4FC004AE130 /* applanga_settings.applanga in Resources */,
 				0831E355242DAEC600C3B3CC /* publickey.der in Resources */,
 				083CFB25226F080500E9FFCA /* LaunchScreen.storyboard in Resources */,
 				083CFB22226F080500E9FFCA /* Assets.xcassets in Resources */,
+				08AA74CA29E7E74C004AE130 /* Localizable.strings in Resources */,
 				083CFB56226F088D00E9FFCA /* readme.md in Resources */,
 				0831E354242DAEC600C3B3CC /* privatekey.p12 in Resources */,
 				083CFB20226F080400E9FFCA /* Main.storyboard in Resources */,
@@ -793,6 +808,7 @@
 				083CFB5F226F08C100E9FFCA /* NSObject+Calculator.m in Sources */,
 				0886FBD624D268C800EA0107 /* KKHeadMessageView.swift in Sources */,
 				08C77FDE26132161007C683F /* KKView+XIB.swift in Sources */,
+				0865B92D2A0CF7160010FD06 /* KKSoundLineAnimation.swift in Sources */,
 				087C4B1424F8D59400D66410 /* KKPersonPresenter.swift in Sources */,
 				082DE5D624C02C4000AB12DE /* KKSortingMethod.m in Sources */,
 				083CFB61226F08C100E9FFCA /* Calculator.m in Sources */,
@@ -878,6 +894,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				083CFB1F226F080400E9FFCA /* Base */,
+				08AA74C629E7E72A004AE130 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -886,8 +903,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				083CFB24226F080500E9FFCA /* Base */,
+				08AA74C729E7E72A004AE130 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		08AA74CC29E7E74C004AE130 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08AA74CB29E7E74C004AE130 /* en */,
+				08AA74CD29E7E74F004AE130 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -897,6 +924,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -956,6 +984,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1016,6 +1045,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1041,6 +1071,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/CodeFragmentation/UtilityHelpers/KKPrefixHeader.pch";
 				INFOPLIST_FILE = CodeFragmentation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

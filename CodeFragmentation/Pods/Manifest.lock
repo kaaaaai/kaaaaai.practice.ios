@@ -24,8 +24,8 @@ DEPENDENCIES:
   - JPush (~> 3.4.0)
   - Masonry (~> 1.1.0)
   - RxCocoa (~> 5.1.0)
-  - RxSwift (~> 5.1.0)
-  - RxSwiftExt (~> 5)
+  - RxSwift (~> 5.1.1)
+  - RxSwiftExt (~> 5.2.0)
   - SnapKit (~> 4.2.0)
 
 SPEC REPOS:
@@ -49,6 +49,6 @@ SPEC CHECKSUMS:
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: ece67372743fe7a52e4f60387842c122d1708432
+PODFILE CHECKSUM: 72b65ee5520204a957cfc18d5b89911f3c71bf1b
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

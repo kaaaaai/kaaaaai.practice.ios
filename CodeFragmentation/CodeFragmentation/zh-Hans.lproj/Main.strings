@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "最少输入五个字符"; ObjectID = "5Cx-9M-MEg"; */
+"5Cx-9M-MEg.text" = "最少输入五个字符";
+
+/* Class = "UIButton"; normalTitle = "加载动画"; ObjectID = "77E-As-d9Q"; */
+"77E-As-d9Q.normalTitle" = "加载动画";
+
+/* Class = "UIButton"; normalTitle = "MVVM"; ObjectID = "GEi-J6-QLX"; */
+"GEi-J6-QLX.normalTitle" = "MVVM";
+
+/* Class = "UIButton"; normalTitle = "none"; ObjectID = "GEu-cU-xez"; */
+"GEu-cU-xez.normalTitle" = "none";
+
+/* Class = "UIButton"; normalTitle = "VIPER"; ObjectID = "HGl-1C-yjC"; */
+"HGl-1C-yjC.normalTitle" = "VIPER";
+
+/* Class = "UILabel"; text = "最少输入五个字符"; ObjectID = "HNU-nQ-2XC"; */
+"HNU-nQ-2XC.text" = "最少输入五个字符";
+
+/* Class = "UIButton"; normalTitle = "RxSwift"; ObjectID = "HNk-EE-oBC"; */
+"HNk-EE-oBC.normalTitle" = "RxSwift";
+
+/* Class = "UIButton"; normalTitle = "转场"; ObjectID = "PMD-Z5-vaT"; */
+"PMD-Z5-vaT.normalTitle" = "转场";
+
+/* Class = "UIButton"; normalTitle = "MVP"; ObjectID = "SK6-5a-Oao"; */
+"SK6-5a-Oao.normalTitle" = "MVP";
+
+/* Class = "UILabel"; text = "架构模式"; ObjectID = "aLW-t4-yXd"; */
+"aLW-t4-yXd.text" = "架构模式";
+
+/* Class = "UIButton"; normalTitle = "权限封装"; ObjectID = "c5s-69-A0c"; */
+"c5s-69-A0c.normalTitle" = "权限封装";
+
+/* Class = "UIButton"; normalTitle = "提示框"; ObjectID = "cUT-93-fT2"; */
+"cUT-93-fT2.normalTitle" = "提示框";
+
+/* Class = "UILabel"; text = "其他"; ObjectID = "dEn-Ts-RVZ"; */
+"dEn-Ts-RVZ.text" = "其他";
+
+/* Class = "UIButton"; normalTitle = "动画"; ObjectID = "dFJ-vg-78f"; */
+"dFJ-vg-78f.normalTitle" = "动画";
+
+/* Class = "UIButton"; normalTitle = "Do Something"; ObjectID = "dwV-jb-ore"; */
+"dwV-jb-ore.normalTitle" = "Do Something";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "orZ-8k-dJk"; */
+"orZ-8k-dJk.text" = "Password";
+
+/* Class = "UIButton"; normalTitle = "error"; ObjectID = "pFo-ZM-pBS"; */
+"pFo-ZM-pBS.normalTitle" = "error";
+
+/* Class = "UIButton"; normalTitle = "signal"; ObjectID = "pIO-PK-We2"; */
+"pIO-PK-We2.normalTitle" = "signal";
+
+/* Class = "UILabel"; text = "UI"; ObjectID = "x1c-lX-T9a"; */
+"x1c-lX-T9a.text" = "UI";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "xrs-kr-G9o"; */
+"xrs-kr-G9o.text" = "Username";

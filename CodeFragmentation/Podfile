@@ -10,9 +10,11 @@ def uikit_pods
 end
 
 def business_pods
-  pod 'RxSwift', '~> 5.1.0'
+  pod 'RxSwift', '~> 5.1.1'
   pod 'RxCocoa', '~> 5.1.0'
-  pod 'RxSwiftExt', '~> 5'
+  pod 'RxSwiftExt', '~> 5.2.0'
+  
+#  pod 'Applanga', '~> 2.0.170'
 end
 
 def other_pods
@@ -38,14 +40,14 @@ end
 # Script for setting swift version of PromiseKit to 4.2, since it for some reason sets the version to 5, even though it does not support it.
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    if target.name == 'RxSwift'
-      target.build_configurations.each do |config|
-        config.build_settings['SWIFT_VERSION'] = '4.2'
-      end
-    end
+    #    if target.name == 'RxSwift'
+    #      target.build_configurations.each do |config|
+    #        config.build_settings['SWIFT_VERSION'] = '4.2'
+    #      end
+    #    end
     target.build_configurations.each do |config|
-            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
-        end
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+    end
   end
 end
 

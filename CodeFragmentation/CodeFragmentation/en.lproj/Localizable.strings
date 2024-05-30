@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  CodeFragmentation
+
+  Created by Kai Lv on 2023/4/13.
+  Copyright © 2023 Kaaaaai. All rights reserved.
+*/
+
+"recordSetting_Call" = "Call";
+"Recording Mode" = "Recording Mode";
+"Mic Gain" = "Mic Gain";
+
+
+"Scheduled Recording" = "Scheduled Recording";
+
+"Disable USB Drives" = "Disable USB Drives";
+"Recording indicator" = "Recording indicator";
+"Voice Activated Recording" = "Voice Activated Recording";
+"Restore Default Setting" = "Restore Default Setting";
+
+"Device Storage" = "Device Storage";
+"Remaining Storage Space" = "Remaining Storage Space";
+"Remaining Recordable Hours" = "Remaining Recordable Hours";
+"Firmware Version" = "Firmware Version";

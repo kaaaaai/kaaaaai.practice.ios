@@ -15,6 +15,12 @@ class KKPersonViewController: KKBaseViewController {
     let showPersionVButton = UIButton()
     let persionLabel = UILabel()
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let langStr = Locale.current.languageCode
+        print("language:\(langStr)")
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
 
