@@ -119,6 +119,40 @@
     
     return YES;
 }
+- (IBAction)decodemSbcAudio1:(id)sender {
+    NSString *sbcFilePath = [[NSBundle mainBundle] pathForResource:@"audio1.msbc" ofType:nil];
+    
+    NSString *pcmFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+    pcmFilePath = [pcmFilePath stringByAppendingPathComponent:@"audio1_decode.pcm"];
+    
+    BOOL success = [self decodeMSBCFile:sbcFilePath toPCMFile:pcmFilePath];
+    if (success) {
+        NSLog(@"文件解码成功，输出路径: %@", pcmFilePath);
+        
+        NSUInteger fileSize = [self fileSizeAtPath:pcmFilePath];
+        NSLog(@"解码后文件长度: %lu bytes", (unsigned long)fileSize);
+    } else {
+        NSLog(@"文件解码失败");
+    }
+    
+}
+
+- (IBAction)decodemSbcAudio2:(id)sender {
+    NSString *sbcFilePath = [[NSBundle mainBundle] pathForResource:@"audio2.msbc" ofType:nil];
+    
+    NSString *pcmFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+    pcmFilePath = [pcmFilePath stringByAppendingPathComponent:@"audio2_decode.pcm"];
+    
+    BOOL success = [self decodeMSBCFile:sbcFilePath toPCMFile:pcmFilePath];
+    if (success) {
+        NSLog(@"文件解码成功，输出路径: %@", pcmFilePath);
+        
+        NSUInteger fileSize = [self fileSizeAtPath:pcmFilePath];
+        NSLog(@"解码后文件长度: %lu bytes", (unsigned long)fileSize);
+    } else {
+        NSLog(@"文件解码失败");
+    }
+}
 
 - (IBAction)encodeMSBCFile:(id)sender {
     NSString *originFilePath = [[NSBundle mainBundle] pathForResource:@"taiwan.pcm" ofType:nil];

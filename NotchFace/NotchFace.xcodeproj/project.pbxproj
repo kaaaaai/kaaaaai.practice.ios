@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088368D72C0F47D5006D1B38 /* CustomPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088368D62C0F47D5006D1B38 /* CustomPopView.swift */; };
+		088983BA2C0EF9210087EB32 /* NotchFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983B92C0EF9210087EB32 /* NotchFaceApp.swift */; };
+		088983BC2C0EF9210087EB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983BB2C0EF9210087EB32 /* ContentView.swift */; };
+		088983BE2C0EF9230087EB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088983BD2C0EF9230087EB32 /* Assets.xcassets */; };
+		088983C12C0EF9230087EB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088983C02C0EF9230087EB32 /* Preview Assets.xcassets */; };
+		088983CC2C0EF9230087EB32 /* NotchFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983CB2C0EF9230087EB32 /* NotchFaceTests.swift */; };
+		088983D62C0EF9230087EB32 /* NotchFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983D52C0EF9230087EB32 /* NotchFaceUITests.swift */; };
+		088983D82C0EF9230087EB32 /* NotchFaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983D72C0EF9230087EB32 /* NotchFaceUITestsLaunchTests.swift */; };
+		088983E52C0F14240087EB32 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983E42C0F14240087EB32 /* StatusBarView.swift */; };
+		088983E72C0F1FD70087EB32 /* VolumeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983E62C0F1FD70087EB32 /* VolumeMonitor.swift */; };
+		088983E92C0F1FEC0087EB32 /* CustomVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983E82C0F1FEC0087EB32 /* CustomVolumeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		088983C82C0EF9230087EB32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088983AE2C0EF9210087EB32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 088983B52C0EF9210087EB32;
+			remoteInfo = NotchFace;
+		};
+		088983D22C0EF9230087EB32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 088983AE2C0EF9210087EB32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 088983B52C0EF9210087EB32;
+			remoteInfo = NotchFace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		088368D62C0F47D5006D1B38 /* CustomPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopView.swift; sourceTree = "<group>"; };
+		088983B62C0EF9210087EB32 /* NotchFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		088983B92C0EF9210087EB32 /* NotchFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchFaceApp.swift; sourceTree = "<group>"; };
+		088983BB2C0EF9210087EB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		088983BD2C0EF9230087EB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		088983C02C0EF9230087EB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		088983C22C0EF9230087EB32 /* NotchFace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotchFace.entitlements; sourceTree = "<group>"; };
+		088983C72C0EF9230087EB32 /* NotchFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		088983CB2C0EF9230087EB32 /* NotchFaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchFaceTests.swift; sourceTree = "<group>"; };
+		088983D12C0EF9230087EB32 /* NotchFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		088983D52C0EF9230087EB32 /* NotchFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchFaceUITests.swift; sourceTree = "<group>"; };
+		088983D72C0EF9230087EB32 /* NotchFaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchFaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		088983E42C0F14240087EB32 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		088983E62C0F1FD70087EB32 /* VolumeMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMonitor.swift; sourceTree = "<group>"; };
+		088983E82C0F1FEC0087EB32 /* CustomVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVolumeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		088983B32C0EF9210087EB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088983C42C0EF9230087EB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088983CE2C0EF9230087EB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088983AD2C0EF9210087EB32 = {
+			isa = PBXGroup;
+			children = (
+				088983B82C0EF9210087EB32 /* NotchFace */,
+				088983CA2C0EF9230087EB32 /* NotchFaceTests */,
+				088983D42C0EF9230087EB32 /* NotchFaceUITests */,
+				088983B72C0EF9210087EB32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		088983B72C0EF9210087EB32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				088983B62C0EF9210087EB32 /* NotchFace.app */,
+				088983C72C0EF9230087EB32 /* NotchFaceTests.xctest */,
+				088983D12C0EF9230087EB32 /* NotchFaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		088983B82C0EF9210087EB32 /* NotchFace */ = {
+			isa = PBXGroup;
+			children = (
+				088983B92C0EF9210087EB32 /* NotchFaceApp.swift */,
+				088983BB2C0EF9210087EB32 /* ContentView.swift */,
+				088983E42C0F14240087EB32 /* StatusBarView.swift */,
+				088983E62C0F1FD70087EB32 /* VolumeMonitor.swift */,
+				088983E82C0F1FEC0087EB32 /* CustomVolumeView.swift */,
+				088368D62C0F47D5006D1B38 /* CustomPopView.swift */,
+				088983BD2C0EF9230087EB32 /* Assets.xcassets */,
+				088983C22C0EF9230087EB32 /* NotchFace.entitlements */,
+				088983BF2C0EF9230087EB32 /* Preview Content */,
+			);
+			path = NotchFace;
+			sourceTree = "<group>";
+		};
+		088983BF2C0EF9230087EB32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				088983C02C0EF9230087EB32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		088983CA2C0EF9230087EB32 /* NotchFaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				088983CB2C0EF9230087EB32 /* NotchFaceTests.swift */,
+			);
+			path = NotchFaceTests;
+			sourceTree = "<group>";
+		};
+		088983D42C0EF9230087EB32 /* NotchFaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				088983D52C0EF9230087EB32 /* NotchFaceUITests.swift */,
+				088983D72C0EF9230087EB32 /* NotchFaceUITestsLaunchTests.swift */,
+			);
+			path = NotchFaceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		088983B52C0EF9210087EB32 /* NotchFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088983DB2C0EF9230087EB32 /* Build configuration list for PBXNativeTarget "NotchFace" */;
+			buildPhases = (
+				088983B22C0EF9210087EB32 /* Sources */,
+				088983B32C0EF9210087EB32 /* Frameworks */,
+				088983B42C0EF9210087EB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotchFace;
+			productName = NotchFace;
+			productReference = 088983B62C0EF9210087EB32 /* NotchFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		088983C62C0EF9230087EB32 /* NotchFaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088983DE2C0EF9230087EB32 /* Build configuration list for PBXNativeTarget "NotchFaceTests" */;
+			buildPhases = (
+				088983C32C0EF9230087EB32 /* Sources */,
+				088983C42C0EF9230087EB32 /* Frameworks */,
+				088983C52C0EF9230087EB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				088983C92C0EF9230087EB32 /* PBXTargetDependency */,
+			);
+			name = NotchFaceTests;
+			productName = NotchFaceTests;
+			productReference = 088983C72C0EF9230087EB32 /* NotchFaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		088983D02C0EF9230087EB32 /* NotchFaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088983E12C0EF9230087EB32 /* Build configuration list for PBXNativeTarget "NotchFaceUITests" */;
+			buildPhases = (
+				088983CD2C0EF9230087EB32 /* Sources */,
+				088983CE2C0EF9230087EB32 /* Frameworks */,
+				088983CF2C0EF9230087EB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				088983D32C0EF9230087EB32 /* PBXTargetDependency */,
+			);
+			name = NotchFaceUITests;
+			productName = NotchFaceUITests;
+			productReference = 088983D12C0EF9230087EB32 /* NotchFaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		088983AE2C0EF9210087EB32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					088983B52C0EF9210087EB32 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					088983C62C0EF9230087EB32 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 088983B52C0EF9210087EB32;
+					};
+					088983D02C0EF9230087EB32 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 088983B52C0EF9210087EB32;
+					};
+				};
+			};
+			buildConfigurationList = 088983B12C0EF9210087EB32 /* Build configuration list for PBXProject "NotchFace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 088983AD2C0EF9210087EB32;
+			productRefGroup = 088983B72C0EF9210087EB32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				088983B52C0EF9210087EB32 /* NotchFace */,
+				088983C62C0EF9230087EB32 /* NotchFaceTests */,
+				088983D02C0EF9230087EB32 /* NotchFaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		088983B42C0EF9210087EB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088983C12C0EF9230087EB32 /* Preview Assets.xcassets in Resources */,
+				088983BE2C0EF9230087EB32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088983C52C0EF9230087EB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088983CF2C0EF9230087EB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		088983B22C0EF9210087EB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088983E52C0F14240087EB32 /* StatusBarView.swift in Sources */,
+				088983BC2C0EF9210087EB32 /* ContentView.swift in Sources */,
+				088983E72C0F1FD70087EB32 /* VolumeMonitor.swift in Sources */,
+				088368D72C0F47D5006D1B38 /* CustomPopView.swift in Sources */,
+				088983E92C0F1FEC0087EB32 /* CustomVolumeView.swift in Sources */,
+				088983BA2C0EF9210087EB32 /* NotchFaceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088983C32C0EF9230087EB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088983CC2C0EF9230087EB32 /* NotchFaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088983CD2C0EF9230087EB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088983D82C0EF9230087EB32 /* NotchFaceUITestsLaunchTests.swift in Sources */,
+				088983D62C0EF9230087EB32 /* NotchFaceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		088983C92C0EF9230087EB32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 088983B52C0EF9210087EB32 /* NotchFace */;
+			targetProxy = 088983C82C0EF9230087EB32 /* PBXContainerItemProxy */;
+		};
+		088983D32C0EF9230087EB32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 088983B52C0EF9210087EB32 /* NotchFace */;
+			targetProxy = 088983D22C0EF9230087EB32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		088983D92C0EF9230087EB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		088983DA2C0EF9230087EB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		088983DC2C0EF9230087EB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotchFace/NotchFace.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NotchFace/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HTHT75Q82;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.product.NotchFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		088983DD2C0EF9230087EB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotchFace/NotchFace.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NotchFace/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HTHT75Q82;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.product.NotchFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		088983DF2C0EF9230087EB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.product.NotchFaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotchFace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotchFace";
+			};
+			name = Debug;
+		};
+		088983E02C0EF9230087EB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.product.NotchFaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotchFace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotchFace";
+			};
+			name = Release;
+		};
+		088983E22C0EF9230087EB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.product.NotchFaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NotchFace;
+			};
+			name = Debug;
+		};
+		088983E32C0EF9230087EB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaaaaai.product.NotchFaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NotchFace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		088983B12C0EF9210087EB32 /* Build configuration list for PBXProject "NotchFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088983D92C0EF9230087EB32 /* Debug */,
+				088983DA2C0EF9230087EB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088983DB2C0EF9230087EB32 /* Build configuration list for PBXNativeTarget "NotchFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088983DC2C0EF9230087EB32 /* Debug */,
+				088983DD2C0EF9230087EB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088983DE2C0EF9230087EB32 /* Build configuration list for PBXNativeTarget "NotchFaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088983DF2C0EF9230087EB32 /* Debug */,
+				088983E02C0EF9230087EB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088983E12C0EF9230087EB32 /* Build configuration list for PBXNativeTarget "NotchFaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088983E22C0EF9230087EB32 /* Debug */,
+				088983E32C0EF9230087EB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 088983AE2C0EF9210087EB32 /* Project object */;
+}

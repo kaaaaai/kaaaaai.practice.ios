@@ -2,7 +2,7 @@
 //  KKPermissions.swift
 //  CodeFragmentation
 //
-//  Created by Kai Lv on 2020/9/3.
+//  Created by Kaaaaai on 2020/9/3.
 //  Copyright © 2020 Kaaaaai. All rights reserved.
 //
 

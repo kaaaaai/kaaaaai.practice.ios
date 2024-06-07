@@ -37,13 +37,31 @@
                                     <action selector="encodeMSBCFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8O-Wz-ijG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zi-Jg-xkJ">
+                                <rect key="frame" x="16" y="112" width="81" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="audio-1"/>
+                                <connections>
+                                    <action selector="decodemSbcAudio1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMK-Nx-LCO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw3-PG-Ykn">
+                                <rect key="frame" x="105" y="116" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="audio2"/>
+                                <connections>
+                                    <action selector="decodemSbcAudio2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3I-ht-f0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="4"/>
+            <point key="canvasLocation" x="-14.503816793893129" y="3.5211267605633805"/>
         </scene>
     </scenes>
 </document>

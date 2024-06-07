@@ -2,7 +2,7 @@
 //  KKHeadMessageView.swift
 //  VoiceAssistant
 //
-//  Created by Kai Lv on 2020/7/29.
+//  Created by Kaaaaai on 2020/7/29.
 //  Copyright © 2020 Kaaaaai. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  LXAdpcmDeCoder.h
 //  CGABluetoothDemo
 //
-//  Created by Kai Lv on 2020/8/11.
+//  Created by Kaaaaai on 2020/8/11.
 //  Copyright © 2020 yhl. All rights reserved.
 //
 

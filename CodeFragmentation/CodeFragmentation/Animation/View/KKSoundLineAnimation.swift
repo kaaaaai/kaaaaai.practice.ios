@@ -2,7 +2,7 @@
 //  KKSoundLineAnimation.swift
 //  CodeFragmentation
 //
-//  Created by Kai Lv on 2023/5/11.
+//  Created by Kaaaaai on 2023/5/11.
 //  Copyright © 2023 Kaaaaai. All rights reserved.
 //
 

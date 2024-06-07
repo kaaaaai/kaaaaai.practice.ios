@@ -13,6 +13,8 @@
 		08EC05E12C06BF9F00C83BB9 /* audio.sbc in Resources */ = {isa = PBXBuildFile; fileRef = 08EC05E02C06BF9F00C83BB9 /* audio.sbc */; };
 		08EC065A2C0824E800C83BB9 /* taiwan.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 08EC06592C0824E800C83BB9 /* taiwan.pcm */; };
 		08EC065C2C08944400C83BB9 /* taiwan_2.msbc in Resources */ = {isa = PBXBuildFile; fileRef = 08EC065B2C08944400C83BB9 /* taiwan_2.msbc */; };
+		08EC065F2C09769C00C83BB9 /* audio2.msbc in Resources */ = {isa = PBXBuildFile; fileRef = 08EC065D2C09769C00C83BB9 /* audio2.msbc */; };
+		08EC06602C09769C00C83BB9 /* audio1.msbc in Resources */ = {isa = PBXBuildFile; fileRef = 08EC065E2C09769C00C83BB9 /* audio1.msbc */; };
 		0F3DA79CC40B70811D0B33B6 /* Pods_XWMP3ToWAV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2E5570943D12F7A88FD66C /* Pods_XWMP3ToWAV.framework */; };
 		2EA624E21E7666AB0092A130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA624E11E7666AB0092A130 /* main.m */; };
 		2EA624E51E7666AB0092A130 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA624E41E7666AB0092A130 /* AppDelegate.m */; };
@@ -41,6 +43,8 @@
 		08EC05E02C06BF9F00C83BB9 /* audio.sbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.sbc; sourceTree = "<group>"; };
 		08EC06592C0824E800C83BB9 /* taiwan.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = taiwan.pcm; sourceTree = "<group>"; };
 		08EC065B2C08944400C83BB9 /* taiwan_2.msbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = taiwan_2.msbc; sourceTree = "<group>"; };
+		08EC065D2C09769C00C83BB9 /* audio2.msbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio2.msbc; sourceTree = "<group>"; };
+		08EC065E2C09769C00C83BB9 /* audio1.msbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio1.msbc; sourceTree = "<group>"; };
 		2EA624DD1E7666AB0092A130 /* XWMP3ToWAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWMP3ToWAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA624E11E7666AB0092A130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EA624E31E7666AB0092A130 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 		2EA624DF1E7666AB0092A130 /* XWMP3ToWAV */ = {
 			isa = PBXGroup;
 			children = (
+				08EC065E2C09769C00C83BB9 /* audio1.msbc */,
+				08EC065D2C09769C00C83BB9 /* audio2.msbc */,
 				08EC065B2C08944400C83BB9 /* taiwan_2.msbc */,
 				2EA625051E7666BC0092A130 /* XWMP3ToPCM.h */,
 				2EA625061E7666BC0092A130 /* XWMP3ToPCM.m */,
@@ -254,6 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EC065F2C09769C00C83BB9 /* audio2.msbc in Resources */,
+				08EC06602C09769C00C83BB9 /* audio1.msbc in Resources */,
 				2EA624F01E7666AB0092A130 /* LaunchScreen.storyboard in Resources */,
 				08EC05E12C06BF9F00C83BB9 /* audio.sbc in Resources */,
 				08EC05DF2C05B84F00C83BB9 /* audio.msbc in Resources */,
