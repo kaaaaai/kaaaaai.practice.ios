@@ -93,6 +93,7 @@
         return NO;
     }
     
+    sbc.endian = SBC_LE;
     uint8_t msbcBuffer[57]; // MSBC 帧大小为 57 字节
     size_t pcmBufferSize = 240; // 每帧解码后的 PCM 数据大小为 240 字节
     //        size_t pcmBufferSize = 1920; // 每帧解码后的 PCM 数据大小为 240 字节
@@ -101,6 +102,10 @@
     size_t outputSize = 0;
     
     while (fread(msbcBuffer, 1, 57, inputFile) == 57) {
+        if (![self isValidMSBCFrame:msbcBuffer]) {
+            NSLog(@"MSBC 不合法");
+        }
+        
         ssize_t decoded = sbc_decode(&sbc, msbcBuffer, 57, (uint8_t *)pcmBuffer, pcmBufferSize, &outputSize);
         if (decoded < 0) {
             NSLog(@"MSBC decoding failed: %zd", decoded);
@@ -120,10 +125,10 @@
     return YES;
 }
 - (IBAction)decodemSbcAudio1:(id)sender {
-    NSString *sbcFilePath = [[NSBundle mainBundle] pathForResource:@"audio1.msbc" ofType:nil];
+    NSString *sbcFilePath = [[NSBundle mainBundle] pathForResource:@"voice.msbc" ofType:nil];
     
     NSString *pcmFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
-    pcmFilePath = [pcmFilePath stringByAppendingPathComponent:@"audio1_decode.pcm"];
+    pcmFilePath = [pcmFilePath stringByAppendingPathComponent:@"voice_0611.pcm"];
     
     BOOL success = [self decodeMSBCFile:sbcFilePath toPCMFile:pcmFilePath];
     if (success) {

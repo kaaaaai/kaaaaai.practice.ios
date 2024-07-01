@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		019F64C1B9BC6B541F0CFA0B /* Pods_XWMP3ToWAVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA2FA2F3C1BE1978FE8FAE /* Pods_XWMP3ToWAVTests.framework */; };
+		087625322C180A9000E5FC36 /* audio_0611.msbc in Resources */ = {isa = PBXBuildFile; fileRef = 087625312C180A9000E5FC36 /* audio_0611.msbc */; };
+		087625342C181FE300E5FC36 /* voice.msbc in Resources */ = {isa = PBXBuildFile; fileRef = 087625332C181FE300E5FC36 /* voice.msbc */; };
 		08E269342AC0415E007E233E /* 降噪测试.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 08E269332AC0415E007E233E /* 降噪测试.mp3 */; };
 		08EC05DF2C05B84F00C83BB9 /* audio.msbc in Resources */ = {isa = PBXBuildFile; fileRef = 08EC05DE2C05B84F00C83BB9 /* audio.msbc */; };
 		08EC05E12C06BF9F00C83BB9 /* audio.sbc in Resources */ = {isa = PBXBuildFile; fileRef = 08EC05E02C06BF9F00C83BB9 /* audio.sbc */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087625312C180A9000E5FC36 /* audio_0611.msbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio_0611.msbc; sourceTree = "<group>"; };
+		087625332C181FE300E5FC36 /* voice.msbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice.msbc; sourceTree = "<group>"; };
 		08E269332AC0415E007E233E /* 降噪测试.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "降噪测试.mp3"; sourceTree = "<group>"; };
 		08EC05DE2C05B84F00C83BB9 /* audio.msbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.msbc; sourceTree = "<group>"; };
 		08EC05E02C06BF9F00C83BB9 /* audio.sbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.sbc; sourceTree = "<group>"; };
@@ -123,9 +127,11 @@
 		2EA624DF1E7666AB0092A130 /* XWMP3ToWAV */ = {
 			isa = PBXGroup;
 			children = (
+				087625312C180A9000E5FC36 /* audio_0611.msbc */,
 				08EC065E2C09769C00C83BB9 /* audio1.msbc */,
 				08EC065D2C09769C00C83BB9 /* audio2.msbc */,
 				08EC065B2C08944400C83BB9 /* taiwan_2.msbc */,
+				087625332C181FE300E5FC36 /* voice.msbc */,
 				2EA625051E7666BC0092A130 /* XWMP3ToPCM.h */,
 				2EA625061E7666BC0092A130 /* XWMP3ToPCM.m */,
 				08EC06592C0824E800C83BB9 /* taiwan.pcm */,
@@ -264,9 +270,11 @@
 				08EC06602C09769C00C83BB9 /* audio1.msbc in Resources */,
 				2EA624F01E7666AB0092A130 /* LaunchScreen.storyboard in Resources */,
 				08EC05E12C06BF9F00C83BB9 /* audio.sbc in Resources */,
+				087625342C181FE300E5FC36 /* voice.msbc in Resources */,
 				08EC05DF2C05B84F00C83BB9 /* audio.msbc in Resources */,
 				08E269342AC0415E007E233E /* 降噪测试.mp3 in Resources */,
 				08EC065A2C0824E800C83BB9 /* taiwan.pcm in Resources */,
+				087625322C180A9000E5FC36 /* audio_0611.msbc in Resources */,
 				2EA6250B1E76835D0092A130 /* libai.mp3 in Resources */,
 				08EC065C2C08944400C83BB9 /* taiwan_2.msbc in Resources */,
 				2EA624ED1E7666AB0092A130 /* Assets.xcassets in Resources */,
