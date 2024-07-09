@@ -2,9 +2,8 @@
 //  AppState.swift
 //  NotchFace
 //
-//  Created by Kai Lv on 2024/6/30.
+//  Created by Kaaaaai on 2024/6/30.
 //
-
 
 import Combine
 import OSLog
@@ -13,14 +12,33 @@ import SwiftUI
 @MainActor
 final class AppState: ObservableObject {
     
+    private var cancellables = Set<AnyCancellable>()
+
+    private(set) lazy var settingsManager = SettingsManager(appState: self)
+
     private(set) weak var appDelegate: AppDelegate?
     
     private(set) weak var settingsWindow: NSWindow?
     
     init() {
+        configureCancellables()
+    }
+
+    private func configureCancellables() {
+        var c = Set<AnyCancellable>()
+
+        settingsManager.objectWillChange
+            .sink { [weak self] in
+                self?.objectWillChange.send()
+            }
+            .store(in: &c)
         
+        cancellables = c
     }
     
+    func performSetup() {
+        settingsManager.performSetup()
+    }
     
     /// Assigns the app delegate to the app state.
     func assignAppDelegate(_ appDelegate: AppDelegate) {
@@ -60,6 +78,9 @@ final class AppState: ObservableObject {
         NSApp.setActivationPolicy(policy)
     }
 }
+
+// MARK: AppState: BindingExposable
+extension AppState: BindingExposable { }
 
 private extension Logger {
     static let appState = Logger(category: "AppState")

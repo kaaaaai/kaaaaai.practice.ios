@@ -2,7 +2,7 @@
 //  NSApplication+Ex.swift
 //  NotchFace
 //
-//  Created by Kai Lv on 2024/6/30.
+//  Created by Kaaaaai on 2024/6/30.
 //
 
 import Cocoa

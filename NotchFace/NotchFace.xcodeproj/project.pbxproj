@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081182BB2C33D37000631B62 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081182BA2C33D37000631B62 /* PermissionView.swift */; };
+		081182BF2C33D39400631B62 /* PermissionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081182BE2C33D39400631B62 /* PermissionWindow.swift */; };
+		081182C22C3401E400631B62 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 081182C12C3401E400631B62 /* LaunchAtLogin */; };
+		081182C42C3403BD00631B62 /* AnyLocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081182C32C3403BD00631B62 /* AnyLocalizedError.swift */; };
+		0837626D2C3CD61400ECA359 /* GeneralSettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0837626C2C3CD61400ECA359 /* GeneralSettingManager.swift */; };
+		0837626F2C3CD6B100ECA359 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0837626E2C3CD6B100ECA359 /* SettingsManager.swift */; };
+		083762712C3CD70E00ECA359 /* BindingExposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083762702C3CD70E00ECA359 /* BindingExposable.swift */; };
+		083762732C3CD8EF00ECA359 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083762722C3CD8EF00ECA359 /* Defaults.swift */; };
 		088983BA2C0EF9210087EB32 /* NotchFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983B92C0EF9210087EB32 /* NotchFaceApp.swift */; };
 		088983BE2C0EF9230087EB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088983BD2C0EF9230087EB32 /* Assets.xcassets */; };
 		088983C12C0EF9230087EB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088983C02C0EF9230087EB32 /* Preview Assets.xcassets */; };
@@ -50,6 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081182BA2C33D37000631B62 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		081182BE2C33D39400631B62 /* PermissionWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionWindow.swift; sourceTree = "<group>"; };
+		081182C32C3403BD00631B62 /* AnyLocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLocalizedError.swift; sourceTree = "<group>"; };
+		0837626C2C3CD61400ECA359 /* GeneralSettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingManager.swift; sourceTree = "<group>"; };
+		0837626E2C3CD6B100ECA359 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		083762702C3CD70E00ECA359 /* BindingExposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExposable.swift; sourceTree = "<group>"; };
+		083762722C3CD8EF00ECA359 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		088983B62C0EF9210087EB32 /* NotchFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088983B92C0EF9210087EB32 /* NotchFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchFaceApp.swift; sourceTree = "<group>"; };
 		088983BD2C0EF9230087EB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081182C22C3401E400631B62 /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081182B92C33D34D00631B62 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				081182BE2C33D39400631B62 /* PermissionWindow.swift */,
+				081182BA2C33D37000631B62 /* PermissionView.swift */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
 		088983AD2C0EF9210087EB32 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +214,11 @@
 			children = (
 				08E890B22C314E2500D4FFD4 /* ScreenStateManager.swift */,
 				08E890B62C314EE900D4FFD4 /* Constants.swift */,
+				083762702C3CD70E00ECA359 /* BindingExposable.swift */,
+				081182C32C3403BD00631B62 /* AnyLocalizedError.swift */,
+				0837626E2C3CD6B100ECA359 /* SettingsManager.swift */,
+				0837626C2C3CD61400ECA359 /* GeneralSettingManager.swift */,
+				083762722C3CD8EF00ECA359 /* Defaults.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -196,6 +226,7 @@
 		08E890BA2C31543300D4FFD4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				081182B92C33D34D00631B62 /* Permission */,
 				08E890BD2C31545500D4FFD4 /* Settings */,
 			);
 			path = UI;
@@ -235,12 +266,17 @@
 				088983B22C0EF9210087EB32 /* Sources */,
 				088983B32C0EF9210087EB32 /* Frameworks */,
 				088983B42C0EF9210087EB32 /* Resources */,
+				083762742C3CE69500ECA359 /* [RS] Swift Format autocorrect */,
+				083762752C3CE6E100ECA359 /* [RS] SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NotchFace;
+			packageProductDependencies = (
+				081182C12C3401E400631B62 /* LaunchAtLogin */,
+			);
 			productName = NotchFace;
 			productReference = 088983B62C0EF9210087EB32 /* NotchFace.app */;
 			productType = "com.apple.product-type.application";
@@ -290,6 +326,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = NotchFace;
 				TargetAttributes = {
 					088983B52C0EF9210087EB32 = {
 						CreatedOnToolsVersion = 15.4;
@@ -313,6 +350,9 @@
 				Base,
 			);
 			mainGroup = 088983AD2C0EF9210087EB32;
+			packageReferences = (
+				081182C02C3401E400631B62 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			productRefGroup = 088983B72C0EF9210087EB32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,6 +390,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		083762742C3CE69500ECA359 /* [RS] Swift Format autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[RS] Swift Format autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nswiftlint autocorrect&&swiftlint autocorrect --format\nfi\n";
+		};
+		083762752C3CE6E100ECA359 /* [RS] SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[RS] SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n    swiftlint\n    else\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		088983B22C0EF9210087EB32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -358,19 +437,26 @@
 				08E890C72C31639500D4FFD4 /* AdvancedSettingView.swift in Sources */,
 				08E890BF2C31546000D4FFD4 /* SettingsWindow.swift in Sources */,
 				08E890C12C31549F00D4FFD4 /* SettingsNavigaionItem.swift in Sources */,
+				0837626D2C3CD61400ECA359 /* GeneralSettingManager.swift in Sources */,
 				08E890D32C31648800D4FFD4 /* AboutSettingView.swift in Sources */,
 				08E890BC2C31544100D4FFD4 /* SettingsView.swift in Sources */,
 				08E890B02C314D7300D4FFD4 /* Logger+Ex.swift in Sources */,
+				083762712C3CD70E00ECA359 /* BindingExposable.swift in Sources */,
+				0837626F2C3CD6B100ECA359 /* SettingsManager.swift in Sources */,
 				08E890AD2C312B9C00D4FFD4 /* AppState.swift in Sources */,
 				08E890CB2C31640A00D4FFD4 /* AudioSettingView.swift in Sources */,
 				08E890CF2C31647400D4FFD4 /* KeyboardBrightSettingView.swift in Sources */,
+				083762732C3CD8EF00ECA359 /* Defaults.swift in Sources */,
 				08E890C32C31598200D4FFD4 /* NSColor+Ex.swift in Sources */,
 				08E890D12C31647D00D4FFD4 /* PlayingSettingView.swift in Sources */,
 				08E890B92C314EFF00D4FFD4 /* Bundle+Ex.swift in Sources */,
 				08E890B52C314EC300D4FFD4 /* NSApplication+Ex.swift in Sources */,
+				081182BB2C33D37000631B62 /* PermissionView.swift in Sources */,
+				081182BF2C33D39400631B62 /* PermissionWindow.swift in Sources */,
 				08E890B32C314E2500D4FFD4 /* ScreenStateManager.swift in Sources */,
 				08E890AA2C312B3600D4FFD4 /* AppDelegate.swift in Sources */,
 				08E890CD2C31646300D4FFD4 /* BrightnessSettingView.swift in Sources */,
+				081182C42C3403BD00631B62 /* AnyLocalizedError.swift in Sources */,
 				088983BA2C0EF9210087EB32 /* NotchFaceApp.swift in Sources */,
 				08E890B72C314EE900D4FFD4 /* Constants.swift in Sources */,
 			);
@@ -540,6 +626,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NotchFace/Preview Content\"";
 				DEVELOPMENT_TEAM = 5HTHT75Q82;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,6 +655,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NotchFace/Preview Content\"";
 				DEVELOPMENT_TEAM = 5HTHT75Q82;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -691,6 +779,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		081182C02C3401E400631B62 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		081182C12C3401E400631B62 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 081182C02C3401E400631B62 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 088983AE2C0EF9210087EB32 /* Project object */;
 }

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  NotchFace
 //
-//  Created by Kai Lv on 2024/6/30.
+//  Created by Kaaaaai on 2024/6/30.
 //
 
 import SwiftUI
@@ -12,7 +12,6 @@ import OSLog
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     private var appState: AppState?
-    
     
     func applicationWillFinishLaunching(_ notification: Notification) {
         guard let appState else {
@@ -36,6 +35,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             appState.assignSettingsWindow(settingsWindow)
             settingsWindow.close()
         }
+        
+//        if !appState.isPreview {
+        // if we have the required permissions, set up the
+            // shared app state
+//            if appState.permissionsManager.hasPermission {
+        appState.performSetup()
+//            }
+//        }
+    }
+    
+    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+        return true
     }
     
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
@@ -57,7 +68,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         self.appState = appState
     }
-    
     
     /// Opens the settings window and activates the app.
     @objc func openSettingsWindow() {
