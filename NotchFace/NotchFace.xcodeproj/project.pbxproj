@@ -15,6 +15,7 @@
 		0837626F2C3CD6B100ECA359 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0837626E2C3CD6B100ECA359 /* SettingsManager.swift */; };
 		083762712C3CD70E00ECA359 /* BindingExposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083762702C3CD70E00ECA359 /* BindingExposable.swift */; };
 		083762732C3CD8EF00ECA359 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083762722C3CD8EF00ECA359 /* Defaults.swift */; };
+		083762A52C3D101D00ECA359 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083762A42C3D101D00ECA359 /* ColorButton.swift */; };
 		088983BA2C0EF9210087EB32 /* NotchFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088983B92C0EF9210087EB32 /* NotchFaceApp.swift */; };
 		088983BE2C0EF9230087EB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088983BD2C0EF9230087EB32 /* Assets.xcassets */; };
 		088983C12C0EF9230087EB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088983C02C0EF9230087EB32 /* Preview Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		0837626E2C3CD6B100ECA359 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		083762702C3CD70E00ECA359 /* BindingExposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExposable.swift; sourceTree = "<group>"; };
 		083762722C3CD8EF00ECA359 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		083762A42C3D101D00ECA359 /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		088983B62C0EF9210087EB32 /* NotchFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088983B92C0EF9210087EB32 /* NotchFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchFaceApp.swift; sourceTree = "<group>"; };
 		088983BD2C0EF9230087EB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				08E890CE2C31647400D4FFD4 /* KeyboardBrightSettingView.swift */,
 				08E890D02C31647D00D4FFD4 /* PlayingSettingView.swift */,
 				08E890D22C31648800D4FFD4 /* AboutSettingView.swift */,
+				083762A42C3D101D00ECA359 /* ColorButton.swift */,
 			);
 			path = SettingsChilds;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				081182BF2C33D39400631B62 /* PermissionWindow.swift in Sources */,
 				08E890B32C314E2500D4FFD4 /* ScreenStateManager.swift in Sources */,
 				08E890AA2C312B3600D4FFD4 /* AppDelegate.swift in Sources */,
+				083762A52C3D101D00ECA359 /* ColorButton.swift in Sources */,
 				08E890CD2C31646300D4FFD4 /* BrightnessSettingView.swift in Sources */,
 				081182C42C3403BD00631B62 /* AnyLocalizedError.swift in Sources */,
 				088983BA2C0EF9210087EB32 /* NotchFaceApp.swift in Sources */,

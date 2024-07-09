@@ -19,7 +19,6 @@ extension Bundle {
         object(forInfoDictionaryKey: "CFBundleVersion") as? String
     }
     
-    
     /// The bundle's copyright string.
     ///
     /// This accessor looks for an associated value for the `NSHumanReadableCopyright`

@@ -13,4 +13,3 @@ extension NSApplication {
         windows.first { $0.identifier?.rawValue == identifier }
     }
 }
-

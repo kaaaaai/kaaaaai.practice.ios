@@ -13,28 +13,28 @@ struct SettingsView: View {
             name: .general,
             icon: .systemSymbol(
                 "gear",
-                backgroundColor: NSColor(hex: "#FF5733")
+                backgroundColor: NSColor(hex: "#8E8E93")
             )
         ),
         SettingsNavigationItem(
             name: .audio,
             icon: .systemSymbol(
                 "speaker.wave.3.fill",
-                backgroundColor: NSColor(hex: "#FF5733")
+                backgroundColor: NSColor(hex: "#0062FF")
             )
         ),
         SettingsNavigationItem(
             name: .brightness,
             icon: .systemSymbol(
                 "sun.max",
-                backgroundColor: NSColor(hex: "#FF5733")
+                backgroundColor: NSColor(hex: "#FF9B2E")
             )
         ),
         SettingsNavigationItem(
             name: .kbBrightness,
             icon: .systemSymbol(
                 "light.max",
-                backgroundColor: NSColor(hex: "#FF5733")
+                backgroundColor: NSColor(hex: "#64D2FF")
             )
         ),
         SettingsNavigationItem(
@@ -48,7 +48,7 @@ struct SettingsView: View {
             name: .about,
             icon: .systemSymbol(
                 "info",
-                backgroundColor: NSColor(hex: "#FF5733")
+                backgroundColor: NSColor(hex: "#8E8E93")
             )
         )
     ]

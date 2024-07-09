@@ -24,7 +24,4 @@ struct NotchFaceApp: App {
 //            }
         })
     }
-    
-   
 }
-
